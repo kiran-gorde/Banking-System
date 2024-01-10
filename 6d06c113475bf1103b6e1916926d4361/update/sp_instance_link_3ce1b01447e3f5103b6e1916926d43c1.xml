@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>book</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Browse and search for articles</short_description>
+        <size>md</size>
+        <sp_column display_value="2">d9c1301447e3f5103b6e1916926d43f7</sp_column>
+        <sp_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-01 06:12:43</sys_created_on>
+        <sys_id>3ce1b01447e3f5103b6e1916926d43c1</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Knowledge Article</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sp_instance_link_3ce1b01447e3f5103b6e1916926d43c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-06 05:42:22</sys_updated_on>
+        <title>Knowledge Article</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=3ce1b01447e3f5103b6e1916926d43c1"/>
+</record_update>

@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category>140e2eda0b203300a1b16c2367673af4</category>
+        <channels/>
+        <connect_queue/>
+        <description/>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.41",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "1033c34c50d142dea76e8092cf61eb46": {
+          "id": "1033c34c50d142dea76e8092cf61eb46",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hey,"
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.user_name}}",
+                      "displayValue": "Input Variables➛User➛User ID"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Welcome to bank incident topic"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "9cbf1be7f1a84371a3a2d242c040465c": {
+          "id": "9cbf1be7f1a84371a3a2d242c040465c",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "6a68ddc0d2204494a044b30d4ba79673": {
+          "stepType": "ChoicePrompt",
+          "name": "Account opening issue",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "how may I Help You to open a bank account?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "33eec99301f045ee9805fb36348facf6",
+          "id": "6a68ddc0d2204494a044b30d4ba79673",
+          "hasCardHeader": true,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "Large image with text",
+            "cardFields": {
+              "1c617fa17313101081e06502edf6a780_title": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Bank Account Opening Issue"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "1c617fa17313101081e06502edf6a780_description": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "welcome to the bank incident topic  solve your bank related issue by the help of out chatbot"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "1c617fa17313101081e06502edf6a780_image": {
+                "value": "bank_1704216267556.jpg",
+                "mode": "db_image"
+              }
+            },
+            "cardDefinition": {
+              "sys_id": "1c617fa17313101081e06502edf6a780",
+              "name": "Large image with text",
+              "sys_name": "Large image with text",
+              "thumbnail.name": "Large image with text.svg",
+              "fields": [
+                {
+                  "label": "Title",
+                  "position": "1",
+                  "mandatory": true,
+                  "name": "title",
+                  "id": "1c617fa17313101081e06502edf6a780_title"
+                },
+                {
+                  "label": "Description",
+                  "position": "2",
+                  "mandatory": false,
+                  "name": "description",
+                  "id": "1c617fa17313101081e06502edf6a780_description"
+                },
+                {
+                  "label": "Image URL link",
+                  "position": "3",
+                  "mandatory": true,
+                  "type": "image",
+                  "name": "image",
+                  "id": "1c617fa17313101081e06502edf6a780_image"
+                },
+                {
+                  "label": "Image alt text",
+                  "position": "4",
+                  "mandatory": false,
+                  "name": "imageAlt",
+                  "id": "1c617fa17313101081e06502edf6a780_imageAlt"
+                }
+              ],
+              "value": "Large image with text",
+              "hasTemplateError": false
+            }
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "597a2de833404ebf87747574eba5ccac": {
+          "id": "597a2de833404ebf87747574eba5ccac",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "6f02acffd38e4c8bab3df512aef76c6f": {
+          "id": "6f02acffd38e4c8bab3df512aef76c6f",
+          "stepType": "LinkOutput",
+          "name": "Knowledge guide",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev179703.service-now.com/bp?id=kb_article_view&amp;sysparm_article=KB0010003"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please solve bank accounting related issue quickly"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.account_opening_issue}}",
+                      "displayValue": "Input Variables➛Account Opening Issue"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "9fb1cf92ef3a440bbc67a97351ecce7b": {
+          "id": "9fb1cf92ef3a440bbc67a97351ecce7b",
+          "stepType": "Prompt",
+          "name": "Issue solved?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Is this article solve your issue"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "400096ed5dcf4273b768141893c5ecda"
+        },
+        "9ba1d525d8d946e397584c2c2f50f247": {
+          "id": "9ba1d525d8d946e397584c2c2f50f247",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "6a110df6e2e64cd7af0ffdb991ee931b": {
+          "id": "6a110df6e2e64cd7af0ffdb991ee931b",
+          "stepType": "TextOutput",
+          "name": "Great",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Your issue is resolved"
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "grinning",
+                        "name": "Grinning Face",
+                        "short_names": [
+                          "grinning"
+                        ],
+                        "colons": ":grinning:",
+                        "emoticons": [],
+                        "unified": "1f600",
+                        "skin": null,
+                        "native": "😀"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "e317b01bd57c410782eeeea81f47bd33"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "7c4e90c45b854b3392512c96b8fc960c": {
+          "stepType": "ChoicePrompt",
+          "name": "select below option",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please choice the below options for the further help"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "4293005d09884bb089d930f51239d7ea",
+          "id": "7c4e90c45b854b3392512c96b8fc960c",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "c861aa5dabc84277bb79be068eb80378": {
+          "id": "c861aa5dabc84277bb79be068eb80378",
+          "stepType": "TextOutput",
+          "name": "Opening a bank account",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Please read the below Steps then you can open a bank account"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Mobile banking"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "SMS Alerts"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Inter-Net banking"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "YONO"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "State Bank Anywhere"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "SBI Quick Missed call facility."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "First 10 cheque leaves free in a financial year"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Thereafter:"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "10 Leaf Cheque Book at Rs 40/-+GST"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "25 Leaf Cheque Book at Rs 75/-+GST"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Restricted free withdrawals based on Monthly Average Balance maintained."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "The facility of transfer of accounts through Internet Banking channel."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Nomination facility is Available"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Monthly Average Balance: NIL"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "No limit on Maximum balance"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "A Pass Book is issued to record the transactions. Duplicate pass book can be issued if original is lost, on payment of charges. Statement of accounts can also be sent through e-mail."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Free Consolidated Account Statem"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "2227cb8625af4e69aed38c1bef398870"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "3243dd50345b4839b21de9a75f5cd19b": {
+          "id": "3243dd50345b4839b21de9a75f5cd19b",
+          "stepType": "TextOutput",
+          "name": "Bank Document to open a account",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "To Read the following information carefully"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Identity Proof (driver's license, passport etc.)"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Address Proof (driver's license, passport etc.)"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "PAN card."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Or, Form 16, which is a certificate issued by the applicant's employer, asserting that TDS has been deducted from your salary."
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "0942b8d820e8421b9c6ed0ebce508234"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "5d473b890eeb4d7789e46a4ce670bf34": {
+          "id": "5d473b890eeb4d7789e46a4ce670bf34",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "dd8a1171477e4e5793ed8da02b398403": {
+          "id": "dd8a1171477e4e5793ed8da02b398403",
+          "stepType": "ImplicitEnd"
+        },
+        "f1e9b8630160407388c761510ead3c8f": {
+          "id": "f1e9b8630160407388c761510ead3c8f",
+          "stepType": "ReusableTopic",
+          "name": "create bank incident",
+          "fields": [],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "reusableTopicChoice": "create bank incident",
+          "reusableTopicId": "23504abc476779103b6e1916926d43d8",
+          "inputs": {
+            "caller": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.user.user_name}}",
+                        "displayValue": "Input Variables➛User➛User ID"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            },
+            "short_description": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.description}}",
+                        "displayValue": "Input Variables➛Description"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            },
+            "urgency": {
+              "value": "3",
+              "mode": "simple",
+              "type": "String"
+            },
+            "description": {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.description}}",
+                        "displayValue": "Input Variables➛Description"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "string",
+              "type": "String"
+            },
+            "cmdb_ci": {
+              "value": "",
+              "mode": "simple",
+              "type": "String"
+            }
+          },
+          "outputs": [
+            {
+              "id": "5a07708f1199403682c92e98c1ff6a87",
+              "value": "created_incident_sys_id",
+              "mapping": "created_incident_sys_id",
+              "preventDisable": false
+            }
+          ],
+          "variableIds": [
+            "5a07708f1199403682c92e98c1ff6a87"
+          ],
+          "outdatedNote": false,
+          "loading": false
+        },
+        "d8b419f426c843ef82b1b37f7cf686e3": {
+          "id": "d8b419f426c843ef82b1b37f7cf686e3",
+          "stepType": "Prompt",
+          "name": "Description",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please describe the issue you are facing in bank"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "26d6efec0b4444e0a76ba98988fea5f8",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "0209a029cb21427a91ed25d863dd5777",
+          "edgeType": "Edge",
+          "source": "f1e9b8630160407388c761510ead3c8f",
+          "target": "9cbf1be7f1a84371a3a2d242c040465c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "23bd9d2ef023492ca315e7321e256933",
+          "edgeType": "Edge",
+          "source": "1033c34c50d142dea76e8092cf61eb46",
+          "target": "6a68ddc0d2204494a044b30d4ba79673",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "74397426882d4815b973c31cc8b99d23",
+          "edgeType": "Edge",
+          "source": "6a68ddc0d2204494a044b30d4ba79673",
+          "target": "597a2de833404ebf87747574eba5ccac",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "17208e43615b4ca593618a4873dd52a4",
+          "edgeType": "Branch",
+          "source": "597a2de833404ebf87747574eba5ccac",
+          "target": "9cbf1be7f1a84371a3a2d242c040465c",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.account_opening_issue=others",
+            "mode": "query"
+          },
+          "label": "others"
+        },
+        {
+          "id": "388667dc802c4111b0049a4f726ddc8c",
+          "edgeType": "Branch",
+          "source": "597a2de833404ebf87747574eba5ccac",
+          "target": "6f02acffd38e4c8bab3df512aef76c6f",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.account_opening_issue=Bank account is not open",
+            "mode": "query"
+          },
+          "label": "Account is not Open"
+        },
+        {
+          "id": "e64b9bebc0bb4bc4a8f688b48f0c5c11",
+          "edgeType": "Edge",
+          "source": "6f02acffd38e4c8bab3df512aef76c6f",
+          "target": "9fb1cf92ef3a440bbc67a97351ecce7b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cea996ea8aa94c03b6748b19213ae24e",
+          "edgeType": "Edge",
+          "source": "9fb1cf92ef3a440bbc67a97351ecce7b",
+          "target": "9ba1d525d8d946e397584c2c2f50f247",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "16f7de55822443a8a80e883ecd2e1157",
+          "edgeType": "Branch",
+          "source": "9ba1d525d8d946e397584c2c2f50f247",
+          "target": "6a110df6e2e64cd7af0ffdb991ee931b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.issue_solved_=true",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "3f5f7f3732964c4dba45e78b6e062dca",
+          "edgeType": "Edge",
+          "source": "6a110df6e2e64cd7af0ffdb991ee931b",
+          "target": "9cbf1be7f1a84371a3a2d242c040465c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7538b7f5d5e24c1fbbba60eca29ecf52",
+          "edgeType": "Branch",
+          "source": "9ba1d525d8d946e397584c2c2f50f247",
+          "target": "7c4e90c45b854b3392512c96b8fc960c",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.issue_solved_=",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "2aafdfb6b9e049268df961ef5d958069",
+          "edgeType": "Branch",
+          "source": "597a2de833404ebf87747574eba5ccac",
+          "target": "c861aa5dabc84277bb79be068eb80378",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.account_opening_issue=bank facility to open a account",
+            "mode": "query"
+          },
+          "label": "Bank Facility"
+        },
+        {
+          "id": "ab7b59cedf9f42febcf1560cbbaacc99",
+          "edgeType": "Edge",
+          "source": "c861aa5dabc84277bb79be068eb80378",
+          "target": "9fb1cf92ef3a440bbc67a97351ecce7b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "4be5da92e1df46d79739647e61ca30db",
+          "edgeType": "Branch",
+          "source": "597a2de833404ebf87747574eba5ccac",
+          "target": "3243dd50345b4839b21de9a75f5cd19b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.account_opening_issue=what document is needed",
+            "mode": "query"
+          },
+          "label": "Document Info"
+        },
+        {
+          "id": "418af9f7ad6740bf85fc2b849f009330",
+          "edgeType": "Edge",
+          "source": "3243dd50345b4839b21de9a75f5cd19b",
+          "target": "9cbf1be7f1a84371a3a2d242c040465c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "c0748ae7cfdd4b899e1579f903201866",
+          "edgeType": "Edge",
+          "source": "7c4e90c45b854b3392512c96b8fc960c",
+          "target": "5d473b890eeb4d7789e46a4ce670bf34",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e6b5775d842a434b9385b683a632bdf1",
+          "edgeType": "Branch",
+          "source": "5d473b890eeb4d7789e46a4ce670bf34",
+          "target": "dd8a1171477e4e5793ed8da02b398403",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.select_below_optionANYTHING",
+            "mode": "query"
+          },
+          "label": "others"
+        },
+        {
+          "id": "e3aa58be807b4757b747d1450a06ffc0",
+          "edgeType": "Branch",
+          "source": "5d473b890eeb4d7789e46a4ce670bf34",
+          "target": "d8b419f426c843ef82b1b37f7cf686e3",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.select_below_option=create a ticket",
+            "mode": "query"
+          },
+          "label": "Create  a incident"
+        },
+        {
+          "id": "9c358c76364d47e38f3b3038f0381bc1",
+          "edgeType": "Edge",
+          "source": "d8b419f426c843ef82b1b37f7cf686e3",
+          "target": "f1e9b8630160407388c761510ead3c8f",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "33eec99301f045ee9805fb36348facf6": {
+      "id": "33eec99301f045ee9805fb36348facf6",
+      "name": "account_opening_issue",
+      "label": "Account Opening Issue",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Bank account is not open",
+          "value": "Bank account is not open"
+        },
+        {
+          "label": "what document is needed",
+          "value": "what document is needed"
+        },
+        {
+          "label": "bank facility to open a account",
+          "value": "bank facility to open a account",
+          "checked": true
+        },
+        {
+          "label": "others",
+          "value": "others",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "400096ed5dcf4273b768141893c5ecda": {
+      "id": "400096ed5dcf4273b768141893c5ecda",
+      "name": "issue_solved_",
+      "label": "Issue Solved?",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs"
+    },
+    "4293005d09884bb089d930f51239d7ea": {
+      "id": "4293005d09884bb089d930f51239d7ea",
+      "name": "select_below_option",
+      "label": "Select Below Option",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "create a ticket",
+          "value": "create a ticket"
+        }
+      ],
+      "category": "vaInputs"
+    },
+    "26d6efec0b4444e0a76ba98988fea5f8": {
+      "id": "26d6efec0b4444e0a76ba98988fea5f8",
+      "name": "description",
+      "label": "Description",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcwNDI0NTM1MDkyMiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "5a07708f1199403682c92e98c1ff6a87": {
+      "id": "5a07708f1199403682c92e98c1ff6a87",
+      "name": "created_incident_sys_id",
+      "label": "Created_incident_sys_id",
+      "defaultValue": "created_incident_sys_id",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "output"
+      },
+      "preventDisable": false
+    }
+  }
+}</graph>
+        <key_phrases>Banking incident,bank account is not open,bank account is not working,issue</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Banking incident</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 17:01:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d3ff8c7847ef39103b6e1916926d43aa</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Banking incident</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_cb_topic_d3ff8c7847ef39103b6e1916926d43aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 03:58:03</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=d3ff8c7847ef39103b6e1916926d43aa"/>
+</record_update>

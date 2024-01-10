@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Banking System Application">9d484d93475bf1103b6e1916926d4348</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Bank Incidents</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1129750_banking_bank_incident</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_1129750_banking.bank_incident_user,x_1129750_banking.banking services,x_1129750_banking.finance services,x_1129750_banking.chief bank officer,x_1129750_banking.chief finance officer</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-29 12:39:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>23bd2a1b47dff1103b6e1916926d43de</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>All Bank  Tncidents</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_app_module_23bd2a1b47dff1103b6e1916926d43de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-04 05:38:52</sys_updated_on>
+        <timeline_page/>
+        <title>All Bank  Tncidents</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>7ab7235a1bffe9d8c84543f4bd4bcbc9</instance_id>
+        <instance_name>dev179703</instance_name>
+        <name>sys_app_module_23bd2a1b47dff1103b6e1916926d43de</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Banking System Application">9d484d93475bf1103b6e1916926d4348</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Bank Incidents</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1129750_banking_bank_incident</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_1129750_banking.bank_incident_user,x_1129750_banking.banking services,x_1129750_banking.finance services,x_1129750_banking.chief bank officer,x_1129750_banking.chief finance officer</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-29 12:39:57</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>23bd2a1b47dff1103b6e1916926d43de</sys_id><sys_mod_count>7</sys_mod_count><sys_name>All Bank  Tncidents</sys_name><sys_overrides/><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>sys_app_module_23bd2a1b47dff1103b6e1916926d43de</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-04 05:38:52</sys_updated_on><timeline_page/><title>All Bank  Tncidents</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-776163016</payload_hash>
+        <record_name>All Bank  Tncidents</record_name>
+        <reverted_from/>
+        <source>a906c113475bf1103b6e1916926d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-04 05:38:52</sys_created_on>
+        <sys_id>3de648514723f9103b6e1916926d43db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cd2fb46d50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-04 05:38:52</sys_updated_on>
+        <type>Module</type>
+        <update_guid>75e648517023f91047377cee5645f2db</update_guid>
+        <update_guid_history>75e648517023f91047377cee5645f2db:-776163016,f0c3489d60efb9104949ce70eba44b6f:-1711776126,7f62045d72efb91070840c286e2f6233:1307987234,6bef3b8929efb910a0c40c02e20d23ce:1815957806,17d8114dff67b91074853263421afb9e:1307987234,8e9795c97e67b91046cd791df861b78f:-1887851570,fcea30cd3fe3b9106a2b06d761366c3c:-1643106806,3e442cc512a3b910f26ce7858a661fe3:-217829352,9634d8c18c63b910a468a16634627331:-65918193,2bbd2a1b91dff11097f00369b1010adf:-1577520734</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="All Bank  Tncidents">2129ccd14723f9103b6e1916926d4371</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-04 05:48:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>516555ce32d84d10ab27948db48e8100</sys_id>
+        <sys_metadata>23bd2a1b47dff1103b6e1916926d43de</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>All Bank  Tncidents</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sys_app_module_23bd2a1b47dff1103b6e1916926d43de</sys_update_name>
+        <sys_update_version display_value="sys_app_module_23bd2a1b47dff1103b6e1916926d43de">3de648514723f9103b6e1916926d43db</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-04 05:48:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

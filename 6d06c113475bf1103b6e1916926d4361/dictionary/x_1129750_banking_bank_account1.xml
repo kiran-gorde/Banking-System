@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ac13bf334753b5103b6e1916926d4385" extends="task" label="Bank Account1" max_length="40" name="x_1129750_banking_bank_account1" type="collection">
+        <element display="true" label="Account holder name" max_length="32" name="account_holder_name" reference="x_1129750_banking_customer1" type="reference"/>
+        <element choice="1" label="Account type" max_length="40" name="account_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Current" value="current"/>
+                <element inactive_on_update="false" label="Saving" value="saving"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="40" name="address" type="string"/>
+        <element label="Adhaar no" max_length="40" name="adhaar_no" type="string"/>
+        <element choice="3" default="SBI" label="Bank name" max_length="40" name="bank_name" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Contact No" max_length="40" name="contact_no" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Date Of Birth" max_length="40" name="date_of_birth" type="glide_date"/>
+        <element label="Date opened" max_length="40" name="date_opened" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="EmailID" max_length="40" name="emailid" type="string"/>
+        <element label="Initial deposit amount" max_length="40" name="initial_deposit_amount" type="integer"/>
+        <element label="Interest rate" max_length="40" name="interest_rate" type="integer"/>
+        <element label="Min balance requirement1" max_length="40" name="min_balance_requirement1" type="integer"/>
+        <element label="Overdraft limit" max_length="40" name="overdraft_limit" type="integer"/>
+        <element label="Pancard no" max_length="40" name="pancard_no" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Closed" value="closed"/>
+                <element inactive_on_update="false" label="Opened" value="opened"/>
+            </choice>
+        </element>
+    </element>
+</database>

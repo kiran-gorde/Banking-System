@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">subjectLIKEbanking issue^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="banking issue"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Banking Incident creation</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[//	Note: current.opened_by is already set to the first UserID that matches the From: email address
+
+// current.caller_id = gs.getUserID();
+// current.comments = "received from: " + email.origemail + "\n\n" + email.body_text;
+// current.short_description = email.subject;
+
+// // current.category = "inquiry";
+// current.incident_state = IncidentState.NEW;
+// current.notify = 2;
+// current.contact_type = "email";
+
+// if (email.body.assign != undefined)
+//    current.assigned_to = email.body.assign;
+
+// if (email.importance != undefined) {
+//    if (email.importance.toLowerCase() == "high") {
+// 		current.impact = 1;
+// 		current.urgency = 1;
+//    }
+// }
+
+if (current.canCreate())
+	current.insert();]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 05:14:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b0e6be7047ab79103b6e1916926d4353</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Banking Incident creation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sysevent_in_email_action_b0e6be7047ab79103b6e1916926d4353</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-06 03:59:05</sys_updated_on>
+        <table>x_1129750_banking_bank_incident</table>
+        <template>short_descriptionDYNAMICb637bd21ef3221002841f7f775c0fbb6^descriptionDYNAMIC367bf121ef3221002841f7f775c0fbe2^EQ</template>
+        <type>new</type>
+    </sysevent_in_email_action>
+</record_update>

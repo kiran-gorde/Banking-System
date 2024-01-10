@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_vlist">
+    <sp_instance_vlist action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <display_field>short_description</display_field>
+        <field_list/>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="3">19c1301447e3f5103b6e1916926d43f9</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Simple List">5b255672cb03020000f8d856634c9c28</sp_widget>
+        <sys_class_name>sp_instance_vlist</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-01 08:23:04</sys_created_on>
+        <sys_id>02bf8d904767f5103b6e1916926d435a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sp_instance_vlist_02bf8d904767f5103b6e1916926d435a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-01 08:29:14</sys_updated_on>
+        <table>x_1129750_banking_bank_incident</table>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "user_name,number",
+		"displayValue": "user_name,number"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]></widget_parameters>
+    </sp_instance_vlist>
+    <sys_translated_text action="DELETE" query="documentkey=02bf8d904767f5103b6e1916926d435a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>7ab7235a1bffe9d8c84543f4bd4bcbc9</instance_id>
+        <instance_name>dev179703</instance_name>
+        <name>sp_instance_vlist_02bf8d904767f5103b6e1916926d435a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_vlist"&gt;&lt;sp_instance_vlist action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;primary&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;short_description&lt;/display_field&gt;&lt;field_list/&gt;&lt;filter/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;5&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="3"&gt;19c1301447e3f5103b6e1916926d43f9&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Simple List"&gt;5b255672cb03020000f8d856634c9c28&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_vlist&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-01 08:23:04&lt;/sys_created_on&gt;&lt;sys_id&gt;02bf8d904767f5103b6e1916926d435a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Banking System" source="x_1129750_banking"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Banking System"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_vlist_02bf8d904767f5103b6e1916926d435a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-01 08:29:14&lt;/sys_updated_on&gt;&lt;table&gt;x_1129750_banking_bank_incident&lt;/table&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"always_show": {
+		"value": "",
+		"displayValue": ""
+	},
+	"panel_body_height": {
+		"value": "",
+		"displayValue": ""
+	},
+	"image_field": {
+		"value": "",
+		"displayValue": ""
+	},
+	"secondary_fields": {
+		"value": "user_name,number",
+		"displayValue": "user_name,number"
+	},
+	"rounded_images": {
+		"value": "",
+		"displayValue": ""
+	},
+	"list_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"hide_footer": {
+		"value": "",
+		"displayValue": ""
+	},
+	"view": {
+		"value": "",
+		"displayValue": ""
+	},
+	"disable_record_watcher": {
+		"value": "",
+		"displayValue": ""
+	},
+	"filter_acls": {
+		"value": "false",
+		"displayValue": "false"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_vlist&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=02bf8d904767f5103b6e1916926d435a"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1939889908</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>a906c113475bf1103b6e1916926d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-01 08:29:14</sys_created_on>
+        <sys_id>542195144767f5103b6e1916926d43e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cc4242cd90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-01 08:29:14</sys_updated_on>
+        <type>Instance of Simple List</type>
+        <update_guid>9c2195141267f510f0040c94d63157e1</update_guid>
+        <update_guid_history>9c2195141267f510f0040c94d63157e1:-1939889908,8abf8d90e867f5109a01e85f28c9245b:-1568251293</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">8d8247a047eb39103b6e1916926d4337</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 11:23:06</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_vlist">sp_instance_vlist</sys_db_object>
+        <sys_id>47b92062eec74606851995ec2b5234d1</sys_id>
+        <sys_metadata>02bf8d904767f5103b6e1916926d435a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sp_instance_vlist_02bf8d904767f5103b6e1916926d435a</sys_update_name>
+        <sys_update_version display_value="sp_instance_vlist_02bf8d904767f5103b6e1916926d435a">542195144767f5103b6e1916926d43e2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 11:23:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

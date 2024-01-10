@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2e97422447e739103b6e1916926d436d" extends="sys_user" label="customer1" max_length="40" name="x_1129750_banking_customer1" type="collection">
+        <element label="Address" max_length="40" name="address" type="string"/>
+        <element label="Adhaar no" max_length="40" name="adhaar_no" type="string"/>
+        <element label="Contact number" max_length="40" name="contact_number" type="string"/>
+        <element display="true" label="Customer full name" max_length="40" name="customer_full_name" type="string"/>
+        <element label="Date of birth" max_length="40" name="date_of_birth" type="glide_date"/>
+        <element label="Email ID" max_length="40" name="email_id" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label=" Customer ID" max_length="40" name="number" type="string"/>
+        <element label="Pancard no" max_length="40" name="pancard_no" type="string"/>
+    </element>
+</database>

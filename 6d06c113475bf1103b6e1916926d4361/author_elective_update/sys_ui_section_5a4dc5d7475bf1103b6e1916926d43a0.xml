@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="5a4dc5d7475bf1103b6e1916926d43a0" sys_domain="global" table="x_1129750_banking_customer" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>customer_full_name</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>19d8302847a339103b6e1916926d4395</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>1dd8302847a339103b6e1916926d4395</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>11d8302847a339103b6e1916926d4396</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_glide_date_1</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>15d8302847a339103b6e1916926d4396</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email_id</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>19d8302847a339103b6e1916926d4396</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>1dd8302847a339103b6e1916926d4396</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pancard_no</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>11d8302847a339103b6e1916926d4397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>adhaar_no</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>15d8302847a339103b6e1916926d4397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ifsc_code</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+            <sys_id>19d8302847a339103b6e1916926d4397</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_1129750_banking_customer</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-29 05:38:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a4dc5d7475bf1103b6e1916926d43a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1129750_banking_customer</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+            <sys_update_name>sys_ui_section_5a4dc5d7475bf1103b6e1916926d43a0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-29 05:38:31</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>7ab7235a1bffe9d8c84543f4bd4bcbc9</instance_id>
+        <instance_name>dev179703</instance_name>
+        <name>sys_ui_section_5a4dc5d7475bf1103b6e1916926d43a0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="5a4dc5d7475bf1103b6e1916926d43a0" sys_domain="global" table="x_1129750_banking_customer" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>customer_full_name</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>19d8302847a339103b6e1916926d4395</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>contact_number</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>1dd8302847a339103b6e1916926d4395</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>address</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>11d8302847a339103b6e1916926d4396</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>u_glide_date_1</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>15d8302847a339103b6e1916926d4396</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>email_id</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>19d8302847a339103b6e1916926d4396</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>gender</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>1dd8302847a339103b6e1916926d4396</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>pancard_no</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>11d8302847a339103b6e1916926d4397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>adhaar_no</element><position>7</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>15d8302847a339103b6e1916926d4397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>ifsc_code</element><position>8</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-02 01:21:33</sys_created_on><sys_id>19d8302847a339103b6e1916926d4397</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer" sys_domain="global" view="Default view">5a4dc5d7475bf1103b6e1916926d43a0</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-02 01:21:33</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1129750_banking_customer</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-29 05:38:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5a4dc5d7475bf1103b6e1916926d43a0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1129750_banking_customer</sys_name><sys_overrides/><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>sys_ui_section_5a4dc5d7475bf1103b6e1916926d43a0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-29 05:38:31</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-249676102</payload_hash>
+        <record_name>Customer</record_name>
+        <reverted_from/>
+        <source>a906c113475bf1103b6e1916926d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 01:21:33</sys_created_on>
+        <sys_id>1dd8302847a339103b6e1916926d4399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cc7c2fc600000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 01:21:33</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>15d83028c9a3391092d8ebbc59781599</update_guid>
+        <update_guid_history>15d83028c9a3391092d8ebbc59781599:-249676102,302a699722dbf110f53d4b6e1922d576:305202480,46d96597a1dbf110ffd50d7eab734319:175817959,a9cd8dd74d5bf110d84eb39834bcd536:-1470002724,524dc5d7e15bf110ee36b4ea2ac70daa:-1981195217,d64dc5d74f5bf110bdd478fb0c8f44a3:-417832519</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 08:13:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>02ce342ea1e14d8c8103e61b67bf13a1</sys_id>
+        <sys_metadata>5a4dc5d7475bf1103b6e1916926d43a0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1129750_banking_customer</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="">473949d3475bf1103b6e1916926d43bd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_5a4dc5d7475bf1103b6e1916926d43a0</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_5a4dc5d7475bf1103b6e1916926d43a0">1dd8302847a339103b6e1916926d4399</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 08:13:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

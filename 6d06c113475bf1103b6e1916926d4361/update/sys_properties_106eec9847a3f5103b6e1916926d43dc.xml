@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>If true, portal css would be in rem units</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.service_portal.resize_text.bp.enable_rem_conversion</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-01 05:57:24</sys_created_on>
+        <sys_id>106eec9847a3f5103b6e1916926d43dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.service_portal.resize_text.bp.enable_rem_conversion</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_properties_106eec9847a3f5103b6e1916926d43dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-01 05:57:24</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=106eec9847a3f5103b6e1916926d43dc"/>
+</record_update>

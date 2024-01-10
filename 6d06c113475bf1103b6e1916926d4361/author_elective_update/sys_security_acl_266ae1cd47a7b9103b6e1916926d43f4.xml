@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Allow write for records in x_1129750_banking_bank_incident, for users with roles (x_1129750_banking.chief finance officer, x_1129750_banking.chief bank officer).</description>
+        <name>x_1129750_banking_bank_incident</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 18:15:51</sys_created_on>
+        <sys_id>266ae1cd47a7b9103b6e1916926d43f4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1129750_banking_bank_incident</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_security_acl_266ae1cd47a7b9103b6e1916926d43f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 18:21:06</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>7ab7235a1bffe9d8c84543f4bd4bcbc9</instance_id>
+        <instance_name>dev179703</instance_name>
+        <name>sys_security_acl_266ae1cd47a7b9103b6e1916926d43f4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Allow write for records in x_1129750_banking_bank_incident, for users with roles (x_1129750_banking.chief finance officer, x_1129750_banking.chief bank officer).</description><name>x_1129750_banking_bank_incident</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-03 18:15:51</sys_created_on><sys_id>266ae1cd47a7b9103b6e1916926d43f4</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1129750_banking_bank_incident</sys_name><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>sys_security_acl_266ae1cd47a7b9103b6e1916926d43f4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-03 18:21:06</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1021873832</payload_hash>
+        <record_name>x_1129750_banking_bank_incident</record_name>
+        <reverted_from/>
+        <source>a906c113475bf1103b6e1916926d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 18:21:06</sys_created_on>
+        <sys_id>7dcb2d0147e7b9103b6e1916926d43d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cd08ec5130000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 18:21:06</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>b5cb2d0119e7b910537f7e469c1a01d0</update_guid>
+        <update_guid_history>b5cb2d0119e7b910537f7e469c1a01d0:1021873832,f12ba901ece7b9100db710ca7ee28f2c:-2128770238,f49aedcd25a7b910a9195629c440e42c:-1945811706</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 18:21:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>5a5078d91d7048e88ca852436c185b04</sys_id>
+        <sys_metadata>266ae1cd47a7b9103b6e1916926d43f4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1129750_banking_bank_incident</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="">7bbd6a1b47dff1103b6e1916926d430d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sys_security_acl_266ae1cd47a7b9103b6e1916926d43f4</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_266ae1cd47a7b9103b6e1916926d43f4">7dcb2d0147e7b9103b6e1916926d43d0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 18:21:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

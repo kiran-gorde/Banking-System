@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Bank Portal - Container 4</name>
+        <order>4</order>
+        <sp_page display_value="bank_portal">f280f09047e3f5103b6e1916926d430a</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 17:07:39</sys_created_on>
+        <sys_id>c461907c47ef39103b6e1916926d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bank Portal - Container 4</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sp_container_c461907c47ef39103b6e1916926d435f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 17:07:39</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

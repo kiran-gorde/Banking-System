@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic">
+    <sys_cs_topic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability>true</applicability>
+        <autopilot_topic>false</autopilot_topic>
+        <cb_topic_id display_value="Banking incident">d3ff8c7847ef39103b6e1916926d43aa</cb_topic_id>
+        <channels/>
+        <definition>{"id":"d3ff8c7847ef39103b6e1916926d43aa","name":"Banking incident","system_topic":false,"autopilot_topic":false,"vendor_id":"c2f0b8f187033200246ddd4c97cb0bb9","description":"Banking incident","applicability":"true","categories":[],"key_phrases":["Banking incident","bank account is not open","bank account is not working","issue"],"variables":[{"name":"__segment_trigger_de39af4a5e89436b9b1142c1e67da2e1_done","type":"java.lang.Object","init_value":"false"},{"name":"previous_graph_node","type":"java.lang.Object"}],"fields":[{"type":"Reference","table_name":"sys_user","name":"user","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[]},{"type":"Boolean","name":"RootDecisionBranch_a0f0d83c79ef3910fbebfcf02d77d818","unique":false,"default_value":"true","key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[]},{"type":"String","name":"__silent_Decision_RootDecision_20f0d83c67ef391091edafe7e0ee9d18","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_StartGoal_1033c34c50d142dea76e8092cf61eb46","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_TerminateGoal_9cbf1be7f1a84371a3a2d242c040465c","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Branch_RootDecisionBranch_60f0d83c20ef391094f52a622447eb18","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true}],"actions":[],"tasks":[{"type":"Consumer to system","show_as_button":true,"name":"primary","description":"primary","applicability":"vaVars.__segment_trigger_de39af4a5e89436b9b1142c1e67da2e1_done==false &amp;&amp; true","mode":"Qmode","key_phrases":[],"greeting_msg":"vaInputs.initialize(\"user\");vaInputs.initialize(\"RootDecisionBranch_a0f0d83c79ef3910fbebfcf02d77d818\");vaInputs.initialize(\"__silent_Decision_RootDecision_20f0d83c67ef391091edafe7e0ee9d18\");vaInputs.initialize(\"__silent_StartGoal_1033c34c50d142dea76e8092cf61eb46\");vaInputs.initialize(\"__silent_Branch_RootDecisionBranch_60f0d83c20ef391094f52a622447eb18\");vaInputs.initialize(\"__silent_TerminateGoal_9cbf1be7f1a84371a3a2d242c040465c\");null;","fields":[{"name":"__silent_Decision_RootDecision_20f0d83c67ef391091edafe7e0ee9d18","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_20f0d83c67ef391091edafe7e0ee9d18\";vaInputs.__silent_Decision_RootDecision_20f0d83c67ef391091edafe7e0ee9d18=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_20f0d83c67ef391091edafe7e0ee9d18\";var ackMsg=null;ackMsg=null;vaInputs.RootDecisionBranch_a0f0d83c79ef3910fbebfcf02d77d818=true;ackMsg;"},{"name":"__silent_Branch_RootDecisionBranch_60f0d83c20ef391094f52a622447eb18","applicable":"vaVars.previous_graph_node==\"RootDecision_for_goal_primary___RootDecision_20f0d83c67ef391091edafe7e0ee9d18\" &amp;&amp; ((vaInputs.RootDecisionBranch_a0f0d83c79ef3910fbebfcf02d77d818.getValue() == true))","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_60f0d83c20ef391094f52a622447eb18___RootDecisionBranch_60f0d83c20ef391094f52a622447eb18\";vaInputs.__silent_Branch_RootDecisionBranch_60f0d83c20ef391094f52a622447eb18=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_60f0d83c20ef391094f52a622447eb18___RootDecisionBranch_60f0d83c20ef391094f52a622447eb18\";var ackMsg=null;ackMsg=null;ackMsg;"},{"name":"__silent_StartGoal_1033c34c50d142dea76e8092cf61eb46","applicable":"vaVars.previous_graph_node==\"RootDecisionBranch_60f0d83c20ef391094f52a622447eb18___RootDecisionBranch_60f0d83c20ef391094f52a622447eb18\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"Start___1033c34c50d142dea76e8092cf61eb46\";vaInputs.__silent_StartGoal_1033c34c50d142dea76e8092cf61eb46=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"Start___1033c34c50d142dea76e8092cf61eb46\";var ackMsg=null;ackMsg=gs.getMessageLang(\"Hey,{0}Welcome to bank incident topic\", vaContext.getRequesterLang(), [vaInputs.user.user_name]);ackMsg;"},{"name":"__silent_TerminateGoal_9cbf1be7f1a84371a3a2d242c040465c","applicable":"vaVars.previous_graph_node==\"Start___1033c34c50d142dea76e8092cf61eb46\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"End___9cbf1be7f1a84371a3a2d242c040465c\";vaInputs.__silent_TerminateGoal_9cbf1be7f1a84371a3a2d242c040465c=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"End___9cbf1be7f1a84371a3a2d242c040465c\";var ackMsg=null;ackMsg=null;vaVars.__segment_trigger_de39af4a5e89436b9b1142c1e67da2e1_done=true;ackMsg;"}],"variables_update":[]}],"roles":[],"active":true,"published":true,"library":false,"expose_on_palette":false,"palette_label":"","flexible_conversation_switching":false,"design_categories":[{"name":"ITSM IT Issues","visible":false,"sysId":"140e2eda0b203300a1b16c2367673af4"}],"nlu_provider":"","nlu_model":"","nlu_intent":"","topic_type":"STANDARD","channels":[],"triggerable_by_notification":false,"secure_custom_input_control":false,"score":0.0,"visible":true,"discoverable":true,"sys_scope":"6d06c113475bf1103b6e1916926d4361","sys_domain":"global","title":"Banking incident","nlu_intent_label":"","nlu_model_label":""}</definition>
+        <design_category>140e2eda0b203300a1b16c2367673af4</design_category>
+        <discoverable>true</discoverable>
+        <expose_on_palette>false</expose_on_palette>
+        <fields/>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <is_system_topic>false</is_system_topic>
+        <key_phrases>Banking incident bank account is not open bank account is not working issue</key_phrases>
+        <last_published_on>2024-01-02 17:05:46</last_published_on>
+        <library>false</library>
+        <library_usage>null</library_usage>
+        <metaphone/>
+        <name>Banking incident</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <published>true</published>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <sys_class_name>sys_cs_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 17:05:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2cf0d83c47ef39103b6e1916926d4318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Banking incident</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_cs_topic_2cf0d83c47ef39103b6e1916926d4318</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 17:05:46</sys_updated_on>
+        <title>Banking incident</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <vendor display_value="ServiceNow">c2f0b8f187033200246ddd4c97cb0bb9</vendor>
+        <visible>true</visible>
+    </sys_cs_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=2cf0d83c47ef39103b6e1916926d4318"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2cf0d83c47ef39103b6e1916926d4318"/>
+</record_update>

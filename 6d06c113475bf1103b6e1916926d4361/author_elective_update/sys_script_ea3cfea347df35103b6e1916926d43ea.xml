@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1129750_banking_bank_account</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>bank  address rule</name>
+        <order>600</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	
+	// Define the selected state from the Bank Account table
+var selectedState ='KARNATAKA';
+
+// Create a GlideAggregate to find distinct cities based on the selected state
+var cityAggregate = new GlideAggregate('city');
+cityAggregate.addQuery('state', selectedState);
+cityAggregate.addAggregate('COUNT', 'city_name'); // Count the occurrences of each city
+cityAggregate.groupBy('city_name');
+cityAggregate.query();
+
+// Create a list to store unique city names
+var uniqueCities = [];
+
+// Iterate through the results to populate the uniqueCities list
+while (cityAggregate.next()) {
+    var cityName = cityAggregate.getValue('city_name');
+    uniqueCities.push(cityName);
+}
+
+// Iterate through the unique city names and fetch other details
+for (var i = 0; i < uniqueCities.length; i++) {
+    var city = uniqueCities[i];
+
+    // Create a GlideRecord to fetch additional details for each unique city
+    var cityRecord = new GlideRecord('city');
+    cityRecord.addQuery('state', selectedState);
+    cityRecord.addQuery('city_name', city);
+    cityRecord.query();
+
+    // Iterate through the records for the current city
+    while (cityRecord.next()) {
+        // Fetch other details like branch code, pincode, address, etc.
+        var branchCode = cityRecord.getValue('branch_code');
+        var pincode = cityRecord.getValue('pincode');
+        var address = cityRecord.getValue('address');
+
+        // Perform actions with the fetched details
+        gs.info('State: ' + selectedState + ', City: ' + city + ', Branch Code: ' + branchCode + ', Pincode: ' + pincode + ', Address: ' + address);
+    }
+}
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-30 08:34:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ea3cfea347df35103b6e1916926d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bank  address rule</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_script_ea3cfea347df35103b6e1916926d43ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-30 08:34:16</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=ea3cfea347df35103b6e1916926d43ea"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>7ab7235a1bffe9d8c84543f4bd4bcbc9</instance_id>
+        <instance_name>dev179703</instance_name>
+        <name>sys_script_ea3cfea347df35103b6e1916926d43ea</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1129750_banking_bank_account&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;bank  address rule&lt;/name&gt;&lt;order&gt;600&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	
+	// Define the selected state from the Bank Account table
+var selectedState ='KARNATAKA';
+
+// Create a GlideAggregate to find distinct cities based on the selected state
+var cityAggregate = new GlideAggregate('city');
+cityAggregate.addQuery('state', selectedState);
+cityAggregate.addAggregate('COUNT', 'city_name'); // Count the occurrences of each city
+cityAggregate.groupBy('city_name');
+cityAggregate.query();
+
+// Create a list to store unique city names
+var uniqueCities = [];
+
+// Iterate through the results to populate the uniqueCities list
+while (cityAggregate.next()) {
+    var cityName = cityAggregate.getValue('city_name');
+    uniqueCities.push(cityName);
+}
+
+// Iterate through the unique city names and fetch other details
+for (var i = 0; i &lt; uniqueCities.length; i++) {
+    var city = uniqueCities[i];
+
+    // Create a GlideRecord to fetch additional details for each unique city
+    var cityRecord = new GlideRecord('city');
+    cityRecord.addQuery('state', selectedState);
+    cityRecord.addQuery('city_name', city);
+    cityRecord.query();
+
+    // Iterate through the records for the current city
+    while (cityRecord.next()) {
+        // Fetch other details like branch code, pincode, address, etc.
+        var branchCode = cityRecord.getValue('branch_code');
+        var pincode = cityRecord.getValue('pincode');
+        var address = cityRecord.getValue('address');
+
+        // Perform actions with the fetched details
+        gs.info('State: ' + selectedState + ', City: ' + city + ', Branch Code: ' + branchCode + ', Pincode: ' + pincode + ', Address: ' + address);
+    }
+}
+
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-30 08:34:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ea3cfea347df35103b6e1916926d43ea&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;bank  address rule&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Banking System" source="x_1129750_banking"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Banking System"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_ea3cfea347df35103b6e1916926d43ea&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-30 08:34:16&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=ea3cfea347df35103b6e1916926d43ea"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1009157378</payload_hash>
+        <record_name>bank  address rule</record_name>
+        <reverted_from/>
+        <source>a906c113475bf1103b6e1916926d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-30 08:34:17</sys_created_on>
+        <sys_id>fa1f3a6747df35103b6e1916926d4393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cb9dc14350000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-30 08:34:17</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>3a1fb2a349df3510edbcd1d3079f4f4e</update_guid>
+        <update_guid_history>3a1fb2a349df3510edbcd1d3079f4f4e:1009157378</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-31 07:52:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>43589cde68c843a49d191128f4598284</sys_id>
+        <sys_metadata>ea3cfea347df35103b6e1916926d43ea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bank  address rule</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="">49e6d553479bf1103b6e1916926d43ec</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sys_script_ea3cfea347df35103b6e1916926d43ea</sys_update_name>
+        <sys_update_version display_value="sys_script_ea3cfea347df35103b6e1916926d43ea">fa1f3a6747df35103b6e1916926d4393</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-31 07:52:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.text_index_translations=true" db_object_id="2cced832d423211095d7c105f1bf43a1" label="Location" max_length="40" name="cmn_location" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="IFSC Code" max_length="40" name="x_1129750_banking_ifsc_code" type="string"/>
+    </element>
+</database>

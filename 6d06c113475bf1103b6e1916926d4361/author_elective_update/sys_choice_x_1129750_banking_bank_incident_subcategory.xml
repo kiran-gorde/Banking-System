@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="subcategory" table="x_1129750_banking_bank_incident" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>subcategory</element>
+            <name>x_1129750_banking_bank_incident</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-02 04:28:01</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>subcategory</sys_name>
+            <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+            <sys_update_name>sys_choice_x_1129750_banking_bank_incident_subcategory</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-02 04:28:01</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>finance services</dependent_value>
+            <element>subcategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Account Maintainance</label>
+            <language>en</language>
+            <name>x_1129750_banking_bank_incident</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-04 06:15:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>712f00594723f9103b6e1916926d4319</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-04 06:22:05</sys_updated_on>
+            <value>AM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>banking services</dependent_value>
+            <element>subcategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ATM Services</label>
+            <language>en</language>
+            <name>x_1129750_banking_bank_incident</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-04 06:14:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c01f00594723f9103b6e1916926d4318</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-04 06:16:52</sys_updated_on>
+            <value>AS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>banking services</dependent_value>
+            <element>subcategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Existing Account</label>
+            <language>en</language>
+            <name>x_1129750_banking_bank_incident</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-04 06:14:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ffe84594723f9103b6e1916926d43a9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-04 06:16:47</sys_updated_on>
+            <value>EA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>banking services</dependent_value>
+            <element>subcategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open New Account</label>
+            <language>en</language>
+            <name>x_1129750_banking_bank_incident</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-04 06:14:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28ee00594723f9103b6e1916926d4316</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-04 06:21:41</sys_updated_on>
+            <value>ONA</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value>finance services</dependent_value>
+            <element>subcategory</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transaction Processing</label>
+            <language>en</language>
+            <name>x_1129750_banking_bank_incident</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-01-04 06:16:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b65f80994723f9103b6e1916926d43ac</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-01-04 06:17:13</sys_updated_on>
+            <value>TP</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

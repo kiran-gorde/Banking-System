@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1129750_banking.chief finance officer" name="x_1129750_banking.chief finance officer">b186f48947e3b9103b6e1916926d433f</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-03 14:28:41</sys_created_on>
+        <sys_id>1996380947e3b9103b6e1916926d437a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b186f48947e3b9103b6e1916926d433f</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_embedded_help_role_1996380947e3b9103b6e1916926d437a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-03 14:28:41</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

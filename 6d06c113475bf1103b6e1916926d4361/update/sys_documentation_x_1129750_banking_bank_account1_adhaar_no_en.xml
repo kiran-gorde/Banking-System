@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="adhaar_no" label="Adhaar no" language="en" table="x_1129750_banking_bank_account1">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>adhaar_no</element>
+            <help/>
+            <hint/>
+            <label>Adhaar no</label>
+            <language>en</language>
+            <name>x_1129750_banking_bank_account1</name>
+            <plural>Adhaar nos</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-31 07:12:30</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Adhaar no</sys_name>
+            <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+            <sys_update_name>sys_documentation_x_1129750_banking_bank_account1_adhaar_no_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-31 07:12:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

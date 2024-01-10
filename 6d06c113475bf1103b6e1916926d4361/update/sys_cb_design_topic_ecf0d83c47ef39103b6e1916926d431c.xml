@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Banking incident">2cf0d83c47ef39103b6e1916926d4318</compiled_topic>
+        <design_definition>{"type":"FlowTopic","type":"FlowTopic","triggers":[{"type":"Trigger","name":"de39af4a5e89436b9b1142c1e67da2e1","triggerType":"request","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"id":"de39af4a5e89436b9b1142c1e67da2e1"}],"goals":[{"name":"primary","trigger_id":"de39af4a5e89436b9b1142c1e67da2e1","nodes":[{"type":"StartGoal","type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Hey,{0}Welcome to bank incident topic\", vaContext.getRequesterLang(), [vaInputs.user.user_name])"},"id":"1033c34c50d142dea76e8092cf61eb46","name":"Start"},{"type":"TerminateGoal","type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","type":"String","mode":"string","value":""},"id":"9cbf1be7f1a84371a3a2d242c040465c","name":"End"}],"edges":[{"type":"Edge","source_node_id":"1033c34c50d142dea76e8092cf61eb46","target_node_id":"9cbf1be7f1a84371a3a2d242c040465c","id":"23bd9d2ef023492ca315e7321e256933"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6d06c113475bf1103b6e1916926d4361","domain":"global","topic_type":"STANDARD","channels":[],"id":"d3ff8c7847ef39103b6e1916926d43aa","name":"Banking incident","key_phrases":["Banking incident","bank account is not open","bank account is not working","issue"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[{"name":null,"visible":false,"sysId":"140e2eda0b203300a1b16c2367673af4"}],"triggerable_by_notification":false,"library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>d3ff8c7847ef39103b6e1916926d43aa</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.41",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "1033c34c50d142dea76e8092cf61eb46": {
+          "id": "1033c34c50d142dea76e8092cf61eb46",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hey,"
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.user_name}}",
+                      "displayValue": "Input Variables➛User➛User ID"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Welcome to bank incident topic"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "9cbf1be7f1a84371a3a2d242c040465c": {
+          "id": "9cbf1be7f1a84371a3a2d242c040465c",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "23bd9d2ef023492ca315e7321e256933",
+          "edgeType": "Edge",
+          "source": "1033c34c50d142dea76e8092cf61eb46",
+          "target": "9cbf1be7f1a84371a3a2d242c040465c",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <name>Banking incident</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 17:05:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ecf0d83c47ef39103b6e1916926d431c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_cb_design_topic_ecf0d83c47ef39103b6e1916926d431c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 17:05:46</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

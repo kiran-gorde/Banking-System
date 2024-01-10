@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_ais">
+    <sp_instance_ais action="DELETE">
+        <active>true</active>
+        <ai_search_source_filter/>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <disable_all_suggestions>false</disable_all_suggestions>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder/>
+        <roles/>
+        <search_application/>
+        <search_results_configuration/>
+        <short_description>How Can I Help You?</short_description>
+        <size>md</size>
+        <sp_column display_value="1">13b0fc1047e3f5103b6e1916926d438b</sp_column>
+        <sp_widget display_value="Homepage Search">200fbd96cb20020000f8d856634c9ca1</sp_widget>
+        <spell_check_font_size>xl</spell_check_font_size>
+        <sys_class_name>sp_instance_ais</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-01 06:08:13</sys_created_on>
+        <sys_id>fad0f0d047e3f5103b6e1916926d438c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>How Can We Help You?</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sp_instance_ais_fad0f0d047e3f5103b6e1916926d438c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-01 06:22:03</sys_updated_on>
+        <title>How Can We Help You?</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"typeahead_search": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_ais>
+    <sys_translated_text action="DELETE" query="documentkey=fad0f0d047e3f5103b6e1916926d438c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>7ab7235a1bffe9d8c84543f4bd4bcbc9</instance_id>
+        <instance_name>dev179703</instance_name>
+        <name>sp_instance_ais_fad0f0d047e3f5103b6e1916926d438c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_ais"&gt;&lt;sp_instance_ais action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;ai_search_source_filter/&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;disable_all_suggestions&gt;false&lt;/disable_all_suggestions&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;placeholder/&gt;&lt;roles/&gt;&lt;search_application/&gt;&lt;search_results_configuration/&gt;&lt;short_description&gt;How Can I Help You?&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;13b0fc1047e3f5103b6e1916926d438b&lt;/sp_column&gt;&lt;sp_widget display_value="Homepage Search"&gt;200fbd96cb20020000f8d856634c9ca1&lt;/sp_widget&gt;&lt;spell_check_font_size&gt;xl&lt;/spell_check_font_size&gt;&lt;sys_class_name&gt;sp_instance_ais&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-01 06:08:13&lt;/sys_created_on&gt;&lt;sys_id&gt;fad0f0d047e3f5103b6e1916926d438c&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;How Can We Help You?&lt;/sys_name&gt;&lt;sys_package display_value="Banking System" source="x_1129750_banking"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Banking System"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_ais_fad0f0d047e3f5103b6e1916926d438c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-01 06:22:03&lt;/sys_updated_on&gt;&lt;title&gt;How Can We Help You?&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"typeahead_search": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_ais&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fad0f0d047e3f5103b6e1916926d438c"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1770438981</payload_hash>
+        <record_name>How Can We Help You?</record_name>
+        <reverted_from/>
+        <source>a906c113475bf1103b6e1916926d4363</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-01 06:22:03</sys_created_on>
+        <sys_id>9d04b09447e3f5103b6e1916926d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cc3afbd830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-01 06:22:03</sys_updated_on>
+        <type>Instance with Search</type>
+        <update_guid>d504b09486e3f5100f5bdf2d2ea4960b</update_guid>
+        <update_guid_history>d504b09486e3f5100f5bdf2d2ea4960b:1770438981,d6e33c546ce3f5100166194f164e0017:1896488229,0b2138d0dce3f51048087ad7dcf8e114:-371697832,fed0f0d01be3f510f6c426a229198f8e:484978914</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="How Can We Help You?">76d489d44727f5103b6e1916926d4331</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-01 07:35:36</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_ais">sp_instance_ais</sys_db_object>
+        <sys_id>6aeb984c4ecf4cfb96ea3da73357c619</sys_id>
+        <sys_metadata>fad0f0d047e3f5103b6e1916926d438c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>How Can We Help You?</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sp_instance_ais_fad0f0d047e3f5103b6e1916926d438c</sys_update_name>
+        <sys_update_version display_value="sp_instance_ais_fad0f0d047e3f5103b6e1916926d438c">9d04b09447e3f5103b6e1916926d430b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-01 07:35:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

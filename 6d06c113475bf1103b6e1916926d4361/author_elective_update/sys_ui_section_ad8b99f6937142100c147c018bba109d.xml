@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Customer View" section_id="ad8b99f6937142100c147c018bba109d" sys_domain="global" table="sys_user" version="3" view="">
+        <sys_ui_section action="DELETE">
+            <caption>Customer View</caption>
+            <header>false</header>
+            <name>sys_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-30 00:00:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad8b99f6937142100c147c018bba109d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_user</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+            <sys_update_name>sys_ui_section_ad8b99f6937142100c147c018bba109d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-30 00:00:44</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>sys_ui_section_ad8b99f6937142100c147c018bba109d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Customer View" section_id="ad8b99f6937142100c147c018bba109d" sys_domain="global" table="sys_user" version="3" view=""><sys_ui_section action="INSERT_OR_UPDATE"><caption>Customer View</caption><header>false</header><name>sys_user</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-04-30 00:00:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ad8b99f6937142100c147c018bba109d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_user</sys_name><sys_overrides/><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>sys_ui_section_ad8b99f6937142100c147c018bba109d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-04-30 00:00:44</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1149272542</payload_hash>
+        <record_name>User</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-30 00:16:41</sys_created_on>
+        <sys_id>9f2f9dbe937142100c147c018bba10af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f2c5c5b9c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-30 00:16:41</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>5f2f9dbec3714210e133b10151154eaf</update_guid>
+        <update_guid_history>5f2f9dbec3714210e133b10151154eaf:-1149272542</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-30 00:16:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>011cb4a99244486080695013fe3e1440</sys_id>
+        <sys_metadata>ad8b99f6937142100c147c018bba109d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Customer View</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="User">44843c317d31311076daf29f52070d56</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sys_ui_section_ad8b99f6937142100c147c018bba109d</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_ad8b99f6937142100c147c018bba109d">9f2f9dbe937142100c147c018bba10af</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-30 00:16:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

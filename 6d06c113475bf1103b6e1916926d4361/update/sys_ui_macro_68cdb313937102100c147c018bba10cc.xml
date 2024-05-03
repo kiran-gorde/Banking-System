@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>whatsupchat</name>
+        <scoped_name>x_1129750_banking_whatsupchat</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 01:07:41</sys_created_on>
+        <sys_id>68cdb313937102100c147c018bba10cc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>whatsupchat</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_ui_macro_68cdb313937102100c147c018bba10cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 12:40:42</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<a><img src="x_1129750_banking.whatsup.jpg"  width="119" height="122" onclick="userWindow('${ref}')" tabindex="0"/> </a>
+
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

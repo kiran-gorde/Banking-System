@@ -7,14 +7,14 @@
         <hint/>
         <name/>
         <order>100</order>
-        <roles/>
+        <roles>itil_admin,itil,x_1129750_banking.bank_account1_user,x_1129750_banking.bank_incident_user,x_1129750_banking.chief bank officer,x_1129750_banking.banking services,x_1129750_banking.chief finance officer,x_1129750_banking.customer1_user,x_1129750_banking.customer_support,x_1129750_banking.customer_user,x_1129750_banking.finance services,x_1129750_banking.incident_user,x_1129750_banking.bank_account_user,x_1129750_banking.city_user,x_1129750_banking.new role assigned,admin,x_1129750_banking.Account Management,x_1129750_banking.Billing and Payments,x_1129750_banking.Card Services,x_1129750_banking.Fraud Prevention,x_1129750_banking.General Inquiries,x_1129750_banking.Loan and Mortage Services,x_1129750_banking.Technical Support,x_1129750_banking.Transactional Support</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-29 05:16:45</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9d484d93475bf1103b6e1916926d4348</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Banking System Application</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
         <sys_update_name>sys_app_application_9d484d93475bf1103b6e1916926d4348</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-29 05:16:45</sys_updated_on>
+        <sys_updated_on>2024-04-30 01:17:01</sys_updated_on>
         <title>Banking System Application</title>
         <view_name/>
     </sys_app_application>

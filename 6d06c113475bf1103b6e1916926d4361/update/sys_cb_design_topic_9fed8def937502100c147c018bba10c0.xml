@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="Bank Service Issue">0fed8def937502100c147c018bba10bc</compiled_topic>
+        <design_definition>{"type":"FlowTopic","type":"FlowTopic","triggers":[{"type":"Trigger","name":"d1fa274539d547a08114c67de122c0fd","triggerType":"request","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"id":"d1fa274539d547a08114c67de122c0fd"}],"goals":[{"name":"primary","trigger_id":"d1fa274539d547a08114c67de122c0fd","nodes":[{"type":"StartGoal","type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Hey {0}welcome to Bank Serives\", vaContext.getRequesterLang(), [vaInputs.user.user_name])"},"id":"88d7caeee1f34da2a263bf81242abcd0","name":"Start"},{"type":"TerminateGoal","type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Thank you for your support\", vaContext.getRequesterLang())"},"id":"770169f9408f469398673baf2db21a5f","name":"End"},{"type":"ChoiceInputPrompt","type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"eb41347c5e44470a85bc21aaae7f8a6f","name":"Bank Issue","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"variable_id":"3872ce1c4d6f48bf9534bab77bf2c898","message":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"How May I Help You ?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true}}],"edges":[{"type":"Edge","source_node_id":"88d7caeee1f34da2a263bf81242abcd0","target_node_id":"eb41347c5e44470a85bc21aaae7f8a6f","id":"b31f6ea0b9154a2380c99c290b4712c6"},{"type":"Edge","source_node_id":"eb41347c5e44470a85bc21aaae7f8a6f","target_node_id":"770169f9408f469398673baf2db21a5f","id":"7771d0a253474d90b854f673da1e9828"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Choice","type":"Choice","choices":[{"name":"Account Management","element":"Account Management"},{"name":"Card Services","element":"Card Services"}],"id":"3872ce1c4d6f48bf9534bab77bf2c898","name":"bank_issue","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6d06c113475bf1103b6e1916926d4361","domain":"global","topic_type":"STANDARD","channels":[],"id":"aa6dc1ef937502100c147c018bba1075","name":"Bank Service Issue","key_phrases":["Bank Service Issue"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>aa6dc1ef937502100c147c018bba1075</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.42",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "88d7caeee1f34da2a263bf81242abcd0": {
+          "id": "88d7caeee1f34da2a263bf81242abcd0",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hey "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.user_name}}",
+                      "displayValue": "Input Variables➛User➛User ID"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "welcome to Bank Serives"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "770169f9408f469398673baf2db21a5f": {
+          "id": "770169f9408f469398673baf2db21a5f",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thank you for your support"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "eb41347c5e44470a85bc21aaae7f8a6f": {
+          "stepType": "ChoicePrompt",
+          "name": "Bank Issue",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How May I Help You ?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "3872ce1c4d6f48bf9534bab77bf2c898",
+          "id": "eb41347c5e44470a85bc21aaae7f8a6f",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        }
+      },
+      "edges": [
+        {
+          "id": "b31f6ea0b9154a2380c99c290b4712c6",
+          "edgeType": "Edge",
+          "source": "88d7caeee1f34da2a263bf81242abcd0",
+          "target": "eb41347c5e44470a85bc21aaae7f8a6f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "7771d0a253474d90b854f673da1e9828",
+          "edgeType": "Edge",
+          "source": "eb41347c5e44470a85bc21aaae7f8a6f",
+          "target": "770169f9408f469398673baf2db21a5f",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "3872ce1c4d6f48bf9534bab77bf2c898": {
+      "id": "3872ce1c4d6f48bf9534bab77bf2c898",
+      "name": "bank_issue",
+      "label": "Bank Issue",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Account Management",
+          "value": "Account Management"
+        },
+        {
+          "label": "Card Services",
+          "value": "Card Services"
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "eb41347c5e44470a85bc21aaae7f8a6f",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>Bank Service Issue</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 06:56:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9fed8def937502100c147c018bba10c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_cb_design_topic_9fed8def937502100c147c018bba10c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 06:56:45</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

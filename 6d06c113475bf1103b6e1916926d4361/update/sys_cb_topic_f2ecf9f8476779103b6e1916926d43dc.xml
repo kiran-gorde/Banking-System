@@ -10,7 +10,7 @@
         <expose_on_palette>false</expose_on_palette>
         <flexible_conversation_switching>true</flexible_conversation_switching>
         <graph>{
-  "graph_api_version": "1.0.41",
+  "graph_api_version": "1.0.42",
   "goals": {
     "primary": {
       "id": "primary",
@@ -34,8 +34,8 @@
               "name": "caller",
               "value": "",
               "id": "fa2436b435eb4fd4b66ae79a995b5c20",
-              "disabled": false,
-              "referenced": true,
+              "disabled": true,
+              "referenced": false,
               "type": "String",
               "hint": "",
               "required": true
@@ -45,7 +45,7 @@
               "value": "",
               "id": "d39019edcdcd47b2808e9bb83fba71c3",
               "referenced": true,
-              "disabled": false,
+              "disabled": true,
               "type": "String",
               "hint": "",
               "required": true
@@ -55,7 +55,7 @@
               "value": "3",
               "id": "3ad4adc75d3e45409a1ddfb7371c4470",
               "referenced": true,
-              "disabled": false,
+              "disabled": true,
               "type": "String",
               "hint": "",
               "required": false
@@ -65,17 +65,17 @@
               "value": "",
               "id": "21869e4260b24226b2e07768ec4304ac",
               "referenced": true,
-              "disabled": false,
+              "disabled": true,
               "type": "String",
               "hint": "",
-              "required": true
+              "required": false
             },
             {
               "name": "cmdb_ci",
               "value": "",
               "id": "30d91552a78b4f7eb5f92378f29ee975",
-              "referenced": true,
-              "disabled": false,
+              "referenced": false,
+              "disabled": true,
               "type": "String",
               "hint": "",
               "required": false
@@ -163,7 +163,8 @@
             "priority",
             "category",
             "assignment_group",
-            "description"
+            "description",
+            "customer_name"
           ],
           "applicability": {
             "value": "",
@@ -171,7 +172,7 @@
           },
           "condition": {
             "mode": "glide_query",
-            "value": "sys_id={{vaVars.inc_sysid}}"
+            "value": "sys_id={{vaVars.inc_sysid}}{{vaInputs.user.user_name}}"
           },
           "cardTemplate": "General",
           "cardFields": {},
@@ -182,8 +183,8 @@
         },
         "a613ac5d7f25412cb5ea2a08b1bd5c01": {
           "id": "a613ac5d7f25412cb5ea2a08b1bd5c01",
-          "name": "Create Request/Incident",
-          "script": "(function execute() {\n    var caller = vaInputs.caller;\n    var short_desc = vaInputs.short_description;\n    var urgency = vaInputs.urgency;\n    var desc = vaInputs.description;\n    var cmdb_ci = vaInputs.cmdb_ci;\n\n     if (!gs.nil(caller) &amp;&amp; !gs.nil(short_desc)) {\n        var incDetails = new sn_itsm_va.VACreateINCUtil().createIncident(caller, short_desc, urgency, desc, cmdb_ci);\n        vaVars.inc_sysid = incDetails.sysid;\n     }\n     \n})()",
+          "name": "Create Incident",
+          "script": "(function execute() {\n    var customer_name = vaInputs.customer_name;\n    var short_desc = vaInputs.short_description;\n    var urgency = vaInputs.urgency;\n    var desc = vaInputs.description;\n\n     if (!gs.nil(customer_name) &amp;&amp; !gs.nil(short_desc)) {\n        var incDetails = new sn_itsm_va.VACreateINCUtil().createbankincident(\t\ncustomer_name,short_desc, urgency, desc);\n        vaVars.inc_sysid = incDetails.sysid;\n     }\n     \n})()",
           "stepType": "ScriptAction",
           "applicability": {
             "value": "",
@@ -347,7 +348,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "d39019edcdcd47b2808e9bb83fba71c3": {
       "id": "d39019edcdcd47b2808e9bb83fba71c3",
@@ -358,7 +361,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "3ad4adc75d3e45409a1ddfb7371c4470": {
       "id": "3ad4adc75d3e45409a1ddfb7371c4470",
@@ -369,7 +374,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "21869e4260b24226b2e07768ec4304ac": {
       "id": "21869e4260b24226b2e07768ec4304ac",
@@ -380,7 +387,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "0e8a54fe2b5e45eda8e23c9e568c5dd3": {
       "category": "vaInputs",
@@ -399,7 +408,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "c2686270964043a999ce6009cd1351b4": {
       "id": "c2686270964043a999ce6009cd1351b4",
@@ -436,25 +447,23 @@
         <nlu_provider/>
         <palette_label/>
         <roles/>
+        <root_topic_id/>
         <secure_custom_input_control>false</secure_custom_input_control>
         <source_topic_id>bd562ebd733333003ade8889faf6a777</source_topic_id>
         <sys_class_name>sys_cb_topic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-03 00:57:30</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>f2ecf9f8476779103b6e1916926d43dc</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>create bank incident</sys_name>
         <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
         <sys_update_name>sys_cb_topic_f2ecf9f8476779103b6e1916926d43dc</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-03 01:12:28</sys_updated_on>
+        <sys_updated_on>2024-04-30 07:10:45</sys_updated_on>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>TOPIC_BLOCK</type>
-        <variables/>
     </sys_cb_topic>
-    <sys_variable_value action="delete_multiple" query="document_key=f2ecf9f8476779103b6e1916926d43dc"/>
 </record_update>

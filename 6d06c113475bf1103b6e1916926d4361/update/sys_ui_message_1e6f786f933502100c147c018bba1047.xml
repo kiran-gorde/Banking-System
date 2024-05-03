@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>va:topic:5b95b6b293b942100c147c018bba10c4:node:6754d8ef01454b4a808bd8ac38f01aaa:field:0</key>
+        <language>en</language>
+        <message>1.Account Access:
+Title: "How to Access Your Account"
+
+Description: This knowledge article provides step-by-step instructions for accessing your account securely:
+
+Visit the bank's website at bankwebsite.com.
+Click on the "Login" button located at the top right corner of the page.
+Enter your username and password in the designated fields.
+If prompted, complete any additional authentication steps, such as entering a verification code sent to your mobile device.
+Once authenticated, you will be logged in to your account dashboard.
+If you encounter any issues during the login process, please refer to our troubleshooting guide or contact customer support for assistance.
+
+2.Account Closure:
+
+Title: "Closing Your Account"
+
+Description: If you wish to close your account, please follow these steps:
+
+Log in to your account using your username and password.
+Navigate to the "Account Settings" or "Profile" section of your dashboard.
+Look for the option to "Close Account" or "Request Account Closure."
+Follow the on-screen instructions to confirm your decision to close the account.
+You may be asked to complete a closure request form or provide additional information for verification purposes.
+Once the closure request is submitted, your account will be scheduled for closure. Please note that this process may take up to [insert time frame] to complete.
+For any questions or assistance regarding account closure, please contact our customer support team.
+
+3.Password Reset:
+
+Title: "Resetting Your Password"
+
+Description: If you've forgotten your password or need to reset it for security reasons, please follow these steps:
+
+Go to the login page on our website.
+Click on the "Forgot Password?" link below the login fields.
+Enter your registered email address or username associated with your account.
+Follow the instructions sent to your email to reset your password securely.
+Once your password is reset, log in to your account using your new credentials.
+If you continue to experience issues with resetting your password, please reach out to our support team for further assistance.
+
+4.Personal Information Update:
+
+Title: "Updating Your Personal Information"
+
+Description: To update your personal information in your account profile, please follow these steps:
+
+Log in to your account using your username and password.
+Navigate to the "Profile" or "Account Settings" section of your dashboard.
+Locate the fields you wish to update, such as contact information, mailing address, or phone number.
+Update the information as needed and save your changes.
+Depending on the type of information being updated, you may be required to verify your identity through additional security measures.
+If you encounter any difficulties updating your personal information, please contact our customer support team for assistance.</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 05:53:20</sys_created_on>
+        <sys_id>1e6f786f933502100c147c018bba1047</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>va:topic:5b95b6b293b942100c147c018bba10c4:node:6754d8ef01454b4a808bd8ac38f01aaa:field:0</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_ui_message_1e6f786f933502100c147c018bba1047</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 05:53:20</sys_updated_on>
+    </sys_ui_message>
+</record_update>

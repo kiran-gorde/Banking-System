@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance_carousel</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list>interval</field_list>
+        <has_preview>false</has_preview>
+        <id>customer_name</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>customer_name</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[data.slides = $sp.getRelatedList('sp_carousel_slide','carousel');]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-30 09:55:53</sys_created_on>
+        <sys_id>efb3e336937d42100c147c018bba1079</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>customer_name</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sp_widget_efb3e336937d42100c147c018bba1079</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-30 10:03:04</sys_updated_on>
+        <template><![CDATA[<div class="pull-in">
+  <uib-carousel interval="options.interval">
+    <uib-slide ng-repeat="slide in ::data.slides" active="slide.active">
+      <div class="container">
+        <a href="{{::slide.url}}" title="${Open carousel item}: {{::slide.name}}">
+          <img ng-src="{{::slide.background}}" style="margin:auto; width:100%; height:400px; " role="presentation">
+        </a>
+      </div>
+    </uib-slide>
+  </uib-carousel>
+</div>]]></template>
+    </sp_widget>
+</record_update>

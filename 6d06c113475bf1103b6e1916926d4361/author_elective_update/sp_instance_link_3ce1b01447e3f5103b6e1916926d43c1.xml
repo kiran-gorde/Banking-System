@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>universal-access</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>2</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>Any End User Can create a Bank Account</short_description>
+        <size>md</size>
+        <sp_column display_value="2">d9c1301447e3f5103b6e1916926d43f7</sp_column>
+        <sp_page display_value="sc_cat_item">9f12251147132100ba13a5554ee490f4</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-01 06:12:43</sys_created_on>
+        <sys_id>3ce1b01447e3f5103b6e1916926d43c1</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Account Open</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sp_instance_link_3ce1b01447e3f5103b6e1916926d43c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:31:24</sys_updated_on>
+        <title>Account Open</title>
+        <type>url</type>
+        <url>https://dev216265.service-now.com/bp?id=sc_cat_item&amp;sys_id=c7c08cf2933d02100c147c018bba109f</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=3ce1b01447e3f5103b6e1916926d43c1"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>sp_instance_link_3ce1b01447e3f5103b6e1916926d43c1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;primary&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;universal-access&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;2&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description&gt;Any End User Can create a Bank Account&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;d9c1301447e3f5103b6e1916926d43f7&lt;/sp_column&gt;&lt;sp_page display_value="sc_cat_item"&gt;9f12251147132100ba13a5554ee490f4&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-01 06:12:43&lt;/sys_created_on&gt;&lt;sys_id&gt;3ce1b01447e3f5103b6e1916926d43c1&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;Account Open&lt;/sys_name&gt;&lt;sys_package display_value="Banking System" source="x_1129750_banking"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Banking System"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_3ce1b01447e3f5103b6e1916926d43c1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-03 06:31:24&lt;/sys_updated_on&gt;&lt;title&gt;Account Open&lt;/title&gt;&lt;type&gt;url&lt;/type&gt;&lt;url&gt;https://dev216265.service-now.com/bp?id=sc_cat_item&amp;amp;sys_id=c7c08cf2933d02100c147c018bba109f&lt;/url&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3ce1b01447e3f5103b6e1916926d43c1"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1686610407</payload_hash>
+        <record_name>Account Open</record_name>
+        <reverted_from/>
+        <source>724c1d2a937102100c147c018bba1082</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:31:24</sys_created_on>
+        <sys_id>adb19a3393b942100c147c018bba1019</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f3d267faf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:31:24</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>a1b19a33d4b9421043fe6f2aa7927c19</update_guid>
+        <update_guid_history>a1b19a33d4b9421043fe6f2aa7927c19:1686610407,b56284b6ba3d021057dfd9f19a0d7faa:-1205996088,2c14c6a66e350210b69ffbffd0521514:-743371317,905e39eec5f10210338bd771f4b1bae4:-639636851,9bcd31eec4f1021044342d52ba02ae8d:-1463947333,cc8dbdaed7f10210dbfdb7ed0ee5b0d5:-488146766,b66bb52e34f10210be568402899b1970:-1466061229,094b7dea3ff10210e7bef1f33391a0b8:-2116398514,b63abde60ff10210dd4fd000eab5c178:-2074701175,021cdd6ac1710210319cdb00a90a6a4c:-328996603</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Account Open">74f11e3393b942100c147c018bba10c1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:32:27</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>88e65efd955043daab774a1dda4bfd41</sys_id>
+        <sys_metadata>3ce1b01447e3f5103b6e1916926d43c1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Account Open</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sp_instance_link_3ce1b01447e3f5103b6e1916926d43c1</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_3ce1b01447e3f5103b6e1916926d43c1">adb19a3393b942100c147c018bba1019</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:32:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

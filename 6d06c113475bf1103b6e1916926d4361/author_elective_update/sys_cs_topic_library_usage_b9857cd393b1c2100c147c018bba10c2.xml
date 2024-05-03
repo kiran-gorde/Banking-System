@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage">
+    <sys_cs_topic_library_usage action="DELETE">
+        <calling_cs_topic_id display_value="To Create Bank Incident">b0f7fe3a93b942100c147c018bba1060</calling_cs_topic_id>
+        <library_cs_topic_id display_value="create bank incident">23504abc476779103b6e1916926d43d8</library_cs_topic_id>
+        <library_usage>{"type":"LibraryCall","library_topic_name":"create bank incident","library_topic_id":"23504abc476779103b6e1916926d43d8","parameter-mappings":[{"parameter-name":"caller","value":{"type":"String","mode":"string","value":"{{vaInputs.user.user_name}}"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"short_description","value":{"type":"String","mode":"string","value":"{{vaInputs.short_description}}"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"urgency","value":{"type":"String","mode":"string","value":"3"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"description","value":{"type":"String","mode":"string","value":""},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"cmdb_ci","value":{"type":"String","mode":"string","value":""},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"created_incident_sys_id","main_topic_mapped_variable_name":"created_incident_sys_id"}],"id":"578386a828884b5fba3a79cafbe11e59","name":"create bank incident","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"}}</library_usage>
+        <node_id>578386a828884b5fba3a79cafbe11e59</node_id>
+        <sys_class_name>sys_cs_topic_library_usage</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-01 10:31:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b9857cd393b1c2100c147c018bba10c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_cs_topic_library_usage_b9857cd393b1c2100c147c018bba10c2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 10:31:41</sys_updated_on>
+    </sys_cs_topic_library_usage>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>sys_cs_topic_library_usage_b9857cd393b1c2100c147c018bba10c2</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_library_usage"><sys_cs_topic_library_usage action="INSERT_OR_UPDATE"><calling_cs_topic_id display_value="To Create Bank Incident">b0f7fe3a93b942100c147c018bba1060</calling_cs_topic_id><library_cs_topic_id display_value="create bank incident">23504abc476779103b6e1916926d43d8</library_cs_topic_id><library_usage>{"type":"LibraryCall","library_topic_name":"create bank incident","library_topic_id":"23504abc476779103b6e1916926d43d8","parameter-mappings":[{"parameter-name":"caller","value":{"type":"String","mode":"string","value":"{{vaInputs.user.user_name}}"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"short_description","value":{"type":"String","mode":"string","value":"{{vaInputs.short_description}}"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"urgency","value":{"type":"String","mode":"string","value":"3"},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"description","value":{"type":"String","mode":"string","value":""},"metadata":{"type":"String","list":false,"items":[],"use_items":false}},{"parameter-name":"cmdb_ci","value":{"type":"String","mode":"string","value":""},"metadata":{"type":"String","list":false,"items":[],"use_items":false}}],"return-value-mappings":[{"main_topic_variable_namespace":"vaInputs","library_topic_return_parameter_name":"created_incident_sys_id","main_topic_mapped_variable_name":"created_incident_sys_id"}],"id":"578386a828884b5fba3a79cafbe11e59","name":"create bank incident","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"}}</library_usage><node_id>578386a828884b5fba3a79cafbe11e59</node_id><sys_class_name>sys_cs_topic_library_usage</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-01 10:31:41</sys_created_on><sys_domain>global</sys_domain><sys_id>b9857cd393b1c2100c147c018bba10c2</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>sys_cs_topic_library_usage_b9857cd393b1c2100c147c018bba10c2</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-01 10:31:41</sys_updated_on></sys_cs_topic_library_usage></record_update>]]></payload>
+        <payload_hash>-2065277569</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>724c1d2a937102100c147c018bba1082</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-01 10:31:41</sys_created_on>
+        <sys_id>7d857cd393b1c2100c147c018bba10c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f33b5c3530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 10:31:41</sys_updated_on>
+        <type>Topic Library Usage</type>
+        <update_guid>71857cd308b1c210f8319382035c6bc4</update_guid>
+        <update_guid_history>71857cd308b1c210f8319382035c6bc4:-2065277569</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-01 11:31:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_cs_topic_library_usage">sys_cs_topic_library_usage</sys_db_object>
+        <sys_id>020ff8aaa3be444c85d373cb5ead3484</sys_id>
+        <sys_metadata>b9857cd393b1c2100c147c018bba10c2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sys_cs_topic_library_usage_b9857cd393b1c2100c147c018bba10c2</sys_update_name>
+        <sys_update_version display_value="sys_cs_topic_library_usage_b9857cd393b1c2100c147c018bba10c2">7d857cd393b1c2100c147c018bba10c4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-01 11:31:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Opens a incident record for the user and provides a message and incident card for confirmation.</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.42",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "216dab6b18834f65a9d31e8df8359458": {
+          "id": "216dab6b18834f65a9d31e8df8359458",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          },
+          "parameters": [
+            {
+              "name": "caller",
+              "value": "",
+              "id": "e6b8b142be404165b5c64b4f207555a0",
+              "disabled": true,
+              "referenced": true,
+              "type": "String",
+              "hint": "",
+              "required": true
+            },
+            {
+              "name": "short_description",
+              "value": "",
+              "id": "5ad5bbd0485c4673adf46cc46f22327d",
+              "referenced": true,
+              "disabled": true,
+              "type": "String",
+              "hint": "",
+              "required": true
+            },
+            {
+              "name": "urgency",
+              "value": "3",
+              "id": "661234241754467bbb4b42aef0b48724",
+              "referenced": true,
+              "disabled": true,
+              "type": "String",
+              "hint": "",
+              "required": false
+            },
+            {
+              "name": "description",
+              "value": "",
+              "id": "c2a837c5f42a427bbcec18a1bb28391c",
+              "referenced": true,
+              "disabled": true,
+              "type": "String",
+              "hint": "",
+              "required": false
+            },
+            {
+              "name": "cmdb_ci",
+              "value": "",
+              "id": "640b496f2fc548a899d29368aaf7c523",
+              "referenced": true,
+              "disabled": true,
+              "type": "String",
+              "hint": "",
+              "required": false
+            }
+          ],
+          "variableIds": [
+            "e6b8b142be404165b5c64b4f207555a0",
+            "5ad5bbd0485c4673adf46cc46f22327d",
+            "661234241754467bbb4b42aef0b48724",
+            "c2a837c5f42a427bbcec18a1bb28391c",
+            "640b496f2fc548a899d29368aaf7c523"
+          ]
+        },
+        "bf7510816a51476f89722fcbfe9e5154": {
+          "id": "bf7510816a51476f89722fcbfe9e5154",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          },
+          "outputVariables": [
+            {
+              "key": "created_incident_sys_id",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaVars.inc_sysid}}",
+                        "displayValue": "vaVars➛inc_sysid"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "disabled": true,
+              "cannotBeDeleted": true,
+              "alertMessage": "You cannot delete this parameter because other calling topics use it.",
+              "additionalInfoUrl": "/sys_cs_topic_library_usage_list.do?sysparm_query=library_cs_topic_id=ef2d8306737333003ade8889faf6a790%5Ecalling_cs_topic_idIN89668d8a18800010964f8326d55386ae",
+              "additionalInfoLabel": "See calling topics"
+            }
+          ]
+        },
+        "1b669ed0587d4d8586e52f3250fbb540": {
+          "id": "1b669ed0587d4d8586e52f3250fbb540",
+          "stepType": "TextOutput",
+          "name": "Incident created",
+          "value": [
+            {
+              "value": "(function execute() {\n    return gs.getMessageLang(\"OK, I've opened a new ticket for you, and someone will help you shortly.\", vaContext.getRequesterLang());\n})()\n",
+              "mode": "script"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "secure": false
+        },
+        "b5a6c65da31248bbad685d619d1ebfa5": {
+          "id": "b5a6c65da31248bbad685d619d1ebfa5",
+          "stepType": "RecordOutput",
+          "name": "Display incident",
+          "variableId": "9140d9984249486e9b074fe6998ff9c6",
+          "mode": "script",
+          "tableName": "incident",
+          "fields": [
+            "short_description",
+            "state",
+            "priority",
+            "category",
+            "assignment_group",
+            "description"
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_query",
+            "value": "sys_id={{vaVars.inc_sysid}}"
+          },
+          "cardTemplate": "General",
+          "cardFields": {},
+          "cardDefinition": {
+            "name": "Record",
+            "value": "General"
+          }
+        },
+        "e96b17c656a34f138404690166f6b4bd": {
+          "id": "e96b17c656a34f138404690166f6b4bd",
+          "name": "Create Request/Incident",
+          "script": "(function execute() {\n    var caller = vaInputs.caller;\n    var short_desc = vaInputs.short_description;\n    var urgency = vaInputs.urgency;\n    var desc = vaInputs.description;\n    var cmdb_ci = vaInputs.cmdb_ci;\n\n     if (!gs.nil(caller) &amp;&amp; !gs.nil(short_desc)) {\n        var incDetails = new sn_itsm_va.VACreateINCUtil().createIncident(caller, short_desc, urgency, desc, cmdb_ci);\n        vaVars.inc_sysid = incDetails.sysid;\n     }\n     \n})()",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "4d481be31cfe4b2d8b0d1d2cb0d5f42e": {
+          "id": "4d481be31cfe4b2d8b0d1d2cb0d5f42e",
+          "name": "Check UR created",
+          "script": "(function execute() {\n  var incGr = new GlideRecord(\"incident\");\n  incGr.get(vaVars.inc_sysid);\n  vaVars.is_UR_created = !gs.nil(incGr.universal_request);\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "a1efc12cd4e44758a6475f017aedcc03": {
+          "id": "a1efc12cd4e44758a6475f017aedcc03",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "40d8c0db86c644bbaefc34082993392b": {
+          "id": "40d8c0db86c644bbaefc34082993392b",
+          "stepType": "TextOutput",
+          "name": "Request created",
+          "value": [
+            {
+              "value": "(function execute() {\n    return gs.getMessageLang(\"Got it. I submitted your request and someone will be assigned to it soon.\", vaContext.getRequesterLang());\n})()\n",
+              "mode": "script"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "secure": false
+        },
+        "fd6a133385e944d287611dd943d8fdaf": {
+          "id": "fd6a133385e944d287611dd943d8fdaf",
+          "stepType": "ScriptOutput",
+          "name": "Display Request",
+          "output_type": "single_part",
+          "script": "(function execute() {\n    var itsm_helper = new sn_itsm_va.ItsmVaHelper();\n    var gr = new GlideRecord(\"incident\");\n    gr.get(vaVars.inc_sysid);\n\n    var title = gr.getElement(\"universal_request\").getLabel();\n    var eff_no = gr.getValue(\"task_effective_number\");\n    var link = gs.getProperty('glide.servlet.uri') + vaVars.portal + '?sys_id=' + vaVars.inc_sysid + '&amp;id=ticket&amp;table=incident';\n    var table_name = gr.getClassDisplayValue();\n    var priority = gr.getDisplayValue('priority');\n    var short_description = gr.getValue('short_description');\n    var description = gr.getValue('description');\n    var state = gr.getDisplayValue('state');\n    var category = gr.getDisplayValue('category');\n    var assignment_group = gr.getDisplayValue('assignment_group');\n    var fields = [];\n    if (short_description != null &amp;&amp; short_description != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"short_description\").getLabel(), \"fieldValue\": short_description });\n    if (state != null &amp;&amp; state != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"state\").getLabel(), \"fieldValue\": state });\n    if (priority != null &amp;&amp; priority != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"priority\").getLabel(), \"fieldValue\": priority });\n    if (category != null &amp;&amp; category != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"category\").getLabel(), \"fieldValue\": category });\n    if (assignment_group != null &amp;&amp; assignment_group != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"assignment_group\").getLabel(), \"fieldValue\": assignment_group });\n    if (description != null &amp;&amp; description != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"description\").getLabel(), \"fieldValue\": description });\n\n    var data = JSON.stringify({\n        \"title\": title,\n        \"fields\": fields,\n        \"subtitle\": eff_no,\n        \"url\": link\n\n    });\n    return vaSystem.renderCard(\"Card\", data);\n\n})()\n",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "b4cb19e03a7348c7bcad8b98fcf12046": {
+          "id": "b4cb19e03a7348c7bcad8b98fcf12046",
+          "name": "Attach incident record to conversation",
+          "script": "(function execute() {\n    vaSystem.attachRecordToConversation(\"incident\", vaVars.inc_sysid);\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "60a8d4fdfd9445eea5a694d4b4dc978d",
+          "edgeType": "Edge",
+          "source": "40d8c0db86c644bbaefc34082993392b",
+          "target": "fd6a133385e944d287611dd943d8fdaf",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2d6f5be821404153b92797f4efc5fba7",
+          "edgeType": "Edge",
+          "source": "216dab6b18834f65a9d31e8df8359458",
+          "target": "e96b17c656a34f138404690166f6b4bd",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bb2374e216af4ee79638e7a1cab9d14e",
+          "edgeType": "Edge",
+          "source": "1b669ed0587d4d8586e52f3250fbb540",
+          "target": "b5a6c65da31248bbad685d619d1ebfa5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ead1f2b3237b461298908c6249dc5e92",
+          "edgeType": "Edge",
+          "source": "b5a6c65da31248bbad685d619d1ebfa5",
+          "target": "bf7510816a51476f89722fcbfe9e5154",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "8e6165c9affd4f2aa74c302151f31394",
+          "edgeType": "Edge",
+          "source": "4d481be31cfe4b2d8b0d1d2cb0d5f42e",
+          "target": "a1efc12cd4e44758a6475f017aedcc03",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b62f8557a13e4522a68616075da5385f",
+          "edgeType": "Branch",
+          "source": "a1efc12cd4e44758a6475f017aedcc03",
+          "target": "1b669ed0587d4d8586e52f3250fbb540",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    return vaVars.is_UR_created == false;\n})()\n"
+          },
+          "label": "No"
+        },
+        {
+          "id": "7c8f08c966e243c2a3ac260cec799781",
+          "edgeType": "Branch",
+          "source": "a1efc12cd4e44758a6475f017aedcc03",
+          "target": "40d8c0db86c644bbaefc34082993392b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    return vaVars.is_UR_created == true;\n})()\n"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "897779d932a0427d958a509c2d85ac63",
+          "edgeType": "Edge",
+          "source": "fd6a133385e944d287611dd943d8fdaf",
+          "target": "bf7510816a51476f89722fcbfe9e5154",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "6ba11e2467164436827cbfd9900de885",
+          "edgeType": "Edge",
+          "source": "e96b17c656a34f138404690166f6b4bd",
+          "target": "b4cb19e03a7348c7bcad8b98fcf12046",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bc7dc50764c544d4b661442aa2f2910f",
+          "edgeType": "Edge",
+          "source": "b4cb19e03a7348c7bcad8b98fcf12046",
+          "target": "4d481be31cfe4b2d8b0d1d2cb0d5f42e",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "e6b8b142be404165b5c64b4f207555a0": {
+      "id": "e6b8b142be404165b5c64b4f207555a0",
+      "name": "caller",
+      "label": "Caller",
+      "defaultValue": "",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "nodeId": "216dab6b18834f65a9d31e8df8359458",
+      "isHidden": false
+    },
+    "5ad5bbd0485c4673adf46cc46f22327d": {
+      "id": "5ad5bbd0485c4673adf46cc46f22327d",
+      "name": "short_description",
+      "label": "Short_description",
+      "defaultValue": "",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "nodeId": "216dab6b18834f65a9d31e8df8359458",
+      "isHidden": false
+    },
+    "661234241754467bbb4b42aef0b48724": {
+      "id": "661234241754467bbb4b42aef0b48724",
+      "name": "urgency",
+      "label": "Urgency",
+      "defaultValue": "3",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "nodeId": "216dab6b18834f65a9d31e8df8359458",
+      "isHidden": false
+    },
+    "c2a837c5f42a427bbcec18a1bb28391c": {
+      "id": "c2a837c5f42a427bbcec18a1bb28391c",
+      "name": "description",
+      "label": "Description",
+      "defaultValue": "",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "nodeId": "216dab6b18834f65a9d31e8df8359458",
+      "isHidden": false
+    },
+    "49fa2be971ed4179a0d64e2ac0649e4a": {
+      "category": "vaInputs",
+      "id": "49fa2be971ed4179a0d64e2ac0649e4a",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "640b496f2fc548a899d29368aaf7c523": {
+      "id": "640b496f2fc548a899d29368aaf7c523",
+      "name": "cmdb_ci",
+      "label": "Cmdb_ci",
+      "defaultValue": "",
+      "varType": "string",
+      "category": "vaInputs",
+      "metadata": {
+        "libraryMappingType": "input"
+      },
+      "nodeId": "216dab6b18834f65a9d31e8df8359458",
+      "isHidden": false
+    },
+    "c5309796854042b49a77dd1032c1e844": {
+      "id": "c5309796854042b49a77dd1032c1e844",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "is_UR_created",
+      "label": "is_UR_created",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "cd0949113d8d4aedb23d028a817d5531": {
+      "id": "cd0949113d8d4aedb23d028a817d5531",
+      "value": {
+        "value": "",
+        "mode": "simple"
+      },
+      "name": "inc_sysid",
+      "label": "inc_sysid",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "c6564a0f06384aa4b08fcc1067edd17b": {
+      "id": "c6564a0f06384aa4b08fcc1067edd17b",
+      "value": {
+        "mode": "script",
+        "value": "(function execute() {\n    if (vaContext.deviceType == 'ios' || vaContext.deviceType == 'android')\n        return 'mesp';\n    return gs.getProperty('sn_itsm_va.com.snc.itsm.virtualagent.portal_url');\n})()"
+      },
+      "name": "portal",
+      "label": "portal",
+      "varType": "script",
+      "category": "vaVars"
+    }
+  }
+}</graph>
+        <key_phrases/>
+        <library>true</library>
+        <live_agent>false</live_agent>
+        <name>Bank incident issue</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id>bd562ebd733333003ade8889faf6a777</root_topic_id>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id>bd562ebd733333003ade8889faf6a777</source_topic_id>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-30 06:30:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>aea432b293b942100c147c018bba1027</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Bank incident issue</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_cb_topic_aea432b293b942100c147c018bba1027</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-30 06:31:07</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>TOPIC_BLOCK</type>
+    </sys_cb_topic>
+</record_update>

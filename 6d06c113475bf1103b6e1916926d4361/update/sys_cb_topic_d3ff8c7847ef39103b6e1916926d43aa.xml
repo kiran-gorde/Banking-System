@@ -10,7 +10,7 @@
         <expose_on_palette>false</expose_on_palette>
         <flexible_conversation_switching>false</flexible_conversation_switching>
         <graph>{
-  "graph_api_version": "1.0.41",
+  "graph_api_version": "1.0.42",
   "goals": {
     "primary": {
       "id": "primary",
@@ -65,14 +65,14 @@
         },
         "6a68ddc0d2204494a044b30d4ba79673": {
           "stepType": "ChoicePrompt",
-          "name": "Account opening issue",
+          "name": "Account  Issue ",
           "prompt": {
             "value": [
               {
                 "type": "paragraph",
                 "children": [
                   {
-                    "text": "how may I Help You to open a bank account?"
+                    "text": "How Can  I Help You?"
                   }
                 ]
               }
@@ -227,7 +227,7 @@
                   {
                     "type": "datapill",
                     "dataPill": {
-                      "value": "{{vaInputs.account_opening_issue}}",
+                      "value": "{{vaInputs.account_issue_}}",
                       "displayValue": "Input Variables➛Account Opening Issue"
                     },
                     "children": [
@@ -831,7 +831,7 @@
           "sourcePort": "",
           "targetPort": "",
           "expression": {
-            "value": "vaInputs.account_opening_issue=others",
+            "value": "vaInputs.account_issue_=others",
             "mode": "query"
           },
           "label": "others"
@@ -844,7 +844,7 @@
           "sourcePort": "",
           "targetPort": "",
           "expression": {
-            "value": "vaInputs.account_opening_issue=Bank account is not open",
+            "value": "vaInputs.account_issue_=Bank account is not open",
             "mode": "query"
           },
           "label": "Account is not Open"
@@ -907,7 +907,7 @@
           "sourcePort": "",
           "targetPort": "",
           "expression": {
-            "value": "vaInputs.account_opening_issue=bank facility to open a account",
+            "value": "vaInputs.account_issue_=bank facility to open a account",
             "mode": "query"
           },
           "label": "Bank Facility"
@@ -928,7 +928,7 @@
           "sourcePort": "",
           "targetPort": "",
           "expression": {
-            "value": "vaInputs.account_opening_issue=what document is needed",
+            "value": "vaInputs.account_issue_=what document is needed",
             "mode": "query"
           },
           "label": "Document Info"
@@ -997,30 +997,22 @@
     },
     "33eec99301f045ee9805fb36348facf6": {
       "id": "33eec99301f045ee9805fb36348facf6",
-      "name": "account_opening_issue",
-      "label": "Account Opening Issue",
+      "name": "account_issue_",
+      "label": "Account  Issue ",
       "varType": "choice",
       "choices": [
         {
-          "label": "Bank account is not open",
-          "value": "Bank account is not open"
+          "label": "Create incident ",
+          "value": "Create incident "
         },
         {
-          "label": "what document is needed",
-          "value": "what document is needed"
-        },
-        {
-          "label": "bank facility to open a account",
-          "value": "bank facility to open a account",
-          "checked": true
-        },
-        {
-          "label": "others",
-          "value": "others",
-          "checked": true
+          "label": "Live Agent Support",
+          "value": "Live Agent Support"
         }
       ],
-      "category": "vaInputs"
+      "category": "vaInputs",
+      "nodeId": "6a68ddc0d2204494a044b30d4ba79673",
+      "isHidden": false
     },
     "400096ed5dcf4273b768141893c5ecda": {
       "id": "400096ed5dcf4273b768141893c5ecda",
@@ -1028,7 +1020,9 @@
       "label": "Issue Solved?",
       "varType": "boolean",
       "secure": false,
-      "category": "vaInputs"
+      "category": "vaInputs",
+      "nodeId": "9fb1cf92ef3a440bbc67a97351ecce7b",
+      "isHidden": false
     },
     "4293005d09884bb089d930f51239d7ea": {
       "id": "4293005d09884bb089d930f51239d7ea",
@@ -1041,7 +1035,9 @@
           "value": "create a ticket"
         }
       ],
-      "category": "vaInputs"
+      "category": "vaInputs",
+      "nodeId": "7c4e90c45b854b3392512c96b8fc960c",
+      "isHidden": false
     },
     "26d6efec0b4444e0a76ba98988fea5f8": {
       "id": "26d6efec0b4444e0a76ba98988fea5f8",
@@ -1054,7 +1050,9 @@
       "encryptionSalt": {
         "value": "MTcwNDI0NTM1MDkyMiBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
         "mode": "simple"
-      }
+      },
+      "nodeId": "d8b419f426c843ef82b1b37f7cf686e3",
+      "isHidden": false
     },
     "5a07708f1199403682c92e98c1ff6a87": {
       "id": "5a07708f1199403682c92e98c1ff6a87",
@@ -1066,7 +1064,9 @@
       "metadata": {
         "libraryMappingType": "output"
       },
-      "preventDisable": false
+      "preventDisable": false,
+      "nodeId": "f1e9b8630160407388c761510ead3c8f",
+      "isHidden": false
     }
   }
 }</graph>
@@ -1081,25 +1081,23 @@
         <nlu_provider/>
         <palette_label/>
         <roles/>
+        <root_topic_id/>
         <secure_custom_input_control>false</secure_custom_input_control>
         <source_topic_id/>
         <sys_class_name>sys_cb_topic</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 17:01:35</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>d3ff8c7847ef39103b6e1916926d43aa</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Banking incident</sys_name>
         <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
         <sys_update_name>sys_cb_topic_d3ff8c7847ef39103b6e1916926d43aa</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-03 03:58:03</sys_updated_on>
+        <sys_updated_on>2024-04-30 04:33:21</sys_updated_on>
         <triggerable_by_notification>false</triggerable_by_notification>
         <type>STANDARD</type>
-        <variables/>
     </sys_cb_topic>
-    <sys_variable_value action="delete_multiple" query="document_key=d3ff8c7847ef39103b6e1916926d43aa"/>
 </record_update>

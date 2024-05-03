@@ -4,7 +4,7 @@
         <class_name/>
         <color>primary</color>
         <css/>
-        <glyph>wrench</glyph>
+        <glyph>book</glyph>
         <id/>
         <kb_article/>
         <kb_category/>
@@ -12,26 +12,26 @@
         <order>1</order>
         <roles/>
         <sc_cat_item/>
-        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
-        <short_description>Contact Support to Make requests</short_description>
+        <sc_category/>
+        <short_description>To see all information related to issue</short_description>
         <size>md</size>
-        <sp_column display_value="3">19c1301447e3f5103b6e1916926d43f9</sp_column>
-        <sp_page display_value="sc_category">07261a2147132100ba13a5554ee49092</sp_page>
+        <sp_column display_value="2">d9c1301447e3f5103b6e1916926d43f7</sp_column>
+        <sp_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</sp_page>
         <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
         <sys_class_name>sp_instance_link</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-01-02 11:33:47</sys_created_on>
-        <sys_id>99f4cb6447eb39103b6e1916926d435f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Get Help</sys_name>
+        <sys_created_on>2024-04-29 07:56:19</sys_created_on>
+        <sys_id>52cef5ee93f102100c147c018bba1018</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Knowledge Articles</sys_name>
         <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
-        <sys_update_name>sp_instance_link_99f4cb6447eb39103b6e1916926d435f</sys_update_name>
+        <sys_update_name>sp_instance_link_52cef5ee93f102100c147c018bba1018</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 11:38:30</sys_updated_on>
-        <title>Get Help</title>
-        <type>sc_category</type>
+        <sys_updated_on>2024-05-03 06:31:23</sys_updated_on>
+        <title>Knowledge Articles</title>
+        <type>page</type>
         <url/>
         <widget_parameters><![CDATA[{
 	"link_template": {
@@ -40,5 +40,5 @@
 	}
 }]]></widget_parameters>
     </sp_instance_link>
-    <sys_translated_text action="delete_multiple" query="documentkey=99f4cb6447eb39103b6e1916926d435f"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=52cef5ee93f102100c147c018bba1018"/>
 </record_update>

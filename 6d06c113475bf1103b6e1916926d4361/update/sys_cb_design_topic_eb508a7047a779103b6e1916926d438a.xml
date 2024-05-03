@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
     <sys_cb_design_topic action="INSERT_OR_UPDATE">
         <compiled_topic display_value="create bank incident">23504abc476779103b6e1916926d43d8</compiled_topic>
-        <design_definition>{"type":"FlowTopic","type":"FlowTopic","triggers":[{"type":"Trigger","name":"663966ec3f754d4384114780570e544c","triggerType":"request","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"id":"663966ec3f754d4384114780570e544c"}],"goals":[{"name":"primary","trigger_id":"663966ec3f754d4384114780570e544c","nodes":[{"type":"StartGoal","type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","type":"String","mode":"string","value":""},"id":"f21a208633f7437a921c77aba84e696f","name":"Start"},{"type":"TerminateGoal","type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","type":"String","mode":"string","value":""},"id":"0cf933f2d34643c0ac9207d804a4784e","name":"End"},{"type":"TextOutputPrompt","type":"TextOutputPrompt","value":[{"type":"String","type":"String","mode":"script","value":"(function execute() {\n    return gs.getMessage(\"OK, I've opened a new ticket for you, and someone will help you shortly.\");\n})()\n"}],"id":"36a4c567b58c411ea44614c91f422d7e","name":"Incident created","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"secure":false},{"type":"RecordOutputPrompt","type":"RecordOutputPrompt","mode":"query","table":"x_1129750_banking_bank_incident","fields":["short_description","state","priority","category","assignment_group","description"],"id":"e4b48afdb10f4752a56f4169d8b106c1","name":"Display incident","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"reference_qualifier_condition":"sys_id={{vaVars.inc_sysid}}","condition":{"type":"Condition","mode":"glide_query","value":"sys_id={{vaVars.inc_sysid}}"}},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n    var caller = vaInputs.caller;\n    var short_desc = vaInputs.short_description;\n    var urgency = vaInputs.urgency;\n    var desc = vaInputs.description;\n    var cmdb_ci = vaInputs.cmdb_ci;\n\n     if (!gs.nil(caller) &amp;&amp; !gs.nil(short_desc)) {\n        var incDetails = new sn_itsm_va.VACreateINCUtil().createIncident(caller, short_desc, urgency, desc, cmdb_ci);\n        vaVars.inc_sysid = incDetails.sysid;\n     }\n     \n})()","id":"a613ac5d7f25412cb5ea2a08b1bd5c01","name":"Create Request/Incident","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n  var incGr = new GlideRecord(\"x_1129750_banking_bank_incident\");\n  incGr.get(vaVars.inc_sysid);\n  vaVars.is_UR_created = !gs.nil(incGr.universal_request);\n})()\n","id":"996e89443e2f469894ba627923af115a","name":"Check UR created","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"Decision","type":"Decision","name":"Decision","branches":[{"type":"Branch","type":"Branch","label":"No","expression":{"type":"Applicability","type":"Applicability","mode":"script","value":"(function execute() {\n    return vaVars.is_UR_created == false;\n})()\n"},"id":"150c99279faa4860a56722c473fa38ee","name":"No"},{"type":"Branch","type":"Branch","label":"Yes","expression":{"type":"Applicability","type":"Applicability","mode":"script","value":"(function execute() {\n    return vaVars.is_UR_created == true;\n})()\n"},"id":"d43daf5ecc77475eb6da34c26cf5348e","name":"Yes"}],"id":"393593049c6548938ddbf9546520b995","goal_id":"primary"},{"type":"TextOutputPrompt","type":"TextOutputPrompt","value":[{"type":"String","type":"String","mode":"script","value":"(function execute() {\n    return gs.getMessage(\"Got it. I submitted your request and someone will be assigned to it soon.\");\n})()\n"}],"id":"fedf1fcbc220492394fb02cab1971183","name":"Request created","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"secure":false},{"type":"ScriptOutputPrompt","type":"ScriptOutputPrompt","output_type":"single_part","id":"5bf7f6d5ac31495e9fa73ad8c5517aff","name":"Display Request","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"value":{"type":"String","type":"String","mode":"string","value":"(function execute() {\n    var itsm_helper = new sn_itsm_va.ItsmVaHelper();\n    var gr = new GlideRecord(\"x_1129750_banking_bank_incident\");\n    gr.get(vaVars.inc_sysid);\n\n    var title = gr.getElement(\"universal_request\").getLabel();\n    var eff_no = gr.getValue(\"task_effective_number\");\n    var link = gs.getProperty('glide.servlet.uri') + gs.getProperty('sn_itsm_va.com.snc.itsm.virtualagent.portal_url') + '?sys_id=' + vaVars.inc_sysid + '&amp;id=ticket&amp;table=incident';\n    var table_name = gr.getClassDisplayValue();\n    var priority = gr.getDisplayValue('priority');\n    var short_description = gr.getValue('short_description');\n    var description = gr.getValue('description');\n    var state = gr.getDisplayValue('state');\n    var category = gr.getDisplayValue('category');\n    var assignment_group = gr.getDisplayValue('assignment_group');\n    var fields = [];\n    if (short_description != null &amp;&amp; short_description != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"short_description\").getLabel(), \"fieldValue\": short_description });\n    if (state != null &amp;&amp; state != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"state\").getLabel(), \"fieldValue\": state });\n    if (priority != null &amp;&amp; priority != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"priority\").getLabel(), \"fieldValue\": priority });\n    if (category != null &amp;&amp; category != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"category\").getLabel(), \"fieldValue\": category });\n    if (assignment_group != null &amp;&amp; assignment_group != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"assignment_group\").getLabel(), \"fieldValue\": assignment_group });\n    if (description != null &amp;&amp; description != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"description\").getLabel(), \"fieldValue\": description });\n\n    var data = JSON.stringify({\n        \"title\": title,\n        \"fields\": fields,\n        \"subtitle\": eff_no,\n        \"url\": link\n\n    });\n    return vaSystem.renderCard(\"Card\", data);\n\n})()\n\n"},"secure":false},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n    vaSystem.attachRecordToConversation(\"x_1129750_banking_bank_incident\", vaVars.inc_sysid);\n})()\n","id":"df5d922956a84b718df92d11891809d2","name":"Attach incident record to conversation","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}}],"edges":[{"type":"Edge","source_node_id":"fedf1fcbc220492394fb02cab1971183","target_node_id":"5bf7f6d5ac31495e9fa73ad8c5517aff","id":"7333cf62c9084125aaa26932b62c29b0"},{"type":"Edge","source_node_id":"f21a208633f7437a921c77aba84e696f","target_node_id":"a613ac5d7f25412cb5ea2a08b1bd5c01","id":"79e49aab281d4bd2b8adcee9d2fdf68a"},{"type":"Edge","source_node_id":"36a4c567b58c411ea44614c91f422d7e","target_node_id":"e4b48afdb10f4752a56f4169d8b106c1","id":"0712c84cbf544d1e991a3cd6ef233784"},{"type":"Edge","source_node_id":"e4b48afdb10f4752a56f4169d8b106c1","target_node_id":"0cf933f2d34643c0ac9207d804a4784e","id":"e3d77987a75c4c4e9ce7d8d21559e471"},{"type":"Edge","source_node_id":"996e89443e2f469894ba627923af115a","target_node_id":"393593049c6548938ddbf9546520b995","id":"7949433402cb4d98a600413f2cc1c5f9"},{"type":"Edge","source_node_id":"393593049c6548938ddbf9546520b995","target_node_id":"36a4c567b58c411ea44614c91f422d7e","branch_id":"150c99279faa4860a56722c473fa38ee","id":"0f2f9ae7bc3c43c69903069641383b2e","name":"150c99279faa4860a56722c473fa38ee"},{"type":"Edge","source_node_id":"393593049c6548938ddbf9546520b995","target_node_id":"fedf1fcbc220492394fb02cab1971183","branch_id":"d43daf5ecc77475eb6da34c26cf5348e","id":"d995a0b21c0f4769a167303eb5629f93","name":"d43daf5ecc77475eb6da34c26cf5348e"},{"type":"Edge","source_node_id":"5bf7f6d5ac31495e9fa73ad8c5517aff","target_node_id":"0cf933f2d34643c0ac9207d804a4784e","id":"47646bfc2e12452b8af9414eb782b2d3"},{"type":"Edge","source_node_id":"a613ac5d7f25412cb5ea2a08b1bd5c01","target_node_id":"df5d922956a84b718df92d11891809d2","id":"a4151a87e76642119f0a535ac7b27ea1"},{"type":"Edge","source_node_id":"df5d922956a84b718df92d11891809d2","target_node_id":"996e89443e2f469894ba627923af115a","id":"3ea78a5b99fd4e01a14e3663eae6cb67"}],"id":"primary"}],"script_variables":[{"type":"VariableDto","type":"String","name":"is_UR_created","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"c2686270964043a999ce6009cd1351b4","formatType":"text","secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"inc_sysid","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"e49b34e3062e4305a0b1d7be04d736d0","formatType":"text","secure":false,"sensitive":false}],"glide_variables":[{"type":"VariableDto","type":"String","name":"caller","list":false,"id":"fa2436b435eb4fd4b66ae79a995b5c20","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"short_description","list":false,"id":"d39019edcdcd47b2808e9bb83fba71c3","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"urgency","list":false,"id":"3ad4adc75d3e45409a1ddfb7371c4470","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"description","list":false,"id":"21869e4260b24226b2e07768ec4304ac","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false},{"type":"Reference","type":"Reference","table":"sys_user","id":"0e8a54fe2b5e45eda8e23c9e568c5dd3","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"VariableDto","type":"String","name":"cmdb_ci","list":false,"id":"30d91552a78b4f7eb5f92378f29ee975","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false}],"applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6d06c113475bf1103b6e1916926d4361","library-usage":{"type":"Library","input-parameters":[{"name":"caller","label":"caller","default-value":"\"\"","required":true,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"fa2436b435eb4fd4b66ae79a995b5c20","type":"String","hint":""},{"name":"short_description","label":"short_description","default-value":"\"\"","required":true,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"d39019edcdcd47b2808e9bb83fba71c3","type":"String","hint":""},{"name":"urgency","label":"urgency","default-value":"\"3\"","required":false,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"3ad4adc75d3e45409a1ddfb7371c4470","type":"String","hint":""},{"name":"description","label":"description","default-value":"\"\"","required":true,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"21869e4260b24226b2e07768ec4304ac","type":"String","hint":""},{"name":"cmdb_ci","label":"cmdb_ci","default-value":"\"\"","required":false,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"30d91552a78b4f7eb5f92378f29ee975","type":"String","hint":""}],"return-values-mapping":[{"name":"created_incident_sys_id","label":"created_incident_sys_id","value":{"type":"String","type":"String","mode":"string","value":"{{vaVars.inc_sysid}}"}}]},"domain":"global","topic_type":"TOPIC_BLOCK","channels":[],"id":"f2ecf9f8476779103b6e1916926d43dc","name":"create bank incident","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":true,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"library":true,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_definition>{"type":"FlowTopic","type":"FlowTopic","triggers":[{"type":"Trigger","name":"c0bf81a4b9f247d68f62e2261ec78e1d","triggerType":"request","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"id":"c0bf81a4b9f247d68f62e2261ec78e1d"}],"goals":[{"name":"primary","trigger_id":"c0bf81a4b9f247d68f62e2261ec78e1d","nodes":[{"type":"StartGoal","type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","type":"String","mode":"string","value":""},"id":"f21a208633f7437a921c77aba84e696f","name":"Start"},{"type":"TerminateGoal","type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","type":"String","mode":"string","value":""},"id":"0cf933f2d34643c0ac9207d804a4784e","name":"End"},{"type":"TextOutputPrompt","type":"TextOutputPrompt","value":[{"type":"String","type":"String","mode":"script","value":"(function execute() {\n    return gs.getMessage(\"OK, I've opened a new ticket for you, and someone will help you shortly.\");\n})()\n"}],"id":"36a4c567b58c411ea44614c91f422d7e","name":"Incident created","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"secure":false},{"type":"RecordOutputPrompt","type":"RecordOutputPrompt","mode":"query","table":"x_1129750_banking_bank_incident","fields":["short_description","state","priority","category","assignment_group","description","customer_name"],"id":"e4b48afdb10f4752a56f4169d8b106c1","name":"Display incident","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"reference_qualifier_condition":"sys_id={{vaVars.inc_sysid}}{{vaInputs.user.user_name}}","condition":{"type":"Condition","mode":"glide_query","value":"sys_id={{vaVars.inc_sysid}}{{vaInputs.user.user_name}}"}},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n    var customer_name = vaInputs.customer_name;\n    var short_desc = vaInputs.short_description;\n    var urgency = vaInputs.urgency;\n    var desc = vaInputs.description;\n\n     if (!gs.nil(customer_name) &amp;&amp; !gs.nil(short_desc)) {\n        var incDetails = new sn_itsm_va.VACreateINCUtil().createIncident(\t\ncustomer_name, short_desc, urgency, desc);\n        vaVars.inc_sysid = incDetails.sysid;\n     }\n     \n})()","id":"a613ac5d7f25412cb5ea2a08b1bd5c01","name":"Create Incident","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n  var incGr = new GlideRecord(\"x_1129750_banking_bank_incident\");\n  incGr.get(vaVars.inc_sysid);\n  vaVars.is_UR_created = !gs.nil(incGr.universal_request);\n})()\n","id":"996e89443e2f469894ba627923af115a","name":"Check UR created","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"Decision","type":"Decision","name":"Decision","branches":[{"type":"Branch","type":"Branch","label":"No","expression":{"type":"Applicability","type":"Applicability","mode":"script","value":"(function execute() {\n    return vaVars.is_UR_created == false;\n})()\n"},"id":"d3469eea9c4943fd8e9667ebfb9c17f5","name":"No"},{"type":"Branch","type":"Branch","label":"Yes","expression":{"type":"Applicability","type":"Applicability","mode":"script","value":"(function execute() {\n    return vaVars.is_UR_created == true;\n})()\n"},"id":"e67e57081c044eb09fd3237f0ee8916e","name":"Yes"}],"id":"393593049c6548938ddbf9546520b995","goal_id":"primary"},{"type":"TextOutputPrompt","type":"TextOutputPrompt","value":[{"type":"String","type":"String","mode":"script","value":"(function execute() {\n    return gs.getMessage(\"Got it. I submitted your request and someone will be assigned to it soon.\");\n})()\n"}],"id":"fedf1fcbc220492394fb02cab1971183","name":"Request created","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"secure":false},{"type":"ScriptOutputPrompt","type":"ScriptOutputPrompt","output_type":"single_part","id":"5bf7f6d5ac31495e9fa73ad8c5517aff","name":"Display Request","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"value":{"type":"String","type":"String","mode":"string","value":"(function execute() {\n    var itsm_helper = new sn_itsm_va.ItsmVaHelper();\n    var gr = new GlideRecord(\"x_1129750_banking_bank_incident\");\n    gr.get(vaVars.inc_sysid);\n\n    var title = gr.getElement(\"universal_request\").getLabel();\n    var eff_no = gr.getValue(\"task_effective_number\");\n    var link = gs.getProperty('glide.servlet.uri') + gs.getProperty('sn_itsm_va.com.snc.itsm.virtualagent.portal_url') + '?sys_id=' + vaVars.inc_sysid + '&amp;id=ticket&amp;table=incident';\n    var table_name = gr.getClassDisplayValue();\n    var priority = gr.getDisplayValue('priority');\n    var short_description = gr.getValue('short_description');\n    var description = gr.getValue('description');\n    var state = gr.getDisplayValue('state');\n    var category = gr.getDisplayValue('category');\n    var assignment_group = gr.getDisplayValue('assignment_group');\n    var fields = [];\n    if (short_description != null &amp;&amp; short_description != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"short_description\").getLabel(), \"fieldValue\": short_description });\n    if (state != null &amp;&amp; state != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"state\").getLabel(), \"fieldValue\": state });\n    if (priority != null &amp;&amp; priority != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"priority\").getLabel(), \"fieldValue\": priority });\n    if (category != null &amp;&amp; category != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"category\").getLabel(), \"fieldValue\": category });\n    if (assignment_group != null &amp;&amp; assignment_group != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"assignment_group\").getLabel(), \"fieldValue\": assignment_group });\n    if (description != null &amp;&amp; description != '')\n        fields.push({ \"fieldLabel\": gr.getElement(\"description\").getLabel(), \"fieldValue\": description });\n\n    var data = JSON.stringify({\n        \"title\": title,\n        \"fields\": fields,\n        \"subtitle\": eff_no,\n        \"url\": link\n\n    });\n    return vaSystem.renderCard(\"Card\", data);\n\n})()\n\n"},"secure":false},{"type":"ScriptedAction","type":"ScriptedAction","script":"(function execute() {\n    vaSystem.attachRecordToConversation(\"x_1129750_banking_bank_incident\", vaVars.inc_sysid);\n})()\n","id":"df5d922956a84b718df92d11891809d2","name":"Attach incident record to conversation","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}}],"edges":[{"type":"Edge","source_node_id":"fedf1fcbc220492394fb02cab1971183","target_node_id":"5bf7f6d5ac31495e9fa73ad8c5517aff","id":"7333cf62c9084125aaa26932b62c29b0"},{"type":"Edge","source_node_id":"f21a208633f7437a921c77aba84e696f","target_node_id":"a613ac5d7f25412cb5ea2a08b1bd5c01","id":"79e49aab281d4bd2b8adcee9d2fdf68a"},{"type":"Edge","source_node_id":"36a4c567b58c411ea44614c91f422d7e","target_node_id":"e4b48afdb10f4752a56f4169d8b106c1","id":"0712c84cbf544d1e991a3cd6ef233784"},{"type":"Edge","source_node_id":"e4b48afdb10f4752a56f4169d8b106c1","target_node_id":"0cf933f2d34643c0ac9207d804a4784e","id":"e3d77987a75c4c4e9ce7d8d21559e471"},{"type":"Edge","source_node_id":"996e89443e2f469894ba627923af115a","target_node_id":"393593049c6548938ddbf9546520b995","id":"7949433402cb4d98a600413f2cc1c5f9"},{"type":"Edge","source_node_id":"393593049c6548938ddbf9546520b995","target_node_id":"36a4c567b58c411ea44614c91f422d7e","branch_id":"d3469eea9c4943fd8e9667ebfb9c17f5","id":"0f2f9ae7bc3c43c69903069641383b2e","name":"d3469eea9c4943fd8e9667ebfb9c17f5"},{"type":"Edge","source_node_id":"393593049c6548938ddbf9546520b995","target_node_id":"fedf1fcbc220492394fb02cab1971183","branch_id":"e67e57081c044eb09fd3237f0ee8916e","id":"d995a0b21c0f4769a167303eb5629f93","name":"e67e57081c044eb09fd3237f0ee8916e"},{"type":"Edge","source_node_id":"5bf7f6d5ac31495e9fa73ad8c5517aff","target_node_id":"0cf933f2d34643c0ac9207d804a4784e","id":"47646bfc2e12452b8af9414eb782b2d3"},{"type":"Edge","source_node_id":"a613ac5d7f25412cb5ea2a08b1bd5c01","target_node_id":"df5d922956a84b718df92d11891809d2","id":"a4151a87e76642119f0a535ac7b27ea1"},{"type":"Edge","source_node_id":"df5d922956a84b718df92d11891809d2","target_node_id":"996e89443e2f469894ba627923af115a","id":"3ea78a5b99fd4e01a14e3663eae6cb67"}],"id":"primary"}],"script_variables":[{"type":"VariableDto","type":"String","name":"is_UR_created","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"c2686270964043a999ce6009cd1351b4","formatType":"text","secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"inc_sysid","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"e49b34e3062e4305a0b1d7be04d736d0","formatType":"text","secure":false,"sensitive":false}],"glide_variables":[{"type":"VariableDto","type":"String","name":"caller","list":false,"id":"fa2436b435eb4fd4b66ae79a995b5c20","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"short_description","list":false,"id":"d39019edcdcd47b2808e9bb83fba71c3","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"urgency","list":false,"id":"3ad4adc75d3e45409a1ddfb7371c4470","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"description","list":false,"id":"21869e4260b24226b2e07768ec4304ac","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false},{"type":"Reference","type":"Reference","table":"sys_user","id":"0e8a54fe2b5e45eda8e23c9e568c5dd3","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"VariableDto","type":"String","name":"cmdb_ci","list":false,"id":"30d91552a78b4f7eb5f92378f29ee975","formatType":"text","metadata":{"libraryMappingType":"input"},"secure":false,"sensitive":false}],"applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6d06c113475bf1103b6e1916926d4361","library-usage":{"type":"Library","input-parameters":[{"name":"caller","label":"caller","default-value":"\"\"","required":true,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"fa2436b435eb4fd4b66ae79a995b5c20","type":"String","hint":""},{"name":"short_description","label":"short_description","default-value":"\"\"","required":true,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"d39019edcdcd47b2808e9bb83fba71c3","type":"String","hint":""},{"name":"urgency","label":"urgency","default-value":"\"3\"","required":false,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"3ad4adc75d3e45409a1ddfb7371c4470","type":"String","hint":""},{"name":"description","label":"description","default-value":"\"\"","required":false,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"21869e4260b24226b2e07768ec4304ac","type":"String","hint":""},{"name":"cmdb_ci","label":"cmdb_ci","default-value":"\"\"","required":false,"metadata":{"type":"String","list":false,"items":[],"use_items":false},"id":"30d91552a78b4f7eb5f92378f29ee975","type":"String","hint":""}],"return-values-mapping":[{"name":"created_incident_sys_id","label":"created_incident_sys_id","value":{"type":"String","type":"String","mode":"string","value":"{{vaVars.inc_sysid}}"}}]},"domain":"global","topic_type":"TOPIC_BLOCK","channels":[],"id":"f2ecf9f8476779103b6e1916926d43dc","name":"create bank incident","key_phrases":[],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":true,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"library":true,"csTopicId":"23504abc476779103b6e1916926d43d8","readOnly":false,"nluMapping":"[]"}</design_definition>
         <design_topic_id>f2ecf9f8476779103b6e1916926d43dc</design_topic_id>
         <graph>{
-  "graph_api_version": "1.0.41",
+  "graph_api_version": "1.0.42",
   "goals": {
     "primary": {
       "id": "primary",
@@ -28,8 +28,8 @@
               "name": "caller",
               "value": "",
               "id": "fa2436b435eb4fd4b66ae79a995b5c20",
-              "disabled": false,
-              "referenced": true,
+              "disabled": true,
+              "referenced": false,
               "type": "String",
               "hint": "",
               "required": true
@@ -39,7 +39,7 @@
               "value": "",
               "id": "d39019edcdcd47b2808e9bb83fba71c3",
               "referenced": true,
-              "disabled": false,
+              "disabled": true,
               "type": "String",
               "hint": "",
               "required": true
@@ -49,7 +49,7 @@
               "value": "3",
               "id": "3ad4adc75d3e45409a1ddfb7371c4470",
               "referenced": true,
-              "disabled": false,
+              "disabled": true,
               "type": "String",
               "hint": "",
               "required": false
@@ -59,17 +59,17 @@
               "value": "",
               "id": "21869e4260b24226b2e07768ec4304ac",
               "referenced": true,
-              "disabled": false,
+              "disabled": true,
               "type": "String",
               "hint": "",
-              "required": true
+              "required": false
             },
             {
               "name": "cmdb_ci",
               "value": "",
               "id": "30d91552a78b4f7eb5f92378f29ee975",
-              "referenced": true,
-              "disabled": false,
+              "referenced": false,
+              "disabled": true,
               "type": "String",
               "hint": "",
               "required": false
@@ -157,7 +157,8 @@
             "priority",
             "category",
             "assignment_group",
-            "description"
+            "description",
+            "customer_name"
           ],
           "applicability": {
             "value": "",
@@ -165,7 +166,7 @@
           },
           "condition": {
             "mode": "glide_query",
-            "value": "sys_id={{vaVars.inc_sysid}}"
+            "value": "sys_id={{vaVars.inc_sysid}}{{vaInputs.user.user_name}}"
           },
           "cardTemplate": "General",
           "cardFields": {},
@@ -176,8 +177,8 @@
         },
         "a613ac5d7f25412cb5ea2a08b1bd5c01": {
           "id": "a613ac5d7f25412cb5ea2a08b1bd5c01",
-          "name": "Create Request/Incident",
-          "script": "(function execute() {\n    var caller = vaInputs.caller;\n    var short_desc = vaInputs.short_description;\n    var urgency = vaInputs.urgency;\n    var desc = vaInputs.description;\n    var cmdb_ci = vaInputs.cmdb_ci;\n\n     if (!gs.nil(caller) &amp;&amp; !gs.nil(short_desc)) {\n        var incDetails = new sn_itsm_va.VACreateINCUtil().createIncident(caller, short_desc, urgency, desc, cmdb_ci);\n        vaVars.inc_sysid = incDetails.sysid;\n     }\n     \n})()",
+          "name": "Create Incident",
+          "script": "(function execute() {\n    var customer_name = vaInputs.customer_name;\n    var short_desc = vaInputs.short_description;\n    var urgency = vaInputs.urgency;\n    var desc = vaInputs.description;\n\n     if (!gs.nil(customer_name) &amp;&amp; !gs.nil(short_desc)) {\n        var incDetails = new sn_itsm_va.VACreateINCUtil().createIncident(\t\ncustomer_name, short_desc, urgency, desc);\n        vaVars.inc_sysid = incDetails.sysid;\n     }\n     \n})()",
           "stepType": "ScriptAction",
           "applicability": {
             "value": "",
@@ -341,7 +342,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "d39019edcdcd47b2808e9bb83fba71c3": {
       "id": "d39019edcdcd47b2808e9bb83fba71c3",
@@ -352,7 +355,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "3ad4adc75d3e45409a1ddfb7371c4470": {
       "id": "3ad4adc75d3e45409a1ddfb7371c4470",
@@ -363,7 +368,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "21869e4260b24226b2e07768ec4304ac": {
       "id": "21869e4260b24226b2e07768ec4304ac",
@@ -374,7 +381,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "0e8a54fe2b5e45eda8e23c9e568c5dd3": {
       "category": "vaInputs",
@@ -393,7 +402,9 @@
       "category": "vaInputs",
       "metadata": {
         "libraryMappingType": "input"
-      }
+      },
+      "nodeId": "f21a208633f7437a921c77aba84e696f",
+      "isHidden": false
     },
     "c2686270964043a999ce6009cd1351b4": {
       "id": "c2686270964043a999ce6009cd1351b4",
@@ -424,16 +435,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-03 01:12:35</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
         <sys_id>eb508a7047a779103b6e1916926d438a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>FlowTopic</sys_name>
         <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
         <sys_update_name>sys_cb_design_topic_eb508a7047a779103b6e1916926d438a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-03 01:22:31</sys_updated_on>
+        <sys_updated_on>2024-04-30 07:00:53</sys_updated_on>
         <type>FlowTopic</type>
     </sys_cb_design_topic>
 </record_update>

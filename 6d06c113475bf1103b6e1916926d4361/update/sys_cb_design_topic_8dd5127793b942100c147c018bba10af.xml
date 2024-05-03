@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__8dd516f34bb94210dc3ccac8ae67c846">49d5127793b942100c147c018bba10aa</compiled_topic>
+        <design_definition>{"type":"FlowTopic","type":"FlowTopic","triggers":[{"type":"Trigger","name":"a5ac1a9840064f5194ae07c3700866b3","triggerType":"request","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"id":"a5ac1a9840064f5194ae07c3700866b3"}],"goals":[{"name":"primary","trigger_id":"a5ac1a9840064f5194ae07c3700866b3","nodes":[{"type":"StartGoal","type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Hey {0}welcome to the bank Topic\", vaContext.getRequesterLang(), [vaInputs.user.user_name])"},"id":"9caa8344244b4f23a02692fab2c5bfdc","name":"Start"},{"type":"TerminateGoal","type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Thank you for your support\", vaContext.getRequesterLang())"},"id":"4596d727f1bb4582a48264d766745aa9","name":"End"},{"type":"Decision","type":"Decision","name":"select Option","branches":[{"type":"Branch","type":"Branch","label":"Card Services","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"bank_issue=Card Services"},"id":"1fe8bbdc6e7a4c19897e529ee2e886b7","name":"Card Services"},{"type":"Branch","type":"Branch","label":"Account Management","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"bank_issue=Account Management"},"id":"62017c28728e4e139843c0de133f63e6","name":"Account Management"},{"type":"Branch","type":"Branch","label":"Technical Support","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"bank_issue=Technical Support"},"id":"340a4b2e59e5426680efac462c66ac4a","name":"Technical Support"},{"type":"Branch","type":"Branch","label":"Billing and Payment","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"bank_issue=Billing and Payment"},"id":"d8318dbecc08409db8701b123435129c","name":"Billing and Payment"},{"type":"Branch","type":"Branch","label":"General Inquiries","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"bank_issue=General Inquiries"},"id":"c8ceb574dcff4056982c1b596e9c6eef","name":"General Inquiries"},{"type":"Branch","type":"Branch","label":"Fraud Prevention","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"bank_issue=Fraud Prevention"},"id":"5d85246bb31a418f8677b15b62a63645","name":"Fraud Prevention"},{"type":"Branch","type":"Branch","label":"Loan and Mortgage","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"bank_issue=Loan and mortgage"},"id":"acb5b1c46de545f28d760ce11790f91a","name":"Loan and Mortgage"}],"id":"1b0dde72ecfb40bdb5f998f3f7cdc301","goal_id":"primary"},{"type":"ChoiceInputPrompt","type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"Large image with text","cardFields":[{"name":"title","value":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Bank Issue\", vaContext.getRequesterLang())"},"required":true},{"name":"description","value":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"welcome to the bank topic solve your bank issue by the help of out chatBot\", vaContext.getRequesterLang())"},"required":false},{"name":"image","value":{"type":"String","type":"String","mode":"script","value":"(function execute() { var url = gs.getProperty(\"glide.servlet.uri\"); return url + \"bank1_1714558576637.jpg\";})()"},"required":true},{"name":"imageAlt","value":{"type":"String","type":"String","mode":"string","value":""},"required":false}],"id":"aefacfed99cd4e6688aed3c7de80a05f","name":"Bank Issue","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"variable_id":"f5f1ec526f2943b59bd388c23a2a2dde","message":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"How may i Help You in bank ?\", vaContext.getRequesterLang())"},"skippable":{"type":"Applicability","type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true}},{"type":"InputPrompt","type":"InputPrompt","variable_id":"478ffe70e8624bb4a8056ed841cf508e","message":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Is this issue Resolved\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","type":"Applicability","mode":"script","value":"false"},"id":"b5ed89df72514bd2832e6445b0e873b9","name":"Is this issue Resolved","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"LinkOutputPrompt","type":"LinkOutputPrompt","header":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Card Services related issue solution\", vaContext.getRequesterLang())"},"label":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Card Services related issue solution\", vaContext.getRequesterLang())"},"url":{"type":"String","type":"String","mode":"string","value":"https://dev216265.service-now.com/bp/en/card-related-issue?id=kb_article_view&amp;sysparm_article=KB0010003"},"link_type":"single","multi_link_script":"","id":"b9c0a167d3ef4ce9b47a8daad0c215ae","name":"Knowledge Guide","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"LinkOutputPrompt","type":"LinkOutputPrompt","header":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Account management\", vaContext.getRequesterLang())"},"label":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"account Management Services related solution\", vaContext.getRequesterLang())"},"url":{"type":"String","type":"String","mode":"string","value":"https://dev216265.service-now.com/bp/en/account-related-issue-solution?id=kb_article_view&amp;sysparm_article=KB0010002"},"link_type":"single","multi_link_script":"","id":"9e642b8c5fde46aba28550dda8950aa1","name":"Knowledge Article","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"LinkOutputPrompt","type":"LinkOutputPrompt","header":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Technical Support\", vaContext.getRequesterLang())"},"label":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"technical support services related solution\", vaContext.getRequesterLang())"},"url":{"type":"String","type":"String","mode":"string","value":"https://dev216265.service-now.com/bp/en/technical-support?id=kb_article_view&amp;sysparm_article=KB0010006"},"link_type":"single","multi_link_script":"","id":"8f00d24c516c48808e1b172820a3f219","name":"Knowledge Article","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"LinkOutputPrompt","type":"LinkOutputPrompt","header":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Billing and Payment\", vaContext.getRequesterLang())"},"label":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Billing and Payment related issue solution\", vaContext.getRequesterLang())"},"url":{"type":"String","type":"String","mode":"string","value":"https://dev216265.service-now.com/bp/en/billing-and-payment?id=kb_article_view&amp;sysparm_article=KB0010004"},"link_type":"single","multi_link_script":"","id":"52a1a840c83f46cf8878a3ffaa41a572","name":"Knowledge Article","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"LinkOutputPrompt","type":"LinkOutputPrompt","header":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"General Inquiries\", vaContext.getRequesterLang())"},"label":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"General Inquiries related issue solution\", vaContext.getRequesterLang())"},"url":{"type":"String","type":"String","mode":"string","value":"https://dev216265.service-now.com/bp/en/general-inquiries?id=kb_article_view&amp;sysparm_article=KB0010005"},"link_type":"single","multi_link_script":"","id":"bbf3b0d4c5db48a9846fff75e818699d","name":"Knowledge Article","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"LinkOutputPrompt","type":"LinkOutputPrompt","header":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Fraud Prevention\", vaContext.getRequesterLang())"},"label":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Fraud Prevention related solution\", vaContext.getRequesterLang())"},"url":{"type":"String","type":"String","mode":"string","value":"https://dev216265.service-now.com/bp/en/fraud-prevention?id=kb_article_view&amp;sysparm_article=KB0010008"},"link_type":"single","multi_link_script":"","id":"67b76bf72f3b4ee9a56ba3feb2693e59","name":"Fraud Prevention","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"LinkOutputPrompt","type":"LinkOutputPrompt","header":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Loan and Mortgage\", vaContext.getRequesterLang())"},"label":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Loan and Mortgage\", vaContext.getRequesterLang())"},"url":{"type":"String","type":"String","mode":"string","value":"Loan and Mortgage related solution"},"link_type":"single","multi_link_script":"","id":"1a6d4913a09445248a476ae8d6ee2e10","name":"Knowledge Article","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"Decision","type":"Decision","name":"Decision","branches":[{"type":"Branch","type":"Branch","label":"No","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"is_this_issue_resolved="},"id":"f596fd420bcc4407bea74a0b767aa531","name":"No"},{"type":"Branch","type":"Branch","label":"Yes","expression":{"type":"Applicability","type":"Applicability","mode":"query","value":"is_this_issue_resolved=true"},"id":"04c6dc402505489f82f1026abd5d533b","name":"Yes"}],"id":"a976bfb111dd4d67b3e37fc9a972d5de","goal_id":"primary"},{"type":"InputPrompt","type":"InputPrompt","variable_id":"1224460f55c048a2922c319f5fd8fade","message":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Please enter the Short Description of issue you are facing?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","type":"Applicability","mode":"script","value":"false"},"id":"29582ce2dc2940fe8b2f3be9e616de5d","name":"Short Description","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":""},{"type":"InputPrompt","type":"InputPrompt","variable_id":"8dae17f7a73e461b8a9c4a9de7518a6b","message":{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"Please explain More description about above Issue?\", vaContext.getRequesterLang())"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"skippable":{"type":"Applicability","type":"Applicability","mode":"script","value":"false"},"id":"7aff329e150e4b52aed60dd028ec9856","name":"Description","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"formatType":"Text","validationScript":""},{"type":"CRUDAction","type":"CRUDAction","mode":"create","query":"short_description={{vaInputs.short_description}}^description={{vaInputs.description}}^customer_name={{vaInputs.user}}^category={{vaInputs.bank_issue}}^subcategory={{vaInputs.description}}","variable_id":"2b08553b3ad840a69f0fe05ed2a4129e","id":"a5a2be1e2ac64d36b04c1e0c63ff7bce","name":"Create a incident","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"}},{"type":"TextOutputPrompt","type":"TextOutputPrompt","value":[{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"va:topic:5b95b6b293b942100c147c018bba10c4:node:33837195d97f4e5cb0d0e8cb595eb021:field:0 {0} {1} {2} {3} {4}\", vaContext.getRequesterLang(), [vaInputs.user.user_name,vaInputs.create_a_incident.number,vaInputs.short_description,vaInputs.description,vaInputs.create_a_incident.category])"}],"id":"33837195d97f4e5cb0d0e8cb595eb021","name":"Display Incident","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"secure":false},{"type":"TextOutputPrompt","type":"TextOutputPrompt","value":[{"type":"String","type":"String","mode":"string","value":"gs.getMessageLang(\"great that its solve your issue🙃\", vaContext.getRequesterLang())"}],"id":"88c966eb9729437faa1653d6cd433855","name":"Great!!","goal_id":"primary","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"secure":false}],"edges":[{"type":"Edge","source_node_id":"33837195d97f4e5cb0d0e8cb595eb021","target_node_id":"4596d727f1bb4582a48264d766745aa9","id":"061bf3b975e14ca294cbaea777afeeab"},{"type":"Edge","source_node_id":"aefacfed99cd4e6688aed3c7de80a05f","target_node_id":"1b0dde72ecfb40bdb5f998f3f7cdc301","id":"e32a87d09a564dcc9312ee64ea1f739c"},{"type":"Edge","source_node_id":"9caa8344244b4f23a02692fab2c5bfdc","target_node_id":"aefacfed99cd4e6688aed3c7de80a05f","id":"4998106de0344f84951f230875a78f3d"},{"type":"Edge","source_node_id":"1b0dde72ecfb40bdb5f998f3f7cdc301","target_node_id":"b9c0a167d3ef4ce9b47a8daad0c215ae","branch_id":"1fe8bbdc6e7a4c19897e529ee2e886b7","id":"051ca3ce53ea4c8484ca4025b933441f","name":"1fe8bbdc6e7a4c19897e529ee2e886b7"},{"type":"Edge","source_node_id":"b9c0a167d3ef4ce9b47a8daad0c215ae","target_node_id":"b5ed89df72514bd2832e6445b0e873b9","id":"026f5163f4cd471b940e9097b85a68e0"},{"type":"Edge","source_node_id":"1b0dde72ecfb40bdb5f998f3f7cdc301","target_node_id":"9e642b8c5fde46aba28550dda8950aa1","branch_id":"62017c28728e4e139843c0de133f63e6","id":"afa47d09e0ed4f37af2b60810defe8bc","name":"62017c28728e4e139843c0de133f63e6"},{"type":"Edge","source_node_id":"9e642b8c5fde46aba28550dda8950aa1","target_node_id":"b5ed89df72514bd2832e6445b0e873b9","id":"e63e9eb5f57c4ce7ba899c7b5d944aa9"},{"type":"Edge","source_node_id":"1b0dde72ecfb40bdb5f998f3f7cdc301","target_node_id":"8f00d24c516c48808e1b172820a3f219","branch_id":"340a4b2e59e5426680efac462c66ac4a","id":"cdffc0c73a86446b9b54444051f28036","name":"340a4b2e59e5426680efac462c66ac4a"},{"type":"Edge","source_node_id":"8f00d24c516c48808e1b172820a3f219","target_node_id":"b5ed89df72514bd2832e6445b0e873b9","id":"02986e4f67c042c79e413c0000c6af2b"},{"type":"Edge","source_node_id":"1b0dde72ecfb40bdb5f998f3f7cdc301","target_node_id":"52a1a840c83f46cf8878a3ffaa41a572","branch_id":"d8318dbecc08409db8701b123435129c","id":"fce1e64454934849be22689ac927ce2c","name":"d8318dbecc08409db8701b123435129c"},{"type":"Edge","source_node_id":"52a1a840c83f46cf8878a3ffaa41a572","target_node_id":"b5ed89df72514bd2832e6445b0e873b9","id":"2065d84592124590919456b3a5f385c4"},{"type":"Edge","source_node_id":"1b0dde72ecfb40bdb5f998f3f7cdc301","target_node_id":"bbf3b0d4c5db48a9846fff75e818699d","branch_id":"c8ceb574dcff4056982c1b596e9c6eef","id":"9c2636b1a6f7475da58102744315a3f7","name":"c8ceb574dcff4056982c1b596e9c6eef"},{"type":"Edge","source_node_id":"bbf3b0d4c5db48a9846fff75e818699d","target_node_id":"b5ed89df72514bd2832e6445b0e873b9","id":"75f608c4ee1044b3a3238ada34fb208a"},{"type":"Edge","source_node_id":"1b0dde72ecfb40bdb5f998f3f7cdc301","target_node_id":"67b76bf72f3b4ee9a56ba3feb2693e59","branch_id":"5d85246bb31a418f8677b15b62a63645","id":"813a4edafd1240eeb00844372c67c0bf","name":"5d85246bb31a418f8677b15b62a63645"},{"type":"Edge","source_node_id":"67b76bf72f3b4ee9a56ba3feb2693e59","target_node_id":"b5ed89df72514bd2832e6445b0e873b9","id":"b2b0035003d14493acadff842c72e4a5"},{"type":"Edge","source_node_id":"1b0dde72ecfb40bdb5f998f3f7cdc301","target_node_id":"1a6d4913a09445248a476ae8d6ee2e10","branch_id":"acb5b1c46de545f28d760ce11790f91a","id":"19579d92c4ac46cbbbfcec3500a07b40","name":"acb5b1c46de545f28d760ce11790f91a"},{"type":"Edge","source_node_id":"1a6d4913a09445248a476ae8d6ee2e10","target_node_id":"b5ed89df72514bd2832e6445b0e873b9","id":"20099fd8595444ddb6663ef66b92101d"},{"type":"Edge","source_node_id":"b5ed89df72514bd2832e6445b0e873b9","target_node_id":"a976bfb111dd4d67b3e37fc9a972d5de","id":"b9d6be2091074896aa2fe0c525f8775b"},{"type":"Edge","source_node_id":"a976bfb111dd4d67b3e37fc9a972d5de","target_node_id":"29582ce2dc2940fe8b2f3be9e616de5d","branch_id":"f596fd420bcc4407bea74a0b767aa531","id":"690159f42230418d858c8e95f257aa63","name":"f596fd420bcc4407bea74a0b767aa531"},{"type":"Edge","source_node_id":"29582ce2dc2940fe8b2f3be9e616de5d","target_node_id":"7aff329e150e4b52aed60dd028ec9856","id":"bfd9502e92be4833b1acc6975592d189"},{"type":"Edge","source_node_id":"7aff329e150e4b52aed60dd028ec9856","target_node_id":"a5a2be1e2ac64d36b04c1e0c63ff7bce","id":"a512d09d88144f828a12ce0014b54cc1"},{"type":"Edge","source_node_id":"a5a2be1e2ac64d36b04c1e0c63ff7bce","target_node_id":"33837195d97f4e5cb0d0e8cb595eb021","id":"38a190b975cf4428bf0c647ab4e30d36"},{"type":"Edge","source_node_id":"a976bfb111dd4d67b3e37fc9a972d5de","target_node_id":"88c966eb9729437faa1653d6cd433855","branch_id":"04c6dc402505489f82f1026abd5d533b","id":"323cc189990743119d455a612672c8ee","name":"04c6dc402505489f82f1026abd5d533b"},{"type":"Edge","source_node_id":"88c966eb9729437faa1653d6cd433855","target_node_id":"4596d727f1bb4582a48264d766745aa9","id":"b8fcb8cb5aa448e68d34f7b298850c6c"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"Choice","type":"Choice","choices":[{"name":"Account Management","element":"Account Management"},{"name":"Card Services","element":"Card Services"},{"name":"Technical Support","element":"Technical Support"},{"name":"Transactional Support","element":"Transactional Support"},{"name":"Billing and Payment","element":"Billing and Payment"},{"name":"Fraud Prevention","element":"Fraud Prevention"},{"name":"General Inquiries","element":"General Inquiries"},{"name":"Loan and mortgage","element":"Loan and mortgage"}],"id":"f5f1ec526f2943b59bd388c23a2a2dde","name":"bank_issue","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"True/False","type":"True/False","id":"478ffe70e8624bb4a8056ed841cf508e","name":"is_this_issue_resolved","formatType":"text","secure":false,"sensitive":false,"list":false},{"type":"VariableDto","type":"String","name":"short_description","list":false,"id":"1224460f55c048a2922c319f5fd8fade","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"description","list":false,"id":"8dae17f7a73e461b8a9c4a9de7518a6b","formatType":"Text","validationScript":"","secure":false,"sensitive":false},{"type":"Reference","type":"Reference","table":"x_1129750_banking_bank_incident","id":"2b08553b3ad840a69f0fe05ed2a4129e","name":"create_a_incident","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"6d06c113475bf1103b6e1916926d4361","domain":"global","topic_type":"STANDARD","channels":[],"id":"5b95b6b293b942100c147c018bba10c4","name":"_PRVW__8dd516f34bb94210dc3ccac8ae67c846","key_phrases":["To Create Bank Incident"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"library":false,"csTopicId":"b0f7fe3a93b942100c147c018bba1060","readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>5b95b6b293b942100c147c018bba10c4</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.42",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "9caa8344244b4f23a02692fab2c5bfdc": {
+          "id": "9caa8344244b4f23a02692fab2c5bfdc",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hey "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.user_name}}",
+                      "displayValue": "Input Variables➛User➛User ID"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "welcome to the bank Topic"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "4596d727f1bb4582a48264d766745aa9": {
+          "id": "4596d727f1bb4582a48264d766745aa9",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thank you for your support"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "1b0dde72ecfb40bdb5f998f3f7cdc301": {
+          "id": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "stepType": "Decision",
+          "name": "select Option"
+        },
+        "aefacfed99cd4e6688aed3c7de80a05f": {
+          "stepType": "ChoicePrompt",
+          "name": "Bank Issue",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How may i Help You in bank ?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "f5f1ec526f2943b59bd388c23a2a2dde",
+          "id": "aefacfed99cd4e6688aed3c7de80a05f",
+          "hasCardHeader": true,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "Large image with text",
+            "cardFields": {
+              "1c617fa17313101081e06502edf6a780_title": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "Bank Issue"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "1c617fa17313101081e06502edf6a780_description": {
+                "value": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "text": "welcome to the bank topic solve your bank issue by the help of out chatBot"
+                      }
+                    ]
+                  }
+                ],
+                "mode": "simple"
+              },
+              "1c617fa17313101081e06502edf6a780_image": {
+                "value": "bank1_1714558576637.jpg",
+                "mode": "db_image"
+              }
+            },
+            "cardDefinition": {
+              "sys_id": "1c617fa17313101081e06502edf6a780",
+              "name": "Large image with text",
+              "sys_name": "Large image with text",
+              "thumbnail.name": "Large image with text.svg",
+              "fields": [
+                {
+                  "label": "Title",
+                  "position": "1",
+                  "mandatory": true,
+                  "name": "title",
+                  "id": "1c617fa17313101081e06502edf6a780_title"
+                },
+                {
+                  "label": "Description",
+                  "position": "2",
+                  "mandatory": false,
+                  "name": "description",
+                  "id": "1c617fa17313101081e06502edf6a780_description"
+                },
+                {
+                  "label": "Image URL link",
+                  "position": "3",
+                  "mandatory": true,
+                  "type": "image",
+                  "name": "image",
+                  "id": "1c617fa17313101081e06502edf6a780_image"
+                },
+                {
+                  "label": "Image alt text",
+                  "position": "4",
+                  "mandatory": false,
+                  "name": "imageAlt",
+                  "id": "1c617fa17313101081e06502edf6a780_imageAlt"
+                }
+              ],
+              "value": "Large image with text",
+              "hasTemplateError": false
+            }
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "b5ed89df72514bd2832e6445b0e873b9": {
+          "id": "b5ed89df72514bd2832e6445b0e873b9",
+          "stepType": "Prompt",
+          "name": "Is this issue Resolved",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Is this issue Resolved"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "478ffe70e8624bb4a8056ed841cf508e"
+        },
+        "b9c0a167d3ef4ce9b47a8daad0c215ae": {
+          "id": "b9c0a167d3ef4ce9b47a8daad0c215ae",
+          "stepType": "LinkOutput",
+          "name": "Knowledge Guide",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev216265.service-now.com/bp/en/card-related-issue?id=kb_article_view&amp;sysparm_article=KB0010003"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Card Services related issue solution"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Card Services related issue solution"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "9e642b8c5fde46aba28550dda8950aa1": {
+          "id": "9e642b8c5fde46aba28550dda8950aa1",
+          "stepType": "LinkOutput",
+          "name": "Knowledge Article",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev216265.service-now.com/bp/en/account-related-issue-solution?id=kb_article_view&amp;sysparm_article=KB0010002"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "account Management Services related solution"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Account management"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "8f00d24c516c48808e1b172820a3f219": {
+          "id": "8f00d24c516c48808e1b172820a3f219",
+          "stepType": "LinkOutput",
+          "name": "Knowledge Article",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev216265.service-now.com/bp/en/technical-support?id=kb_article_view&amp;sysparm_article=KB0010006"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "technical support services related solution"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Technical Support"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "52a1a840c83f46cf8878a3ffaa41a572": {
+          "id": "52a1a840c83f46cf8878a3ffaa41a572",
+          "stepType": "LinkOutput",
+          "name": "Knowledge Article",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev216265.service-now.com/bp/en/billing-and-payment?id=kb_article_view&amp;sysparm_article=KB0010004"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Billing and Payment related issue solution"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Billing and Payment"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "bbf3b0d4c5db48a9846fff75e818699d": {
+          "id": "bbf3b0d4c5db48a9846fff75e818699d",
+          "stepType": "LinkOutput",
+          "name": "Knowledge Article",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev216265.service-now.com/bp/en/general-inquiries?id=kb_article_view&amp;sysparm_article=KB0010005"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "General Inquiries related issue solution"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "General Inquiries"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "67b76bf72f3b4ee9a56ba3feb2693e59": {
+          "id": "67b76bf72f3b4ee9a56ba3feb2693e59",
+          "stepType": "LinkOutput",
+          "name": "Fraud Prevention",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://dev216265.service-now.com/bp/en/fraud-prevention?id=kb_article_view&amp;sysparm_article=KB0010008"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Fraud Prevention related solution"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Fraud Prevention"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "1a6d4913a09445248a476ae8d6ee2e10": {
+          "id": "1a6d4913a09445248a476ae8d6ee2e10",
+          "stepType": "LinkOutput",
+          "name": "Knowledge Article",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Loan and Mortgage related solution"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Loan and Mortgage"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Loan and Mortgage"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "a976bfb111dd4d67b3e37fc9a972d5de": {
+          "id": "a976bfb111dd4d67b3e37fc9a972d5de",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "29582ce2dc2940fe8b2f3be9e616de5d": {
+          "id": "29582ce2dc2940fe8b2f3be9e616de5d",
+          "stepType": "Prompt",
+          "name": "Short Description",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please enter the Short Description of issue you are facing?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "1224460f55c048a2922c319f5fd8fade",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "7aff329e150e4b52aed60dd028ec9856": {
+          "id": "7aff329e150e4b52aed60dd028ec9856",
+          "stepType": "Prompt",
+          "name": "Description",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Please explain More description about above Issue?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "8dae17f7a73e461b8a9c4a9de7518a6b",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "a5a2be1e2ac64d36b04c1e0c63ff7bce": {
+          "id": "a5a2be1e2ac64d36b04c1e0c63ff7bce",
+          "stepType": "CrudAction",
+          "name": "Create a incident",
+          "template": "short_description={{vaInputs.short_description}}^description={{vaInputs.description}}^customer_name={{vaInputs.user}}^category={{vaInputs.bank_issue}}^subcategory={{vaInputs.description}}",
+          "mode": "create",
+          "record": "",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "2b08553b3ad840a69f0fe05ed2a4129e"
+        },
+        "33837195d97f4e5cb0d0e8cb595eb021": {
+          "id": "33837195d97f4e5cb0d0e8cb595eb021",
+          "stepType": "TextOutput",
+          "name": "Display Incident",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Incident ceated succesfully here is the info of incident you have created now",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Caller:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.user.user_name}}",
+                        "displayValue": "Input Variables➛User➛User ID"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Number:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.create_a_incident.number}}",
+                        "displayValue": "Input Variables➛Create A Incident➛Number"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Short_Description:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.short_description}}",
+                        "displayValue": "Input Variables➛Short Description"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Description:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.description}}",
+                        "displayValue": "Input Variables➛Description"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Category:",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    },
+                    {
+                      "type": "datapill",
+                      "dataPill": {
+                        "value": "{{vaInputs.create_a_incident.category}}",
+                        "displayValue": "Input Variables➛Create A Incident➛Category"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "",
+                      "bold": true
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "d768b2681d5c4cac8d2c3e159566c055"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "88c966eb9729437faa1653d6cd433855": {
+          "id": "88c966eb9729437faa1653d6cd433855",
+          "stepType": "TextOutput",
+          "name": "Great!!",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "great that its solve your issue"
+                    },
+                    {
+                      "type": "emoji",
+                      "emoji": {
+                        "id": "upside_down_face",
+                        "name": "Upside-Down Face",
+                        "short_names": [
+                          "upside_down_face"
+                        ],
+                        "colons": ":upside_down_face:",
+                        "emoticons": [],
+                        "unified": "1f643",
+                        "skin": null,
+                        "native": "🙃"
+                      },
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "b1c9a350452f4fb680c6fc34e200fc38"
+            }
+          ],
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "061bf3b975e14ca294cbaea777afeeab",
+          "edgeType": "Edge",
+          "source": "33837195d97f4e5cb0d0e8cb595eb021",
+          "target": "4596d727f1bb4582a48264d766745aa9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e32a87d09a564dcc9312ee64ea1f739c",
+          "edgeType": "Edge",
+          "source": "aefacfed99cd4e6688aed3c7de80a05f",
+          "target": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "4998106de0344f84951f230875a78f3d",
+          "edgeType": "Edge",
+          "source": "9caa8344244b4f23a02692fab2c5bfdc",
+          "target": "aefacfed99cd4e6688aed3c7de80a05f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "051ca3ce53ea4c8484ca4025b933441f",
+          "edgeType": "Branch",
+          "source": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "target": "b9c0a167d3ef4ce9b47a8daad0c215ae",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.bank_issue=Card Services",
+            "mode": "query"
+          },
+          "label": "Card Services"
+        },
+        {
+          "id": "026f5163f4cd471b940e9097b85a68e0",
+          "edgeType": "Edge",
+          "source": "b9c0a167d3ef4ce9b47a8daad0c215ae",
+          "target": "b5ed89df72514bd2832e6445b0e873b9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "afa47d09e0ed4f37af2b60810defe8bc",
+          "edgeType": "Branch",
+          "source": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "target": "9e642b8c5fde46aba28550dda8950aa1",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.bank_issue=Account Management",
+            "mode": "query"
+          },
+          "label": "Account Management"
+        },
+        {
+          "id": "e63e9eb5f57c4ce7ba899c7b5d944aa9",
+          "edgeType": "Edge",
+          "source": "9e642b8c5fde46aba28550dda8950aa1",
+          "target": "b5ed89df72514bd2832e6445b0e873b9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cdffc0c73a86446b9b54444051f28036",
+          "edgeType": "Branch",
+          "source": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "target": "8f00d24c516c48808e1b172820a3f219",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.bank_issue=Technical Support",
+            "mode": "query"
+          },
+          "label": "Technical Support"
+        },
+        {
+          "id": "02986e4f67c042c79e413c0000c6af2b",
+          "edgeType": "Edge",
+          "source": "8f00d24c516c48808e1b172820a3f219",
+          "target": "b5ed89df72514bd2832e6445b0e873b9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "fce1e64454934849be22689ac927ce2c",
+          "edgeType": "Branch",
+          "source": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "target": "52a1a840c83f46cf8878a3ffaa41a572",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.bank_issue=Billing and Payment",
+            "mode": "query"
+          },
+          "label": "Billing and Payment"
+        },
+        {
+          "id": "2065d84592124590919456b3a5f385c4",
+          "edgeType": "Edge",
+          "source": "52a1a840c83f46cf8878a3ffaa41a572",
+          "target": "b5ed89df72514bd2832e6445b0e873b9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "9c2636b1a6f7475da58102744315a3f7",
+          "edgeType": "Branch",
+          "source": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "target": "bbf3b0d4c5db48a9846fff75e818699d",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.bank_issue=General Inquiries",
+            "mode": "query"
+          },
+          "label": "General Inquiries"
+        },
+        {
+          "id": "75f608c4ee1044b3a3238ada34fb208a",
+          "edgeType": "Edge",
+          "source": "bbf3b0d4c5db48a9846fff75e818699d",
+          "target": "b5ed89df72514bd2832e6445b0e873b9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "813a4edafd1240eeb00844372c67c0bf",
+          "edgeType": "Branch",
+          "source": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "target": "67b76bf72f3b4ee9a56ba3feb2693e59",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.bank_issue=Fraud Prevention",
+            "mode": "query"
+          },
+          "label": "Fraud Prevention"
+        },
+        {
+          "id": "b2b0035003d14493acadff842c72e4a5",
+          "edgeType": "Edge",
+          "source": "67b76bf72f3b4ee9a56ba3feb2693e59",
+          "target": "b5ed89df72514bd2832e6445b0e873b9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "19579d92c4ac46cbbbfcec3500a07b40",
+          "edgeType": "Branch",
+          "source": "1b0dde72ecfb40bdb5f998f3f7cdc301",
+          "target": "1a6d4913a09445248a476ae8d6ee2e10",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.bank_issue=Loan and mortgage",
+            "mode": "query"
+          },
+          "label": "Loan and Mortgage"
+        },
+        {
+          "id": "20099fd8595444ddb6663ef66b92101d",
+          "edgeType": "Edge",
+          "source": "1a6d4913a09445248a476ae8d6ee2e10",
+          "target": "b5ed89df72514bd2832e6445b0e873b9",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "b9d6be2091074896aa2fe0c525f8775b",
+          "edgeType": "Edge",
+          "source": "b5ed89df72514bd2832e6445b0e873b9",
+          "target": "a976bfb111dd4d67b3e37fc9a972d5de",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "690159f42230418d858c8e95f257aa63",
+          "edgeType": "Branch",
+          "source": "a976bfb111dd4d67b3e37fc9a972d5de",
+          "target": "29582ce2dc2940fe8b2f3be9e616de5d",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.is_this_issue_resolved=",
+            "mode": "query"
+          },
+          "label": "No"
+        },
+        {
+          "id": "bfd9502e92be4833b1acc6975592d189",
+          "edgeType": "Edge",
+          "source": "29582ce2dc2940fe8b2f3be9e616de5d",
+          "target": "7aff329e150e4b52aed60dd028ec9856",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a512d09d88144f828a12ce0014b54cc1",
+          "edgeType": "Edge",
+          "source": "7aff329e150e4b52aed60dd028ec9856",
+          "target": "a5a2be1e2ac64d36b04c1e0c63ff7bce",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "38a190b975cf4428bf0c647ab4e30d36",
+          "edgeType": "Edge",
+          "source": "a5a2be1e2ac64d36b04c1e0c63ff7bce",
+          "target": "33837195d97f4e5cb0d0e8cb595eb021",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "323cc189990743119d455a612672c8ee",
+          "edgeType": "Branch",
+          "source": "a976bfb111dd4d67b3e37fc9a972d5de",
+          "target": "88c966eb9729437faa1653d6cd433855",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.is_this_issue_resolved=true",
+            "mode": "query"
+          },
+          "label": "Yes"
+        },
+        {
+          "id": "b8fcb8cb5aa448e68d34f7b298850c6c",
+          "edgeType": "Edge",
+          "source": "88c966eb9729437faa1653d6cd433855",
+          "target": "4596d727f1bb4582a48264d766745aa9",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "f5f1ec526f2943b59bd388c23a2a2dde": {
+      "id": "f5f1ec526f2943b59bd388c23a2a2dde",
+      "name": "bank_issue",
+      "label": "Bank Issue",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Account Management",
+          "value": "Account Management"
+        },
+        {
+          "label": "Card Services",
+          "value": "Card Services"
+        },
+        {
+          "label": "Technical Support",
+          "value": "Technical Support",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Transactional Support",
+          "value": "Transactional Support",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Billing and Payment",
+          "value": "Billing and Payment",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Fraud Prevention",
+          "value": "Fraud Prevention",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "General Inquiries",
+          "value": "General Inquiries",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Loan and mortgage",
+          "value": "Loan and mortgage",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "aefacfed99cd4e6688aed3c7de80a05f",
+      "isHidden": false
+    },
+    "478ffe70e8624bb4a8056ed841cf508e": {
+      "id": "478ffe70e8624bb4a8056ed841cf508e",
+      "name": "is_this_issue_resolved",
+      "label": "Is This Issue Resolved",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "b5ed89df72514bd2832e6445b0e873b9",
+      "isHidden": false
+    },
+    "1224460f55c048a2922c319f5fd8fade": {
+      "id": "1224460f55c048a2922c319f5fd8fade",
+      "name": "short_description",
+      "label": "Short Description",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcxNDYzNjU1OTc4OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "29582ce2dc2940fe8b2f3be9e616de5d",
+      "isHidden": false
+    },
+    "8dae17f7a73e461b8a9c4a9de7518a6b": {
+      "id": "8dae17f7a73e461b8a9c4a9de7518a6b",
+      "name": "description",
+      "label": "Description",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTcxNDYzNjYzNzQwNSBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      },
+      "nodeId": "7aff329e150e4b52aed60dd028ec9856",
+      "isHidden": false
+    },
+    "2b08553b3ad840a69f0fe05ed2a4129e": {
+      "id": "2b08553b3ad840a69f0fe05ed2a4129e",
+      "name": "create_a_incident",
+      "label": "Create A Incident",
+      "varType": "reference",
+      "table": "x_1129750_banking_bank_incident",
+      "inactive": false,
+      "category": "vaInputs",
+      "nodeId": "a5a2be1e2ac64d36b04c1e0c63ff7bce",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>_PRVW__8dd516f34bb94210dc3ccac8ae67c846</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 06:49:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8dd5127793b942100c147c018bba10af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_cb_design_topic_8dd5127793b942100c147c018bba10af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 06:49:24</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

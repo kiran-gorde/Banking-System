@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.text_index_translations=true,display_image=photo,global_search_config_handler=UserConfig,ih_process_sync_enabled=true,iterativeDelete=true,metadata_link_exempt=true,ref_ac_columns=email,ref_ac_columns_search=true,ref_ac_order_by=name,ref_auto_completer=AJAXTableCompleter" create_roles="user_admin" db_object_id="44843c317d31311076daf29f52070d56" defaultsort="-1" dynamic_creation_script="dynamicUserCreation(current, value);" label="User" max_length="40" name="sys_user" text_index="true" type="collection">
+        <element label="Adhaar No" max_length="100" name="x_1129750_banking_adhaar_no" type="string"/>
+        <element label="DateOfBirth" max_length="40" name="x_1129750_banking_dateofbirth" type="glide_date"/>
+        <element default="javascript:new GlideDate().getDisplayValue();" label="Date Of Opened" max_length="100" name="x_1129750_banking_date_of_opened" type="glide_date"/>
+        <element label="initial Deposit Amount" max_length="100" name="x_1129750_banking_initial_deposit_amount" type="integer"/>
+        <element choice="1" label="Marital Status" max_length="40" name="x_1129750_banking_marital_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Single" sequence="0" value="Single"/>
+                <element inactive_on_update="false" label="Married" sequence="1" value="Married"/>
+                <element inactive_on_update="false" label="Divorced" sequence="2" value="Divorced"/>
+            </choice>
+        </element>
+        <element label="Nationality" max_length="60" name="x_1129750_banking_nationality" type="string"/>
+        <element choice="1" label="Type Of Account" max_length="40" name="x_1129750_banking_type_of_account" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Current" sequence="0" value="Current"/>
+                <element inactive_on_update="false" label="Saving" sequence="1" value="Saving"/>
+            </choice>
+        </element>
+    </element>
+</database>

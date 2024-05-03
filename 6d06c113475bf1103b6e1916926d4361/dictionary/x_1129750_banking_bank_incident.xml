@@ -2,18 +2,42 @@
     <element audit="true" db_object_id="949984154723f9103b6e1916926d433a" extends="task" label="Bank Incident" max_length="40" name="x_1129750_banking_bank_incident" type="collection">
         <element choice="1" label="Category" max_length="40" name="category" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Banking Services" value="banking services"/>
-                <element inactive_on_update="false" label="Finance Services" value="finance services"/>
+                <element inactive_on_update="false" label="Account Management" value="Account Management"/>
+                <element inactive_on_update="false" label="Billing and Payments" value="Billing and Payments"/>
+                <element inactive_on_update="false" label="Card Services" value="Card Services"/>
+                <element inactive_on_update="false" label="Fraud Prevention" value="Fraud Prevention"/>
+                <element inactive_on_update="false" label="General Inquiries" value="General Inquiries"/>
+                <element inactive_on_update="false" label="Loan and Mortgage Services" value="Loan and Mortgage Services"/>
+                <element inactive_on_update="false" label="Technical Support" value="Technical Support"/>
+                <element inactive_on_update="false" label="Transaction Support" value="Transaction Support"/>
             </choice>
         </element>
-        <element attributes="encode_utf8=false" label="Customer name" max_length="32" name="customer_name" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false,ref_contributions=user_show_incidents;add_edit_user;whatsupchat" default="javascript:gs.getUser().email" dynamic_default_value="ba8f4b76eb330100d4360c505206feb2" label="Customer name" mandatory="true" max_length="32" name="customer_name" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" choice="1" dependent="category" dependent_on_field="category" label="Subcategory" max_length="40" name="subcategory" type="string" use_dependent_field="true">
             <choice>
-                <element dependent_value="finance services" inactive_on_update="false" label="Account Maintainance" value="AM"/>
-                <element dependent_value="banking services" inactive_on_update="false" label="ATM Services" value="AS"/>
-                <element dependent_value="banking services" inactive_on_update="false" label="Existing Account" value="EA"/>
-                <element dependent_value="banking services" inactive_on_update="false" label="Open New Account" value="ONA"/>
-                <element dependent_value="finance services" inactive_on_update="false" label="Transaction Processing" value="TP"/>
+                <element dependent_value="Account Management" inactive_on_update="false" label="Account Access" value="Account Access"/>
+                <element dependent_value="Account Management" inactive_on_update="false" label="Account Closure" value="Account Closure"/>
+                <element dependent_value="Billing and Payments" inactive_on_update="false" label="Automatic Payment Setup" value="Automatic Payment Setup"/>
+                <element dependent_value="Billing and Payments" inactive_on_update="false" label="Billing Inquiry" value="Billing Inquiry"/>
+                <element dependent_value="Card Services" inactive_on_update="false" label="Card Activation" value="Card Activation"/>
+                <element dependent_value="Card Services" inactive_on_update="false" label="Card Replacement" value="Card Replacement"/>
+                <element dependent_value="Technical Support" inactive_on_update="false" label="Error During Transaction" value="Error During Transaction"/>
+                <element dependent_value="Fraud Prevention" inactive_on_update="false" label="Fraudulent Transaction Report" value="Fraudulent Transaction Report"/>
+                <element dependent_value="Loan and Mortgage Services" inactive_on_update="false" label="Loan Application Status" value="Loan Application Status"/>
+                <element dependent_value="Card Services" inactive_on_update="false" label="Lost or Stolen Card" value="Lost or Stolen Card"/>
+                <element dependent_value="Technical Support" inactive_on_update="false" label="Mobile Banking App Issue" value="Mobile Banking App Issue"/>
+                <element dependent_value="Loan and Mortgage Services" inactive_on_update="false" label="Mortgage Approval Inquiry" value="Mortgage Approval Inquiry"/>
+                <element dependent_value="Technical Support" inactive_on_update="false" label="Online Banking Platform Issue" value="Online Banking Platform Issue"/>
+                <element dependent_value="Account Management" inactive_on_update="false" label="Password Reset" value="Password Reset"/>
+                <element dependent_value="Billing and Payments" inactive_on_update="false" label="Payment Issue" value="Payment Issue"/>
+                <element dependent_value="Loan and Mortgage Services" inactive_on_update="false" label="Payment Schedule Adjustment" value="Payment Schedule Adjustment"/>
+                <element dependent_value="Account Management" inactive_on_update="false" label="Personal Information Update" value="Personal Information Update"/>
+                <element dependent_value="General Inquiries" inactive_on_update="false" label="Policy Information" value="Policy Information"/>
+                <element dependent_value="General Inquiries" inactive_on_update="false" label="Product Information" value="Product Information"/>
+                <element dependent_value="General Inquiries" inactive_on_update="false" label="Service Information" value="Service Information"/>
+                <element dependent_value="Fraud Prevention" inactive_on_update="false" label="Suspicious Activity Report" value="Suspicious Activity Report"/>
+                <element dependent_value="Transaction Support" inactive_on_update="false" label="Transaction Disputes" value="Transaction Disputes"/>
+                <element dependent_value="Transaction Support" inactive_on_update="false" label="Transaction History Inquiry" value="Transaction History Inquiry"/>
             </choice>
         </element>
     </element>

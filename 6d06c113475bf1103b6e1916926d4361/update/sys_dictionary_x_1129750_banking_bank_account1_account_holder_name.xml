@@ -33,14 +33,14 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
         <name>x_1129750_banking_bank_account1</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_1129750_banking_customer1">x_1129750_banking_customer1</reference>
+        <reference display_value="" name="sys_user">sys_user</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
         <sys_update_name>sys_dictionary_x_1129750_banking_bank_account1_account_holder_name</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 07:39:00</sys_updated_on>
+        <sys_updated_on>2024-05-03 05:27:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

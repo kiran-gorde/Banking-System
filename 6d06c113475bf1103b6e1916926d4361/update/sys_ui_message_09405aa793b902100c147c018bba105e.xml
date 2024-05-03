@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>va:topic:5b95b6b293b942100c147c018bba10c4:node:33837195d97f4e5cb0d0e8cb595eb021:field:0 {0} {1} {2} {3} {4}</key>
+        <language>en</language>
+        <message>**Incident ceated succesfully here is the info of incident you have created now**
+**Caller:**
+{0}
+**Number:**
+{1}
+**Short\_Description:**
+{2}
+**Description:**
+{3}
+**Category:**
+{4}</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 11:46:36</sys_created_on>
+        <sys_id>09405aa793b902100c147c018bba105e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>va:topic:5b95b6b293b942100c147c018bba10c4:node:33837195d97f4e5cb0d0e8cb595eb021:field:0 {0} {1} {2} {3} {4}</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_ui_message_09405aa793b902100c147c018bba105e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 11:46:36</sys_updated_on>
+    </sys_ui_message>
+</record_update>

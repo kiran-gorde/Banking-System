@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
     <sysevent_in_email_action action="INSERT_OR_UPDATE">
         <action>record_action</action>
-        <active>true</active>
+        <active>false</active>
         <assignment_operator/>
         <condition_script/>
         <description/>
         <event_name>email.read</event_name>
-        <filter_condition table="sys_email">subjectLIKEbanking issue^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="banking issue"/>
+        <filter_condition table="sys_email">subjectLIKEbanking issue^subjectISNOTEMPTY^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="banking issue"/>
+            <item endquery="false" field="subject" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <from/>
@@ -44,7 +45,7 @@ if (current.canCreate())
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b0e6be7047ab79103b6e1916926d4353</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Banking Incident creation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
@@ -52,7 +53,7 @@ if (current.canCreate())
         <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
         <sys_update_name>sysevent_in_email_action_b0e6be7047ab79103b6e1916926d4353</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-06 03:59:05</sys_updated_on>
+        <sys_updated_on>2024-05-02 10:52:13</sys_updated_on>
         <table>x_1129750_banking_bank_incident</table>
         <template>short_descriptionDYNAMICb637bd21ef3221002841f7f775c0fbb6^descriptionDYNAMIC367bf121ef3221002841f7f775c0fbe2^EQ</template>
         <type>new</type>

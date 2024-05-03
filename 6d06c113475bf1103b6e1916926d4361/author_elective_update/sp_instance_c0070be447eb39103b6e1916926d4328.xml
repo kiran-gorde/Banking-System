@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">1fd64be447eb39103b6e1916926d434f</sp_column>
+        <sp_widget display_value="My Requests">8cc0df25875023000f220cf888cb0bb5</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 11:42:42</sys_created_on>
+        <sys_id>c0070be447eb39103b6e1916926d4328</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Bank Requests</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sp_instance_c0070be447eb39103b6e1916926d4328</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-02 12:23:01</sys_updated_on>
+        <title>Bank Requests</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"title": {
+		"value": "Bank Requests",
+		"displayValue": "Bank Requests"
+	},
+	"show_view": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"items_per_page": {
+		"value": 2,
+		"displayValue": "2"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=c0070be447eb39103b6e1916926d4328"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>sp_instance_c0070be447eb39103b6e1916926d4328</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;
+    &lt;sp_instance action="INSERT_OR_UPDATE"&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;class_name/&gt;
+        &lt;color&gt;default&lt;/color&gt;
+        &lt;css/&gt;
+        &lt;glyph/&gt;
+        &lt;id/&gt;
+        &lt;order&gt;1&lt;/order&gt;
+        &lt;roles/&gt;
+        &lt;short_description/&gt;
+        &lt;size&gt;md&lt;/size&gt;
+        &lt;sp_column display_value="2"&gt;1fd64be447eb39103b6e1916926d434f&lt;/sp_column&gt;
+        &lt;sp_widget display_value="My Requests"&gt;8cc0df25875023000f220cf888cb0bb5&lt;/sp_widget&gt;
+        &lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2024-01-02 11:42:42&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;c0070be447eb39103b6e1916926d4328&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;Bank Requests&lt;/sys_name&gt;
+        &lt;sys_package display_value="Banking System" source="x_1129750_banking"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Banking System"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sp_instance_c0070be447eb39103b6e1916926d4328&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2024-01-02 12:23:01&lt;/sys_updated_on&gt;
+        &lt;title&gt;Bank Requests&lt;/title&gt;
+        &lt;url/&gt;
+        &lt;widget_parameters&gt;&lt;![CDATA[{
+	"title": {
+		"value": "Bank Requests",
+		"displayValue": "Bank Requests"
+	},
+	"show_view": {
+		"value": "true",
+		"displayValue": "true"
+	},
+	"items_per_page": {
+		"value": 2,
+		"displayValue": "2"
+	}
+}]]&gt;&lt;/widget_parameters&gt;
+    &lt;/sp_instance&gt;
+    &lt;sys_translated_text action="delete_multiple" query="documentkey=c0070be447eb39103b6e1916926d4328"/&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-1820661379</payload_hash>
+        <record_name>Bank Requests</record_name>
+        <reverted_from/>
+        <source>bd0cd56a937102100c147c018bba10a6</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-29 05:24:44</sys_created_on>
+        <sys_id>c61cdd6a937102100c147c018bba1043</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f285008eb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-29 05:24:44</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>861cdd6aab71021026ba48a2b3c5a943</update_guid>
+        <update_guid_history>861cdd6aab71021026ba48a2b3c5a943:-1820661379</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Bank Requests">b3df163293b542100c147c018bba1057</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-30 04:59:21</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>171e228b09a948f08382fefcebe10b10</sys_id>
+        <sys_metadata>c0070be447eb39103b6e1916926d4328</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bank Requests</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sp_instance_c0070be447eb39103b6e1916926d4328</sys_update_name>
+        <sys_update_version display_value="sp_instance_c0070be447eb39103b6e1916926d4328">c61cdd6a937102100c147c018bba1043</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-30 04:59:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

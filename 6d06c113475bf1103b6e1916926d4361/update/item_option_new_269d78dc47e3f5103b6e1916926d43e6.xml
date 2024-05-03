@@ -9,7 +9,7 @@
         <choice_table/>
         <create_roles/>
         <default_html_value/>
-        <default_value/>
+        <default_value>javascript:gs.getUserID();</default_value>
         <delete_roles/>
         <delivery_plan/>
         <description/>
@@ -17,6 +17,8 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
+        <dynamic_value_dot_walk_path/>
+        <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
         <example_text/>
         <field>customer_name</field>
@@ -35,11 +37,11 @@
         <lookup_value/>
         <macro/>
         <macroponent/>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>customer_name</name>
+        <name>user_name</name>
         <order>100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
@@ -53,9 +55,11 @@
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
         <record_producer_table>x_1129750_banking_bank_incident</record_producer_table>
-        <reference>x_1129750_banking_customer1</reference>
-        <reference_qual/>
-        <reference_qual_condition/>
+        <reference>sys_user</reference>
+        <reference_qual>roles=x_1129750_banking.customer_bank^EQ</reference_qual>
+        <reference_qual_condition table="sys_user">roles=x_1129750_banking.customer_bank^EQ<item endquery="false" field="roles" goto="false" newquery="false" operator="=" or="false" value="x_1129750_banking.customer_bank"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </reference_qual_condition>
         <rich_text/>
         <roles_to_use_also_request_for/>
         <save_script><![CDATA[/** This script is executed before the Record is generated
@@ -75,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-01-02 08:37:50</sys_created_on>
         <sys_id>269d78dc47e3f5103b6e1916926d43e6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>customer_name</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Customer Name</sys_name>
         <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
         <sys_policy/>
         <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
         <sys_update_name>item_option_new_269d78dc47e3f5103b6e1916926d43e6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-02 09:40:03</sys_updated_on>
+        <sys_updated_on>2024-05-03 06:28:12</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

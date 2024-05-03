@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>43d829d147a7f9103b6e1916926d4337</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>0d26ad6693b102100c147c018bba108c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>user_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>47d829d147a7f9103b6e1916926d4337</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>8d26ad6693b102100c147c018bba108c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>contact_number</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>4bd829d147a7f9103b6e1916926d4337</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>0126ad6693b102100c147c018bba108d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>pancard_no</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>4fd829d147a7f9103b6e1916926d4337</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>8126ad6693b102100c147c018bba108d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>adhaar_no</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>43d829d147a7f9103b6e1916926d4338</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>0526ad6693b102100c147c018bba108d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>address</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>47d829d147a7f9103b6e1916926d4338</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>8526ad6693b102100c147c018bba108d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>date_of_birth</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>4bd829d147a7f9103b6e1916926d4338</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>0926ad6693b102100c147c018bba108d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>gender</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>4fd829d147a7f9103b6e1916926d4338</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>8926ad6693b102100c147c018bba108d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,55 @@
             <element>email</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-01-04 12:46:50</sys_created_on>
-            <sys_id>43d829d147a7f9103b6e1916926d4339</sys_id>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>0d26ad6693b102100c147c018bba108d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-01-04 12:46:50</sys_updated_on>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>8d26ad6693b102100c147c018bba108d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>city</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>0126ad6693b102100c147c018bba108e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>zip</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-04-29 06:08:38</sys_created_on>
+            <sys_id>8126ad6693b102100c147c018bba108e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1129750_banking_customer1" sys_domain="global" view="Default view">6b29466447e739103b6e1916926d4373</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-04-29 06:08:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

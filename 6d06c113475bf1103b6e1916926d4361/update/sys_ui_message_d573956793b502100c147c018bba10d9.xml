@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>va:topic:5b95b6b293b942100c147c018bba10c4:node:75572484f3ce4275999e97c1efb2e37f:field:0</key>
+        <language>en</language>
+        <message>1.Card Activation:
+
+Title: "Activating Your Card"
+
+Description: This knowledge article provides step-by-step instructions for activating your new card:
+
+Via Phone: Call our dedicated activation line at [insert phone number] from your registered phone number.
+
+Through Online Banking: Log in to your online banking account and navigate to the "Card Services" or "Manage Cards" section. Select the option to activate your card and follow the prompts.
+
+At an ATM: Insert your card into any bank ATM and follow the on-screen instructions for activation.
+
+By Contacting Customer Support: If you encounter any issues during the activation process, please contact our customer support team for assistance.
+
+2.Card Replacement:
+
+Title: "Requesting a Card Replacement"
+
+Description: If your card is damaged, lost, or stolen, you can request a replacement card by following these steps:
+
+Report the Issue: Immediately report the lost, stolen, or damaged card to our customer support team either through our hotline or via online banking.
+
+Verification: For security purposes, you may be asked to verify your identity before a replacement card can be issued.
+
+Delivery: Once your request is processed, your replacement card will be delivered to the address on file within [insert timeframe].
+
+Activation: Upon receiving your replacement card, follow the activation instructions provided in the previous knowledge article.
+
+If you suspect fraudulent activity on your lost or stolen card, please inform our customer support team immediately.
+
+3.Card Lost or Stolen:
+
+Title: "Reporting a Lost or Stolen Card"
+
+Description: If your card is lost or stolen, it's important to take immediate action to prevent unauthorized use. Follow these steps:
+
+Report the Loss: Contact our customer support team immediately to report the loss or theft of your card. This helps prevent unauthorized transactions.
+
+Card Block: Request to block your lost or stolen card to prevent any further transactions.
+
+Verification: For security purposes, you may be asked to verify your identity and provide details about the lost or stolen card.
+
+Replacement: Once the loss is reported, you can follow the steps outlined in the "Replacement" knowledge article to request a replacement card.
+
+Remember to monitor your account for any unauthorized transactions and report them promptly to our customer support team.</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-02 07:20:56</sys_created_on>
+        <sys_id>d573956793b502100c147c018bba10d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>va:topic:5b95b6b293b942100c147c018bba10c4:node:75572484f3ce4275999e97c1efb2e37f:field:0</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_ui_message_d573956793b502100c147c018bba10d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-02 07:20:56</sys_updated_on>
+    </sys_ui_message>
+</record_update>

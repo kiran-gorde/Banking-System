@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="DELETE">
+        <field>state</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-06 08:24:38</sys_created_on>
+        <sys_id>fb580e7493c202100c147c018bba101a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_db_view_table_field_fb580e7493c202100c147c018bba101a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-06 08:24:38</sys_updated_on>
+        <table>x_1129750_banking_bank_incident</table>
+        <view_table display_value="x_1129750_banking_bank_incident">0455063493c202100c147c018bba108d</view_table>
+    </sys_db_view_table_field>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>sys_db_view_table_field_fb580e7493c202100c147c018bba101a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field"><sys_db_view_table_field action="INSERT_OR_UPDATE"><field>state</field><sys_class_name>sys_db_view_table_field</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-06 08:24:38</sys_created_on><sys_id>fb580e7493c202100c147c018bba101a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>state</sys_name><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>sys_db_view_table_field_fb580e7493c202100c147c018bba101a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-06 08:24:38</sys_updated_on><table>x_1129750_banking_bank_incident</table><view_table display_value="x_1129750_banking_bank_incident">0455063493c202100c147c018bba108d</view_table></sys_db_view_table_field></record_update>]]></payload>
+        <payload_hash>220771200</payload_hash>
+        <record_name>state</record_name>
+        <reverted_from/>
+        <source>724c1d2a937102100c147c018bba1082</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-06 08:24:38</sys_created_on>
+        <sys_id>6568063893c202100c147c018bba1024</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f4d013ff30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-06 08:24:38</sys_updated_on>
+        <type>View Field</type>
+        <update_guid>69680638fac2021048ee3409afc8c223</update_guid>
+        <update_guid_history>69680638fac2021048ee3409afc8c223:220771200</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-06 08:33:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table_field">sys_db_view_table_field</sys_db_object>
+        <sys_id>0baa555631b645caba461a6b2cf3e131</sys_id>
+        <sys_metadata>fb580e7493c202100c147c018bba101a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="x_1129750_banking_bank_incident">0455063493c202100c147c018bba108d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_field_fb580e7493c202100c147c018bba101a</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_field_fb580e7493c202100c147c018bba101a">6568063893c202100c147c018bba1024</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-06 08:33:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

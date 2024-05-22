@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>true</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Type of Request">97ac89e5938e82100c147c018bba1010</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-08 12:06:14</sys_created_on>
+        <sys_id>6fed4969938e82100c147c018bba1075</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Password Reset</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>question_choice_6fed4969938e82100c147c018bba1075</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:25:12</sys_updated_on>
+        <text>Password Reset</text>
+        <value>Password Reset</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=6fed4969938e82100c147c018bba1075"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>question_choice_6fed4969938e82100c147c018bba1075</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>true</inactive><order>200</order><published_ref/><question display_value="Type of Request">97ac89e5938e82100c147c018bba1010</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-08 12:06:14</sys_created_on><sys_id>6fed4969938e82100c147c018bba1075</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Password Reset</sys_name><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>question_choice_6fed4969938e82100c147c018bba1075</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-10 06:25:12</sys_updated_on><text>Password Reset</text><value>Password Reset</value></question_choice><fx_price action="delete_multiple" query="id=6fed4969938e82100c147c018bba1075"/></record_update>]]></payload>
+        <payload_hash>1387849528</payload_hash>
+        <record_name>Password Reset</record_name>
+        <reverted_from/>
+        <source>724c1d2a937102100c147c018bba1082</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 06:25:13</sys_created_on>
+        <sys_id>db639a82934202100c147c018bba104b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f612d594c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:25:13</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>5f639a82be4202102dd51accb1985e4a</update_guid>
+        <update_guid_history>5f639a82be4202102dd51accb1985e4a:1387849528,80a115e5a68e8210327a1409d1577848:-975160487,8b4ecd694b8e8210a16cf9def4369f65:1711049746</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Password Reset">aa945e06934202100c147c018bba103e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 06:30:21</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>38080498483a4afab3bec8bdc7388ca4</sys_id>
+        <sys_metadata>6fed4969938e82100c147c018bba1075</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Password Reset</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="Type of Request">97ac89e5938e82100c147c018bba1010</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>question_choice_6fed4969938e82100c147c018bba1075</sys_update_name>
+        <sys_update_version display_value="question_choice_6fed4969938e82100c147c018bba1075">db639a82934202100c147c018bba104b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:30:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

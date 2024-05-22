@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a2ba3b3b933182100c147c018bba10c3" label="Customer Feedback" max_length="40" name="x_1129750_banking_customer_feedback" type="collection">
+        <element default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Name Of Customer" max_length="32" name="customer_name" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Please enter the Feedback" max_length="600" name="please_enter_the_feedback" type="string"/>
+        <index name="index">
+            <element name="customer_name"/>
+        </index>
+    </element>
+</database>

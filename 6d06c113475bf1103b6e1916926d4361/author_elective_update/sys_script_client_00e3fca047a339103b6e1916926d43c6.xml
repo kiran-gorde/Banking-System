@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>account_holder_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>populate fields in table</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+  var custName=g_form.getReference('account_holder_name',callback);
+	//alert(devicename);
+	function callback(custName)
+	{
+		//alert('Device Name : '+deviceName.device_name);
+		//alert(JSON.stringify(deviceName));
+		//alert('Device type : '+deviceName.device_type);
+//var value1=g_form.setValue('adhaar_no',custName.adhaar_no);
+//var value2=g_form.setValue('pancard_no',custName.pancard_no);
+	var value3=g_form.setValue('emailid',custName.email);	
+			var value4=g_form.setValue('contact_no',custName.contact_number);
+			//var value5=g_form.setValue('date_of_birth',custName.date_of_birth);
+		//var value6=g_form.setValue('address',custName.address);
+		
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-02 01:05:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>00e3fca047a339103b6e1916926d43c6</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>populate fields in table</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_script_client_00e3fca047a339103b6e1916926d43c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 01:45:40</sys_updated_on>
+        <table>x_1129750_banking_bank_account1</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>sys_script_client_00e3fca047a339103b6e1916926d43c6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;account_holder_name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;populate fields in table&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+  var custName=g_form.getReference('account_holder_name',callback);
+	//alert(devicename);
+	function callback(custName)
+	{
+		//alert('Device Name : '+deviceName.device_name);
+		//alert(JSON.stringify(deviceName));
+		//alert('Device type : '+deviceName.device_type);
+//var value1=g_form.setValue('adhaar_no',custName.adhaar_no);
+//var value2=g_form.setValue('pancard_no',custName.pancard_no);
+	var value3=g_form.setValue('emailid',custName.email);	
+			var value4=g_form.setValue('contact_no',custName.contact_number);
+			//var value5=g_form.setValue('date_of_birth',custName.date_of_birth);
+		//var value6=g_form.setValue('address',custName.address);
+		
+	}
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-02 01:05:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;00e3fca047a339103b6e1916926d43c6&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;populate fields in table&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Banking System" source="x_1129750_banking"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Banking System"&gt;6d06c113475bf1103b6e1916926d4361&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_00e3fca047a339103b6e1916926d43c6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-05-03 01:45:40&lt;/sys_updated_on&gt;&lt;table&gt;x_1129750_banking_bank_account1&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1014723555</payload_hash>
+        <record_name>populate fields in table</record_name>
+        <reverted_from/>
+        <source>724c1d2a937102100c147c018bba1082</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-03 01:45:40</sys_created_on>
+        <sys_id>bf405dff937542100c147c018bba107a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f3c20e6050000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-03 01:45:40</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>f3405dff7d754210c937df92214c117a</update_guid>
+        <update_guid_history>f3405dff7d754210c937df92214c117a:-1014723555,bf1fc57fa1754210a4d71583687bcf52:835525744,e0d1a22b4af90210028558516f8d885a:-1875770595,fe50eaa777f90210fe11fc7a643490ae:-1873273615,2aa469260db10210b84c2d9c15799f57:-1875770595,4b1c51aaa171021021c7befe70348605:-231579625</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-05 11:11:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>1cc549cc1a46476895bbe9e266ca2240</sys_id>
+        <sys_metadata>00e3fca047a339103b6e1916926d43c6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>populate fields in table</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="Bank Account1">ac13bf334753b5103b6e1916926d4385</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>sys_script_client_00e3fca047a339103b6e1916926d43c6</sys_update_name>
+        <sys_update_version display_value="sys_script_client_00e3fca047a339103b6e1916926d43c6">bf405dff937542100c147c018bba107a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-05 11:11:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

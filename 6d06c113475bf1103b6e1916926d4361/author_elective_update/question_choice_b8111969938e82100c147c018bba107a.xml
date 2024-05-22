@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>600</order>
+        <published_ref/>
+        <question display_value="Type of Request">97ac89e5938e82100c147c018bba1010</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-08 12:19:27</sys_created_on>
+        <sys_id>b8111969938e82100c147c018bba107a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Balance Inquiry</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>question_choice_b8111969938e82100c147c018bba107a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:27:49</sys_updated_on>
+        <text>Balance Inquiry</text>
+        <value>Balance Inquiry</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=b8111969938e82100c147c018bba107a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>question_choice_b8111969938e82100c147c018bba107a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>600</order><published_ref/><question display_value="Type of Request">97ac89e5938e82100c147c018bba1010</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-08 12:19:27</sys_created_on><sys_id>b8111969938e82100c147c018bba107a</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Balance Inquiry</sys_name><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>question_choice_b8111969938e82100c147c018bba107a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-10 06:27:49</sys_updated_on><text>Balance Inquiry</text><value>Balance Inquiry</value></question_choice><fx_price action="delete_multiple" query="id=b8111969938e82100c147c018bba107a"/></record_update>]]></payload>
+        <payload_hash>-1580544900</payload_hash>
+        <record_name>Balance Inquiry</record_name>
+        <reverted_from/>
+        <source>724c1d2a937102100c147c018bba1082</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 06:27:49</sys_created_on>
+        <sys_id>2104d6c2934202100c147c018bba10d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f612fbcd80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:27:49</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>6504d6c2f7420210519c1a92e437cbd8</update_guid>
+        <update_guid_history>6504d6c2f7420210519c1a92e437cbd8:-1580544900,4b73d642c04202105c3d0b3f014a034c:797046971,59a1916d668e82100b1364a29f2bad37:1257263417,b851dd69968e8210fe4718a71856a06d:1717479863</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Balance Inquiry">35b59e46934202100c147c018bba10bd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 06:35:13</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>15ab21321ad443ea82511dc09a5d3e99</sys_id>
+        <sys_metadata>b8111969938e82100c147c018bba107a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Balance Inquiry</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="Type of Request">97ac89e5938e82100c147c018bba1010</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>question_choice_b8111969938e82100c147c018bba107a</sys_update_name>
+        <sys_update_version display_value="question_choice_b8111969938e82100c147c018bba107a">2104d6c2934202100c147c018bba10d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:35:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

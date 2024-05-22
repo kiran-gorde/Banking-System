@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>300</order>
+        <published_ref/>
+        <question display_value="Type of Request">97ac89e5938e82100c147c018bba1010</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-08 12:18:34</sys_created_on>
+        <sys_id>975e89e5938e82100c147c018bba10ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Lost Card</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>question_choice_975e89e5938e82100c147c018bba10ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:25:19</sys_updated_on>
+        <text>Lost Card</text>
+        <value>Lost Card</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=975e89e5938e82100c147c018bba10ef"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>question_choice_975e89e5938e82100c147c018bba10ef</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>300</order><published_ref/><question display_value="Type of Request">97ac89e5938e82100c147c018bba1010</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-08 12:18:34</sys_created_on><sys_id>975e89e5938e82100c147c018bba10ef</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Lost Card</sys_name><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>question_choice_975e89e5938e82100c147c018bba10ef</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-10 06:25:19</sys_updated_on><text>Lost Card</text><value>Lost Card</value></question_choice><fx_price action="delete_multiple" query="id=975e89e5938e82100c147c018bba10ef"/></record_update>]]></payload>
+        <payload_hash>-1790132382</payload_hash>
+        <record_name>Lost Card</record_name>
+        <reverted_from/>
+        <source>724c1d2a937102100c147c018bba1082</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 06:25:19</sys_created_on>
+        <sys_id>b873d6c2934202100c147c018bba10d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f612d718b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:25:19</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>bc73d6c2b5420210fd330d1ae5daa0cf</update_guid>
+        <update_guid_history>bc73d6c2b5420210fd330d1ae5daa0cf:-1790132382,a31159690b8e8210df5d1669720cf661:-371270816</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Lost Card">a6945e06934202100c147c018bba1045</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-10 06:30:21</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>21458414152147de848dd890ef3c9544</sys_id>
+        <sys_metadata>975e89e5938e82100c147c018bba10ef</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lost Card</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent display_value="Type of Request">97ac89e5938e82100c147c018bba1010</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>question_choice_975e89e5938e82100c147c018bba10ef</sys_update_name>
+        <sys_update_version display_value="question_choice_975e89e5938e82100c147c018bba10ef">b873d6c2934202100c147c018bba10d0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-10 06:30:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

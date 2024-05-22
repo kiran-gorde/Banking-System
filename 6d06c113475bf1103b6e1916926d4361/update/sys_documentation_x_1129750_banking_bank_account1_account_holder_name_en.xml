@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="account_holder_name" label="Account holder name" language="en" table="x_1129750_banking_bank_account1">
+    <sys_documentation element="account_holder_name" label="Account Holder Name" language="en" table="x_1129750_banking_bank_account1">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>account_holder_name</element>
             <help/>
             <hint/>
-            <label>Account holder name</label>
+            <label>Account Holder Name</label>
             <language>en</language>
             <name>x_1129750_banking_bank_account1</name>
-            <plural>Account holder names</plural>
+            <plural>Account Holder Names</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2023-12-31 07:12:30</sys_created_on>
+            <sys_created_on>2024-05-05 11:13:34</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Account holder name</sys_name>
+            <sys_name>Account Holder Name</sys_name>
             <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
             <sys_policy/>
             <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
             <sys_update_name>sys_documentation_x_1129750_banking_bank_account1_account_holder_name_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2023-12-31 07:12:30</sys_updated_on>
+            <sys_updated_on>2024-05-05 11:13:34</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

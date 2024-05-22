@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-06 08:06:24</sys_created_on>
+        <sys_id>62b30af093c202100c147c018bba1049</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>metric_definition</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_db_view_table_62b30af093c202100c147c018bba1049</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-06 08:06:24</sys_updated_on>
+        <table>metric_definition</table>
+        <variable_prefix>md</variable_prefix>
+        <view display_value="x_1129750_banking_incident_bank">9d9306f093c202100c147c018bba1072</view>
+        <where_clause>md_table='x_1129750_banking_bank_incident'</where_clause>
+    </sys_db_view_table>
+</record_update>

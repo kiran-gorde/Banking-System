@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition">
+    <catalog_dl_definition action="DELETE">
+        <active>true</active>
+        <applies_to>item</applies_to>
+        <catalog_item display_value="Bank incident">273608bb47d375103b6e1916926d435c</catalog_item>
+        <matcher_table>x_1129750_banking_bank_incident</matcher_table>
+        <name>new record</name>
+        <run_on_form_change>true</run_on_form_change>
+        <run_on_insert>true</run_on_insert>
+        <run_on_update>false</run_on_update>
+        <source_table/>
+        <sys_class_name>catalog_dl_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 06:19:22</sys_created_on>
+        <sys_id>2de1c47f930242100c147c018bba102b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>new record</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>catalog_dl_definition_2de1c47f930242100c147c018bba102b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-15 06:19:22</sys_updated_on>
+        <variable_set/>
+    </catalog_dl_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Banking System">6d06c113475bf1103b6e1916926d4361</application>
+        <file_path/>
+        <instance_id>9d0634121b2279dcba5ceb9b2d4bcbac</instance_id>
+        <instance_name>dev216265</instance_name>
+        <name>catalog_dl_definition_2de1c47f930242100c147c018bba102b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_dl_definition"><catalog_dl_definition action="INSERT_OR_UPDATE"><active>true</active><applies_to>item</applies_to><catalog_item display_value="Bank incident">273608bb47d375103b6e1916926d435c</catalog_item><matcher_table>x_1129750_banking_bank_incident</matcher_table><name>new record</name><run_on_form_change>true</run_on_form_change><run_on_insert>true</run_on_insert><run_on_update>false</run_on_update><source_table/><sys_class_name>catalog_dl_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-05-15 06:19:22</sys_created_on><sys_id>2de1c47f930242100c147c018bba102b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>new record</sys_name><sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package><sys_policy/><sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope><sys_update_name>catalog_dl_definition_2de1c47f930242100c147c018bba102b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-05-15 06:19:22</sys_updated_on><variable_set/></catalog_dl_definition></record_update>]]></payload>
+        <payload_hash>369587651</payload_hash>
+        <record_name>new record</record_name>
+        <reverted_from/>
+        <source>724c1d2a937102100c147c018bba1082</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 06:19:22</sys_created_on>
+        <sys_id>d602487f930242100c147c018bba1033</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f7ae7ccc60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-15 06:19:22</sys_updated_on>
+        <type>Catalog Data Lookup Definitions</type>
+        <update_guid>9a02487f19024210e9693ceffac8be32</update_guid>
+        <update_guid_history>9a02487f19024210e9693ceffac8be32:369587651</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="new record">5462887f930242100c147c018bba10c7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-15 06:20:52</sys_created_on>
+        <sys_db_object display_value="" name="catalog_dl_definition">catalog_dl_definition</sys_db_object>
+        <sys_id>89d9aff77f174df08e23154f72157089</sys_id>
+        <sys_metadata>2de1c47f930242100c147c018bba102b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>new record</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_scope_delete display_value="">46679e37a4c4432caad55ac9a3db3d10</sys_scope_delete>
+        <sys_update_name>catalog_dl_definition_2de1c47f930242100c147c018bba102b</sys_update_name>
+        <sys_update_version display_value="catalog_dl_definition_2de1c47f930242100c147c018bba102b">d602487f930242100c147c018bba1033</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-15 06:20:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

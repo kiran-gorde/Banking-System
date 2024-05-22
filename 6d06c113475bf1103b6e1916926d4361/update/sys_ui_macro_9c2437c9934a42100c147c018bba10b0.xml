@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_macro">
+    <sys_ui_macro action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>general</category>
+        <description/>
+        <media_type/>
+        <name>Whatsup</name>
+        <scoped_name>x_1129750_banking_Whatsup</scoped_name>
+        <sys_class_name>sys_ui_macro</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-05-07 10:58:20</sys_created_on>
+        <sys_id>9c2437c9934a42100c147c018bba10b0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Whatsup</sys_name>
+        <sys_package display_value="Banking System" source="x_1129750_banking">6d06c113475bf1103b6e1916926d4361</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Banking System">6d06c113475bf1103b6e1916926d4361</sys_scope>
+        <sys_update_name>sys_ui_macro_9c2437c9934a42100c147c018bba10b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-05-07 11:31:28</sys_updated_on>
+        <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<a><img src="http://pluspng.com/img-png/whatsapp-hd-png-whatsapp-logo-png-1000.png" height="25" width="25" onclick="userwindow('${ref}')" tabindex="0"/></a>
+<script>
+function userwindow(reference)
+{
+	var caller_ref=reference.split(".");
+	var fieldName=caller_ref[1];
+	var _mobNo;
+	var demoText;
+	var number=g_form.getValue('number');
+	var category=g_form.getValue('category');
+	var sysId=g_form.getValue(fieldName);
+	var user=new GlideRecord('sys_user');
+	if(user.get(sysId))
+	{
+		_mobNo=user.mobile_phone.toString();
+		demotext="Number:"+number+"\nCategory"+category;
+	}
+	mob=_mobNo.replace(/[^0-9]+/gi,"");
+	if(mob)
+	{
+		open('https://wa.me/'+_mobNo+'?text='+encodeURIComponent(demoText),'_top');
+
+	}
+	else
+	{
+		g_from.addErrorMessage('mobile number  is not valid');
+	}
+}
+</script>
+</j:jelly>]]></xml>
+    </sys_ui_macro>
+</record_update>

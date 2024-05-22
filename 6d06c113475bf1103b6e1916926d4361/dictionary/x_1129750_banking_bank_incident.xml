@@ -12,7 +12,7 @@
                 <element inactive_on_update="false" label="Transaction Support" value="Transaction Support"/>
             </choice>
         </element>
-        <element attributes="encode_utf8=false,ref_contributions=user_show_incidents;add_edit_user;whatsupchat" default="javascript:gs.getUser().email" dynamic_default_value="ba8f4b76eb330100d4360c505206feb2" label="Customer name" mandatory="true" max_length="32" name="customer_name" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element attributes="encode_utf8=false,ref_contributions=user_show_incidents;x_1129750_banking_Whatsup" default="javascript:gs.getUser().email" dynamic_default_value="ba8f4b76eb330100d4360c505206feb2" label="Customer name" mandatory="true" max_length="32" name="customer_name" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element attributes="edge_encryption_enabled=true" choice="1" dependent="category" dependent_on_field="category" label="Subcategory" max_length="40" name="subcategory" type="string" use_dependent_field="true">
             <choice>
                 <element dependent_value="Account Management" inactive_on_update="false" label="Account Access" value="Account Access"/>
